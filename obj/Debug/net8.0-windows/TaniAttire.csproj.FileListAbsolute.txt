@@ -1,0 +1,11 @@
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\ProjectPbo_TaniAttire\obj\Debug\net8.0-windows\TaniAttire.csproj.AssemblyReference.cache
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\ProjectPbo_TaniAttire\obj\Debug\net8.0-windows\TaniAttire.AuditorDashboard.resources
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\ProjectPbo_TaniAttire\obj\Debug\net8.0-windows\TaniAttire.KasirDashboard.resources
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\ProjectPbo_TaniAttire\obj\Debug\net8.0-windows\TaniAttire.Login.resources
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\ProjectPbo_TaniAttire\obj\Debug\net8.0-windows\TaniAttire.Properties.Resources.resources
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\ProjectPbo_TaniAttire\obj\Debug\net8.0-windows\TaniAttire.csproj.GenerateResource.cache
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\ProjectPbo_TaniAttire\obj\Debug\net8.0-windows\TaniAttire.GeneratedMSBuildEditorConfig.editorconfig
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\ProjectPbo_TaniAttire\obj\Debug\net8.0-windows\TaniAttire.AssemblyInfoInputs.cache
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\ProjectPbo_TaniAttire\obj\Debug\net8.0-windows\TaniAttire.AssemblyInfo.cs
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\ProjectPbo_TaniAttire\obj\Debug\net8.0-windows\TaniAttire.csproj.CoreCompileInputs.cache
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\ProjectPbo_TaniAttire\obj\Debug\net8.0-windows\TaniAttire.sourcelink.json

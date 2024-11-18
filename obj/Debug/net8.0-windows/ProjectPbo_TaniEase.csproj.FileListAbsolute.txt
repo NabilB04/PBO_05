@@ -1,0 +1,27 @@
+D:\kuliah\semester 3\pbo\pemrograman\ProjectPbo_TaniEase\obj\Debug\net8.0-windows\ProjectPbo_TaniEase.csproj.AssemblyReference.cache
+D:\kuliah\semester 3\pbo\pemrograman\ProjectPbo_TaniEase\obj\Debug\net8.0-windows\ProjectPbo_TaniEase.Form1.resources
+D:\kuliah\semester 3\pbo\pemrograman\ProjectPbo_TaniEase\obj\Debug\net8.0-windows\ProjectPbo_TaniEase.csproj.GenerateResource.cache
+D:\kuliah\semester 3\pbo\pemrograman\ProjectPbo_TaniEase\obj\Debug\net8.0-windows\ProjectPbo_TaniEase.GeneratedMSBuildEditorConfig.editorconfig
+D:\kuliah\semester 3\pbo\pemrograman\ProjectPbo_TaniEase\obj\Debug\net8.0-windows\ProjectPbo_TaniEase.AssemblyInfoInputs.cache
+D:\kuliah\semester 3\pbo\pemrograman\ProjectPbo_TaniEase\obj\Debug\net8.0-windows\ProjectPbo_TaniEase.AssemblyInfo.cs
+D:\kuliah\semester 3\pbo\pemrograman\ProjectPbo_TaniEase\obj\Debug\net8.0-windows\ProjectPbo_TaniEase.csproj.CoreCompileInputs.cache
+D:\kuliah\semester 3\pbo\pemrograman\ProjectPbo_TaniEase\bin\Debug\net8.0-windows\ProjectPbo_TaniEase.exe
+D:\kuliah\semester 3\pbo\pemrograman\ProjectPbo_TaniEase\bin\Debug\net8.0-windows\ProjectPbo_TaniEase.deps.json
+D:\kuliah\semester 3\pbo\pemrograman\ProjectPbo_TaniEase\bin\Debug\net8.0-windows\ProjectPbo_TaniEase.runtimeconfig.json
+D:\kuliah\semester 3\pbo\pemrograman\ProjectPbo_TaniEase\bin\Debug\net8.0-windows\ProjectPbo_TaniEase.dll
+D:\kuliah\semester 3\pbo\pemrograman\ProjectPbo_TaniEase\bin\Debug\net8.0-windows\ProjectPbo_TaniEase.pdb
+D:\kuliah\semester 3\pbo\pemrograman\ProjectPbo_TaniEase\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\kuliah\semester 3\pbo\pemrograman\ProjectPbo_TaniEase\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\kuliah\semester 3\pbo\pemrograman\ProjectPbo_TaniEase\bin\Debug\net8.0-windows\Npgsql.dll
+D:\kuliah\semester 3\pbo\pemrograman\ProjectPbo_TaniEase\obj\Debug\net8.0-windows\ProjectP.A474BF4C.Up2Date
+D:\kuliah\semester 3\pbo\pemrograman\ProjectPbo_TaniEase\obj\Debug\net8.0-windows\ProjectPbo_TaniEase.dll
+D:\kuliah\semester 3\pbo\pemrograman\ProjectPbo_TaniEase\obj\Debug\net8.0-windows\refint\ProjectPbo_TaniEase.dll
+D:\kuliah\semester 3\pbo\pemrograman\ProjectPbo_TaniEase\obj\Debug\net8.0-windows\ProjectPbo_TaniEase.pdb
+D:\kuliah\semester 3\pbo\pemrograman\ProjectPbo_TaniEase\obj\Debug\net8.0-windows\ProjectPbo_TaniEase.genruntimeconfig.cache
+D:\kuliah\semester 3\pbo\pemrograman\ProjectPbo_TaniEase\obj\Debug\net8.0-windows\ref\ProjectPbo_TaniEase.dll
+D:\kuliah\semester 3\pbo\pemrograman\ProjectPbo_TaniEase\obj\Debug\net8.0-windows\ProjectPbo_TaniEase.Dashboard.resources
+D:\kuliah\semester 3\pbo\pemrograman\ProjectPbo_TaniEase\obj\Debug\net8.0-windows\ProjectPbo_TaniEase.Properties.Resources.resources
+E:\pbo\ProjectPbo_TaniEase\ProjectPbo_TaniEase\obj\Debug\net8.0-windows\ProjectPbo_TaniEase.csproj.AssemblyReference.cache
+E:\pbo\ProjectPbo_TaniEase\ProjectPbo_TaniEase\obj\Debug\net8.0-windows\ProjectPbo_TaniEase.dll
+E:\pbo\ProjectPbo_TaniEase\ProjectPbo_TaniEase\obj\Debug\net8.0-windows\refint\ProjectPbo_TaniEase.dll
+E:\pbo\ProjectPbo_TaniEase\ProjectPbo_TaniEase\obj\Debug\net8.0-windows\ProjectPbo_TaniEase.pdb

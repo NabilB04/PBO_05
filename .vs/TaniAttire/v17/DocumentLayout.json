@@ -1,0 +1,257 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|c:\\users\\user\\downloads\\pbo_05\\pbo_05\\projectpbo_taniattire\\taniattire.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:taniattire.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\app\\models\\ukuran.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\models\\ukuran.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\kasirdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:kasirdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\kasirdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:kasirdashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\app\\models\\detail_produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\models\\detail_produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\app\\models\\detail_transaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\models\\detail_transaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\app\\core\\datawrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\core\\datawrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\app\\models\\laporan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\models\\laporan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\app\\models\\transaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\models\\transaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\app\\models\\produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\models\\produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\app\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\app\\models\\kategori.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\models\\kategori.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 11,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Login.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\Login.cs",
+              "RelativeDocumentMoniker": "Login.cs",
+              "ToolTip": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\ProjectPbo_TaniAttire\\Login.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T04:20:58.733Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DataWrapper.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\App\\Core\\DataWrapper.cs",
+              "RelativeDocumentMoniker": "App\\Core\\DataWrapper.cs",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\App\\Core\\DataWrapper.cs",
+              "RelativeToolTip": "App\\Core\\DataWrapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T05:09:37.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Laporan.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\App\\Models\\Laporan.cs",
+              "RelativeDocumentMoniker": "App\\Models\\Laporan.cs",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\App\\Models\\Laporan.cs",
+              "RelativeToolTip": "App\\Models\\Laporan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T02:59:42.991Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Users.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\App\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "App\\Models\\Users.cs",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\App\\Models\\Users.cs",
+              "RelativeToolTip": "App\\Models\\Users.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T02:59:55.456Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Login.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\Login.cs",
+              "RelativeDocumentMoniker": "Login.cs",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\Login.cs",
+              "RelativeToolTip": "Login.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T04:22:46.164Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Transaksi.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\App\\Models\\Transaksi.cs",
+              "RelativeDocumentMoniker": "App\\Models\\Transaksi.cs",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\App\\Models\\Transaksi.cs",
+              "RelativeToolTip": "App\\Models\\Transaksi.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwBAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T02:59:06.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Produk.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\App\\Models\\Produk.cs",
+              "RelativeDocumentMoniker": "App\\Models\\Produk.cs",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\App\\Models\\Produk.cs",
+              "RelativeToolTip": "App\\Models\\Produk.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwBAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T02:20:50.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "TaniAttire.csproj",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\TaniAttire.csproj",
+              "RelativeDocumentMoniker": "TaniAttire.csproj",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\TaniAttire.csproj",
+              "RelativeToolTip": "TaniAttire.csproj",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-11-18T01:42:45.363Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Detail_Transaksi.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\App\\Models\\Detail_Transaksi.cs",
+              "RelativeDocumentMoniker": "App\\Models\\Detail_Transaksi.cs",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\App\\Models\\Detail_Transaksi.cs",
+              "RelativeToolTip": "App\\Models\\Detail_Transaksi.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T02:59:27.401Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Detail_Produk.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\App\\Models\\Detail_Produk.cs",
+              "RelativeDocumentMoniker": "App\\Models\\Detail_Produk.cs",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\App\\Models\\Detail_Produk.cs",
+              "RelativeToolTip": "App\\Models\\Detail_Produk.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwA0AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T02:53:58.888Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "KasirDashboard.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\KasirDashboard.cs",
+              "RelativeDocumentMoniker": "KasirDashboard.cs",
+              "ToolTip": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\ProjectPbo_TaniAttire\\KasirDashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T05:24:14.4Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "KasirDashboard.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\KasirDashboard.cs",
+              "RelativeDocumentMoniker": "KasirDashboard.cs",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\KasirDashboard.cs",
+              "RelativeToolTip": "KasirDashboard.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAIwEEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T05:24:17.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Kategori.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\App\\Models\\Kategori.cs",
+              "RelativeDocumentMoniker": "App\\Models\\Kategori.cs",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\App\\Models\\Kategori.cs",
+              "RelativeToolTip": "App\\Models\\Kategori.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T01:42:48.893Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Ukuran.cs",
+              "DocumentMoniker": "C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\App\\Models\\Ukuran.cs",
+              "RelativeDocumentMoniker": "App\\Models\\Ukuran.cs",
+              "ToolTip": "C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\App\\Models\\Ukuran.cs",
+              "RelativeToolTip": "App\\Models\\Ukuran.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T02:01:56.109Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
