@@ -21,6 +21,6 @@ namespace TaniAttire.App.Models
         [Required(ErrorMessage = "Nama harus diisi.")]
         public string Nama { get; set; }
         [Required(ErrorMessage = "No Telepon harus diisi.")]
-        public string No_Telp { get; set; }
+        public string No_Telpon { get; set; }
     }
 }

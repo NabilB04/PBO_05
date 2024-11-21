@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Ng0A5kTj9QWV9dZKMG6r3Gb36gS6BNLl4FZur1BCiCpNi6hlG2IRuLKXXvf95ht9CyBLQKAHszBaLm9KBRm2qw==",
+  "dgSpecHash": "lfeACj+H+ONKIGz5X2Qh6K2hcsYJj4DNrnjTaQBbt7yRHOvzWWCsPfIYLjUQ5FgKZIT7nAa0n9F2Dj0YWozxag==",
   "success": true,
-  "projectFilePath": "C:\\Users\\USER\\Downloads\\PBO_05\\PBO_05\\ProjectPbo_TaniAttire\\TaniAttire.csproj",
+  "projectFilePath": "E:\\pbo\\PBO_05\\TaniAttire.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USER\\.nuget\\packages\\bunifu.licensing\\6.0.4\\bunifu.licensing.6.0.4.nupkg.sha512",
     "C:\\Users\\USER\\.nuget\\packages\\bunifu.ui.winforms\\7.2.0\\bunifu.ui.winforms.7.2.0.nupkg.sha512",
