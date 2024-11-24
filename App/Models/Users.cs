@@ -11,7 +11,7 @@ namespace TaniAttire.App.Models
     public class Users
     {
         [Key]
-        public int Id { get; set; }
+        public int id_users { get; set; }
         [Required(ErrorMessage = "Username harus diisi.")]
         public string Username { get; set; }
         [Required(ErrorMessage = "Password harus diisi.")]

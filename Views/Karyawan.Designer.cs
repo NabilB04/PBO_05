@@ -1,6 +1,6 @@
-﻿namespace TaniAttire
+﻿namespace TaniAttire.Views
 {
-    partial class AuditorDashboard
+    partial class Karyawan
     {
         /// <summary>
         /// Required designer variable.
@@ -28,32 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            textBox1 = new TextBox();
-            SuspendLayout();
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(292, 83);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(125, 27);
-            textBox1.TabIndex = 0;
-            textBox1.Text = "Beranda Auditor";
-            textBox1.TextChanged += textBox1_TextChanged;
-            // 
-            // AuditorDashboard
-            // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
-            AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
-            Controls.Add(textBox1);
-            Name = "AuditorDashboard";
-            Text = "AuditorForm";
-            ResumeLayout(false);
-            PerformLayout();
+            this.components = new System.ComponentModel.Container();
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Text = "Karyawan";
         }
 
         #endregion
-
-        private TextBox textBox1;
     }
 }

@@ -80,6 +80,7 @@
             panel1.Anchor = AnchorStyles.Right;
             panel1.AutoSizeMode = AutoSizeMode.GrowAndShrink;
             panel1.BackColor = Color.White;
+            panel1.BackgroundImageLayout = ImageLayout.Stretch;
             panel1.BorderStyle = BorderStyle.FixedSingle;
             panel1.Controls.Add(label3);
             panel1.Controls.Add(label2);

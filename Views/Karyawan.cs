@@ -8,18 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace TaniAttire
+namespace TaniAttire.Views
 {
-    public partial class AuditorDashboard : Form
+    public partial class Karyawan : Form
     {
-        public AuditorDashboard()
+        public Karyawan()
         {
             InitializeComponent();
-        }
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
