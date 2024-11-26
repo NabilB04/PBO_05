@@ -14,73 +14,54 @@ namespace TaniAttire
 {
     public partial class AuditorDashboard : Form
     {
-        private usersControllers _controller;
+        private ukuranControllers _controller;
 
         public AuditorDashboard()
         {
             InitializeComponent();
-            _controller = new usersControllers();
+            _controller = new ukuranControllers();
+            LoadDataUkuran();
+            SetupDataGridView();
+
         }
 
-        private void LoadDataKaryawan()
+        private void SetupDataGridView()
+        {
+            var deleteButtonColumn = new DataGridViewButtonColumn
+            {
+                HeaderText = "Aksi",
+                Text = "Delete",
+                UseColumnTextForButtonValue = true,
+                Name = "Delete"
+            };
+            dataGridView1.Columns.Add(deleteButtonColumn);
+        }
+
+        private void LoadDataUkuran()
         {
             try
             {
-                // Ambil data dari controller
-                List<Users> usersList = _controller.GetAllusers();
-
-                // Periksa apakah data kosong
-                if (usersList == null || usersList.Count == 0)
-                {
-                    MessageBox.Show("Tidak ada data untuk ditampilkan.");
-                }
-                else
-                {
-                    // Tampilkan data pada DataGridView
-                    dataGridView1.DataSource = null; // Reset data
-                    dataGridView1.AutoGenerateColumns = true;
-                    dataGridView1.DataSource = usersList;
-                }
-            DataGridViewButtonColumn updateButtonColumn = new DataGridViewButtonColumn
-                {
-                    Name = "Update",
-                    HeaderText = "Update",
-                    Text = "Edit",
-                    UseColumnTextForButtonValue = true
-                };
-            dataGridView1.Columns.Add(updateButtonColumn);
-
-            DataGridViewButtonColumn deleteButtonColumn = new DataGridViewButtonColumn
-                {
-                    Name = "Delete",
-                    HeaderText = "Delete",
-                    Text = "Delete",
-                    UseColumnTextForButtonValue = true
-                };
-                dataGridView1.Columns.Add(deleteButtonColumn);
+                ukuranControllers controller = new ukuranControllers();
+                var ukuranList = controller.GetAllukuran(); // Data hanya dengan Status = true
+                dataGridView1.DataSource = ukuranList;
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Error dalam LoadDataMahasiswa: {ex.Message}\n{ex.StackTrace}");
+                MessageBox.Show($"Terjadi kesalahan saat memuat data: {ex.Message}");
             }
         }
-        
-        // Event handler untuk tombol Home
+
         private void btnHome_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Home clicked!");
-            // Anda bisa menambahkan logika lain untuk membuka halaman atau view tertentu.
         }
 
-        // Event handler untuk tombol Settings
         private void btnSettings_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Settings clicked!");
-            // Tambahkan logika untuk membuka pengaturan atau halaman terkait.
         }
         private void Dashboard_Load_1(object sender, EventArgs e)
         {
-            LoadDataKaryawan();
         }
 
         private void buttonLaporan_Click(object sender, EventArgs e)
@@ -129,10 +110,11 @@ namespace TaniAttire
             {
                 try
                 {
-                    int id_users = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["id_users"].Value);
-                    usersControllers.DeleteKaryawan(id_users); // Gunakan metode DeleteKaryawan
+                    int Id_Ukuran = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["Id_Ukuran"].Value);
+                    ukuranControllers.DeleteUkuran(Id_Ukuran);
                     MessageBox.Show("Data berhasil dihapus.");
-                    LoadDataKaryawan(); // Refresh data setelah penghapusan
+
+                    LoadDataUkuran(); 
                 }
                 catch (Exception ex)
                 {
@@ -146,4 +128,3 @@ namespace TaniAttire
         }
     }
 }
-

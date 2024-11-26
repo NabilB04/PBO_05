@@ -16,7 +16,6 @@ E:\pbo\PBO_05\bin\Debug\net8.0-windows\TaniAttire.dll
 E:\pbo\PBO_05\bin\Debug\net8.0-windows\TaniAttire.pdb
 E:\pbo\PBO_05\bin\Debug\net8.0-windows\Bunifu.Licensing.dll
 E:\pbo\PBO_05\bin\Debug\net8.0-windows\Bunifu.UI.WinForms.dll
-E:\pbo\PBO_05\bin\Debug\net8.0-windows\dotenv.net.dll
 E:\pbo\PBO_05\bin\Debug\net8.0-windows\Guna.UI2.dll
 E:\pbo\PBO_05\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 E:\pbo\PBO_05\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
@@ -28,7 +27,6 @@ E:\pbo\PBO_05\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Management
 E:\pbo\PBO_05\obj\Debug\net8.0-windows\TaniAttire.csproj.AssemblyReference.cache
 E:\pbo\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Properties.Resources.resources
 E:\pbo\PBO_05\obj\Debug\net8.0-windows\TaniAttire.AuditorDashboard.resources
-E:\pbo\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Karyawan.resources
 E:\pbo\PBO_05\obj\Debug\net8.0-windows\TaniAttire.KasirDashboard.resources
 E:\pbo\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Login.resources
 E:\pbo\PBO_05\obj\Debug\net8.0-windows\TaniAttire.csproj.GenerateResource.cache

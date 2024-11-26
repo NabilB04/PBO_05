@@ -4,9 +4,6 @@
     <Compile Update="Views\AuditorDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Views\Karyawan.cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Views\KasirDashboard.cs">
       <SubType>Form</SubType>
     </Compile>

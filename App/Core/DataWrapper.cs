@@ -13,7 +13,7 @@ namespace TaniAttire.App.Core
     public static class DataWrapper
     {
         private static readonly string DB_HOST = "localhost";
-        private static readonly string DB_DATABASE = "TaniAttire1";
+        private static readonly string DB_DATABASE = "TaniAttire";
         private static readonly string DB_USERNAME = "postgres";
         private static readonly string DB_PASSWORD = "NabilBaihaqi04";
         private static readonly string DB_PORT = "5432";

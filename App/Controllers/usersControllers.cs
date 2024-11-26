@@ -26,7 +26,7 @@ namespace TaniAttire.App.Controllers
                     {
                         usersList.Add(new Users
                         {
-                            id_users = reader.GetInt32(0),
+                            Id_Users = reader.GetInt32(0),
                             Username = reader.GetString(1),
                             Password = reader.GetString(2),
                             Role = reader.GetString(3),
