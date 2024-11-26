@@ -11,7 +11,7 @@ namespace TaniAttire.App.Models
     public class Users
     {
         [Key]
-        public int id_users { get; set; }
+        public int Id_Users { get; set; }
         [Required(ErrorMessage = "Username harus diisi.")]
         public string Username { get; set; }
         [Required(ErrorMessage = "Password harus diisi.")]
@@ -20,7 +20,7 @@ namespace TaniAttire.App.Models
         public string Role { get; set; }
         [Required(ErrorMessage = "Nama harus diisi.")]
         public string Nama { get; set; }
-        [Required(ErrorMessage = "No Telepon harus diisi.")]
+        [StringLength(15, ErrorMessage = "No Telepon tidak boleh lebih dari 15 karakter.")]
         public string No_Telpon { get; set; }
     }
 }

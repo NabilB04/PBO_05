@@ -11,14 +11,21 @@ namespace TaniAttire.App.Models
     public class Detail_Transaksi
     {
         [Key]
-        public int Id { get; set; }
-        [ForeignKey("Transaksi")]
-        public string Id_Transaksi { get; set; }
-        [ForeignKey("Detail_Produk")]
-        public string Id_Detail_Produk { get; set; }
-        [Required(ErrorMessage = "Jumlah harus diisi.")]
-        public int jumlah { get; set; }
+        public int Id_Detail_Transaksi { get; set; } 
 
-        public decimal Total_Harga { get; set; }
+        [ForeignKey("Detail_Stok")]
+        [Required(ErrorMessage = "Id Detail Stok harus diisi.")]
+        public int Id_Detail_Stok { get; set; } 
+
+        [ForeignKey("TransaksiJual")]
+        public int? Id_TransaksiJual { get; set; } 
+
+        [ForeignKey("TransaksiSewa")]
+        public int? Id_TransaksiSewa { get; set; } 
+
+        [Required(ErrorMessage = "Jumlah harus diisi.")]
+        [Range(1, int.MaxValue, ErrorMessage = "Jumlah harus lebih besar dari 0.")]
+        public int Jumlah { get; set; } 
+
     }
 }

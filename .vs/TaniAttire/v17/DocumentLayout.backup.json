@@ -1,50 +1,46 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\ProjectPbo_TaniAttire\\",
+  "WorkspaceRootPath": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_5\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\kuliah\\semester 3\\pbo\\pemrograman\\pbo_05\\projectpbo_taniattire\\models\\laporan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:models\\laporan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\kuliah\\semester 3\\pbo\\pemrograman\\pbo_5\\app\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\kuliah\\semester 3\\pbo\\pemrograman\\pbo_05\\projectpbo_taniattire\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\kuliah\\semester 3\\pbo\\pemrograman\\pbo_5\\app\\models\\ukuran.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\models\\ukuran.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\kuliah\\semester 3\\pbo\\pemrograman\\pbo_05\\projectpbo_taniattire\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\kuliah\\semester 3\\pbo\\pemrograman\\pbo_5\\app\\models\\transaksisewa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\models\\transaksisewa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\kuliah\\semester 3\\pbo\\pemrograman\\pbo_05\\projectpbo_taniattire\\models\\transaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:models\\transaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\kuliah\\semester 3\\pbo\\pemrograman\\pbo_5\\app\\models\\transaksijual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\models\\transaksijual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\kuliah\\semester 3\\pbo\\pemrograman\\pbo_05\\projectpbo_taniattire\\models\\detail_transaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:models\\detail_transaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\kuliah\\semester 3\\pbo\\pemrograman\\pbo_5\\app\\models\\produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\models\\produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\kuliah\\semester 3\\pbo\\pemrograman\\pbo_05\\projectpbo_taniattire\\models\\produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:models\\produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\kuliah\\semester 3\\pbo\\pemrograman\\pbo_5\\app\\models\\detail_transaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\models\\detail_transaksi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\kuliah\\semester 3\\pbo\\pemrograman\\pbo_05\\projectpbo_taniattire\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\kuliah\\semester 3\\pbo\\pemrograman\\pbo_5\\app\\models\\pelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\models\\pelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\kuliah\\semester 3\\pbo\\pemrograman\\pbo_05\\projectpbo_taniattire\\models\\ukuran.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:models\\ukuran.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\kuliah\\semester 3\\pbo\\pemrograman\\pbo_5\\app\\models\\detail_stok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\models\\detail_stok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\kuliah\\semester 3\\pbo\\pemrograman\\pbo_05\\projectpbo_taniattire\\models\\kategori.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:models\\kategori.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\kuliah\\semester 3\\pbo\\pemrograman\\pbo_5\\app\\models\\detail_produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\models\\detail_produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\kuliah\\semester 3\\pbo\\pemrograman\\pbo_05\\projectpbo_taniattire\\models\\detail_produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:models\\detail_produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\kuliah\\semester 3\\pbo\\pemrograman\\pbo_05\\projectpbo_taniattire\\taniattire.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:taniattire.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\kuliah\\semester 3\\pbo\\pemrograman\\pbo_5\\app\\controllers\\userscontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\controllers\\userscontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -54,157 +50,149 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Login.cs",
-              "DocumentMoniker": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\ProjectPbo_TaniAttire\\Login.cs",
-              "RelativeDocumentMoniker": "Login.cs",
-              "ToolTip": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\ProjectPbo_TaniAttire\\Login.cs",
-              "RelativeToolTip": "Login.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAE0AAAA9AAAAAAAAAA==",
+              "DocumentIndex": 9,
+              "Title": "usersControllers.cs",
+              "DocumentMoniker": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_5\\App\\Controllers\\usersControllers.cs",
+              "RelativeDocumentMoniker": "App\\Controllers\\usersControllers.cs",
+              "ToolTip": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_5\\App\\Controllers\\usersControllers.cs",
+              "RelativeToolTip": "App\\Controllers\\usersControllers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T04:22:46.164Z",
+              "WhenOpened": "2024-11-26T00:25:34.888Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Login.cs [Design]",
-              "DocumentMoniker": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\ProjectPbo_TaniAttire\\Login.cs",
-              "RelativeDocumentMoniker": "Login.cs",
-              "ToolTip": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\ProjectPbo_TaniAttire\\Login.cs [Design]",
-              "RelativeToolTip": "Login.cs [Design]",
+              "Title": "TransaksiSewa.cs",
+              "DocumentMoniker": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_5\\App\\Models\\TransaksiSewa.cs",
+              "RelativeDocumentMoniker": "App\\Models\\TransaksiSewa.cs",
+              "ToolTip": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_5\\App\\Models\\TransaksiSewa.cs",
+              "RelativeToolTip": "App\\Models\\TransaksiSewa.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBEAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T04:20:58.733Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Laporan.cs",
-              "DocumentMoniker": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\ProjectPbo_TaniAttire\\Models\\Laporan.cs",
-              "RelativeDocumentMoniker": "Models\\Laporan.cs",
-              "ToolTip": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\ProjectPbo_TaniAttire\\Models\\Laporan.cs",
-              "RelativeToolTip": "Models\\Laporan.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T02:59:42.991Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Kategori.cs",
-              "DocumentMoniker": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\ProjectPbo_TaniAttire\\Models\\Kategori.cs",
-              "RelativeDocumentMoniker": "Models\\Kategori.cs",
-              "ToolTip": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\ProjectPbo_TaniAttire\\Models\\Kategori.cs",
-              "RelativeToolTip": "Models\\Kategori.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T01:42:48.893Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Produk.cs",
-              "DocumentMoniker": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\ProjectPbo_TaniAttire\\Models\\Produk.cs",
-              "RelativeDocumentMoniker": "Models\\Produk.cs",
-              "ToolTip": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\ProjectPbo_TaniAttire\\Models\\Produk.cs",
-              "RelativeToolTip": "Models\\Produk.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T02:20:50.827Z",
+              "WhenOpened": "2024-11-26T00:07:45.99Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Transaksi.cs",
-              "DocumentMoniker": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\ProjectPbo_TaniAttire\\Models\\Transaksi.cs",
-              "RelativeDocumentMoniker": "Models\\Transaksi.cs",
-              "ToolTip": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\ProjectPbo_TaniAttire\\Models\\Transaksi.cs",
-              "RelativeToolTip": "Models\\Transaksi.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
+              "Title": "TransaksiJual.cs",
+              "DocumentMoniker": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_5\\App\\Models\\TransaksiJual.cs",
+              "RelativeDocumentMoniker": "App\\Models\\TransaksiJual.cs",
+              "ToolTip": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_5\\App\\Models\\TransaksiJual.cs",
+              "RelativeToolTip": "App\\Models\\TransaksiJual.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABgAAABHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T02:59:06.852Z",
+              "WhenOpened": "2024-11-26T00:03:56.583Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Users.cs",
-              "DocumentMoniker": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\ProjectPbo_TaniAttire\\Models\\Users.cs",
-              "RelativeDocumentMoniker": "Models\\Users.cs",
-              "ToolTip": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\ProjectPbo_TaniAttire\\Models\\Users.cs",
-              "RelativeToolTip": "Models\\Users.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBMAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T02:59:55.456Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Detail_Transaksi.cs",
-              "DocumentMoniker": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\ProjectPbo_TaniAttire\\Models\\Detail_Transaksi.cs",
-              "RelativeDocumentMoniker": "Models\\Detail_Transaksi.cs",
-              "ToolTip": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\ProjectPbo_TaniAttire\\Models\\Detail_Transaksi.cs",
-              "RelativeToolTip": "Models\\Detail_Transaksi.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA8AAAAwAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_5\\App\\Models\\Detail_Transaksi.cs",
+              "RelativeDocumentMoniker": "App\\Models\\Detail_Transaksi.cs",
+              "ToolTip": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_5\\App\\Models\\Detail_Transaksi.cs",
+              "RelativeToolTip": "App\\Models\\Detail_Transaksi.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBsAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T02:59:27.401Z",
+              "WhenOpened": "2024-11-26T00:00:22.998Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "Ukuran.cs",
-              "DocumentMoniker": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\ProjectPbo_TaniAttire\\Models\\Ukuran.cs",
-              "RelativeDocumentMoniker": "Models\\Ukuran.cs",
-              "ToolTip": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\ProjectPbo_TaniAttire\\Models\\Ukuran.cs",
-              "RelativeToolTip": "Models\\Ukuran.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAA4AAAAgAAAAAAAAAA==",
+              "Title": "Detail_Stok.cs",
+              "DocumentMoniker": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_5\\App\\Models\\Detail_Stok.cs",
+              "RelativeDocumentMoniker": "App\\Models\\Detail_Stok.cs",
+              "ToolTip": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_5\\App\\Models\\Detail_Stok.cs",
+              "RelativeToolTip": "App\\Models\\Detail_Stok.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAACIAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T02:01:56.109Z",
+              "WhenOpened": "2024-11-25T23:59:36.28Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "Detail_Produk.cs",
-              "DocumentMoniker": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\ProjectPbo_TaniAttire\\Models\\Detail_Produk.cs",
-              "RelativeDocumentMoniker": "Models\\Detail_Produk.cs",
-              "ToolTip": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\ProjectPbo_TaniAttire\\Models\\Detail_Produk.cs",
-              "RelativeToolTip": "Models\\Detail_Produk.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "DocumentMoniker": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_5\\App\\Models\\Detail_Produk.cs",
+              "RelativeDocumentMoniker": "App\\Models\\Detail_Produk.cs",
+              "ToolTip": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_5\\App\\Models\\Detail_Produk.cs",
+              "RelativeToolTip": "App\\Models\\Detail_Produk.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-18T02:53:58.888Z",
+              "WhenOpened": "2024-11-25T23:47:05.036Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "TaniAttire",
-              "DocumentMoniker": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\ProjectPbo_TaniAttire\\TaniAttire.csproj",
-              "RelativeDocumentMoniker": "TaniAttire.csproj",
-              "ToolTip": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\ProjectPbo_TaniAttire\\TaniAttire.csproj",
-              "RelativeToolTip": "TaniAttire.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-18T01:42:45.363Z",
+              "DocumentIndex": 0,
+              "Title": "Users.cs",
+              "DocumentMoniker": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_5\\App\\Models\\Users.cs",
+              "RelativeDocumentMoniker": "App\\Models\\Users.cs",
+              "ToolTip": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_5\\App\\Models\\Users.cs",
+              "RelativeToolTip": "App\\Models\\Users.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T23:51:25.96Z",
               "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Produk.cs",
+              "DocumentMoniker": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_5\\App\\Models\\Produk.cs",
+              "RelativeDocumentMoniker": "App\\Models\\Produk.cs",
+              "ToolTip": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_5\\App\\Models\\Produk.cs",
+              "RelativeToolTip": "App\\Models\\Produk.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAABQAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T03:46:06.153Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Ukuran.cs",
+              "DocumentMoniker": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_5\\App\\Models\\Ukuran.cs",
+              "RelativeDocumentMoniker": "App\\Models\\Ukuran.cs",
+              "ToolTip": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_5\\App\\Models\\Ukuran.cs",
+              "RelativeToolTip": "App\\Models\\Ukuran.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T03:44:28.332Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Pelanggan.cs",
+              "DocumentMoniker": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_5\\App\\Models\\Pelanggan.cs",
+              "RelativeDocumentMoniker": "App\\Models\\Pelanggan.cs",
+              "ToolTip": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_5\\App\\Models\\Pelanggan.cs",
+              "RelativeToolTip": "App\\Models\\Pelanggan.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-25T03:44:07.411Z",
+              "EditorCaption": ""
             }
           ]
         }
