@@ -1,0 +1,29 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Build results
+/bin/
+/obj/
+*.dll
+*.exe
+
+# Log files
+*.log
+*.tlog
+
+# Environment files
+.env
+
+# Database files
+*.db
+*.sqlite
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# NuGet
+*.nupkg
+*.snupkg

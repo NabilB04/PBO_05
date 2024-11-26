@@ -10,9 +10,21 @@ D:\kuliah\semester 3\pbo\pemrograman\PBO_05\ProjectPbo_TaniAttire\obj\Debug\net8
 D:\kuliah\semester 3\pbo\pemrograman\PBO_05\ProjectPbo_TaniAttire\obj\Debug\net8.0-windows\TaniAttire.csproj.CoreCompileInputs.cache
 D:\kuliah\semester 3\pbo\pemrograman\PBO_05\ProjectPbo_TaniAttire\obj\Debug\net8.0-windows\TaniAttire.sourcelink.json
 E:\pbo\PBO_05\bin\Debug\net8.0-windows\TaniAttire.exe
+E:\pbo\PBO_05\bin\Debug\net8.0-windows\TaniAttire.deps.json
+E:\pbo\PBO_05\bin\Debug\net8.0-windows\TaniAttire.runtimeconfig.json
 E:\pbo\PBO_05\bin\Debug\net8.0-windows\TaniAttire.dll
+E:\pbo\PBO_05\bin\Debug\net8.0-windows\TaniAttire.pdb
+E:\pbo\PBO_05\bin\Debug\net8.0-windows\Bunifu.Licensing.dll
+E:\pbo\PBO_05\bin\Debug\net8.0-windows\Bunifu.UI.WinForms.dll
+E:\pbo\PBO_05\bin\Debug\net8.0-windows\dotenv.net.dll
+E:\pbo\PBO_05\bin\Debug\net8.0-windows\Guna.UI2.dll
+E:\pbo\PBO_05\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 E:\pbo\PBO_05\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+E:\pbo\PBO_05\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
 E:\pbo\PBO_05\bin\Debug\net8.0-windows\Npgsql.dll
+E:\pbo\PBO_05\bin\Debug\net8.0-windows\RestSharp.dll
+E:\pbo\PBO_05\bin\Debug\net8.0-windows\System.Management.dll
+E:\pbo\PBO_05\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Management.dll
 E:\pbo\PBO_05\obj\Debug\net8.0-windows\TaniAttire.csproj.AssemblyReference.cache
 E:\pbo\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Properties.Resources.resources
 E:\pbo\PBO_05\obj\Debug\net8.0-windows\TaniAttire.AuditorDashboard.resources
@@ -25,17 +37,6 @@ E:\pbo\PBO_05\obj\Debug\net8.0-windows\TaniAttire.AssemblyInfoInputs.cache
 E:\pbo\PBO_05\obj\Debug\net8.0-windows\TaniAttire.AssemblyInfo.cs
 E:\pbo\PBO_05\obj\Debug\net8.0-windows\TaniAttire.csproj.CoreCompileInputs.cache
 E:\pbo\PBO_05\obj\Debug\net8.0-windows\TaniAttire.sourcelink.json
-E:\pbo\PBO_05\bin\Debug\net8.0-windows\TaniAttire.deps.json
-E:\pbo\PBO_05\bin\Debug\net8.0-windows\TaniAttire.runtimeconfig.json
-E:\pbo\PBO_05\bin\Debug\net8.0-windows\TaniAttire.pdb
-E:\pbo\PBO_05\bin\Debug\net8.0-windows\Bunifu.Licensing.dll
-E:\pbo\PBO_05\bin\Debug\net8.0-windows\Bunifu.UI.WinForms.dll
-E:\pbo\PBO_05\bin\Debug\net8.0-windows\Guna.UI2.dll
-E:\pbo\PBO_05\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
-E:\pbo\PBO_05\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
-E:\pbo\PBO_05\bin\Debug\net8.0-windows\RestSharp.dll
-E:\pbo\PBO_05\bin\Debug\net8.0-windows\System.Management.dll
-E:\pbo\PBO_05\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Management.dll
 E:\pbo\PBO_05\obj\Debug\net8.0-windows\TaniAttire.csproj.Up2Date
 E:\pbo\PBO_05\obj\Debug\net8.0-windows\TaniAttire.dll
 E:\pbo\PBO_05\obj\Debug\net8.0-windows\refint\TaniAttire.dll
