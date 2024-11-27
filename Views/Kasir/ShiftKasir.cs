@@ -7,21 +7,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using TaniAttire.Views.Kasir;
 
-namespace TaniAttire
+namespace TaniAttire.Views.Kasir
 {
-    public partial class KasirDashboard : Form
+    public partial class ShiftKasir : Form
     {
-        public KasirDashboard()
+        public ShiftKasir()
         {
             InitializeComponent();
-
         }
 
-        private void Dashboard_Load_1(object sender, EventArgs e)
+        private void buttonPersewaan_Click(object sender, EventArgs e)
         {
-
+            PersewaanProduk persewaanProduk = new PersewaanProduk();
+            persewaanProduk.Show();
+            Hide();
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -33,20 +33,8 @@ namespace TaniAttire
 
         private void buttonTransaksi_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void buttonShiftKasir_Click(object sender, EventArgs e)
-        {
-            ShiftKasir shiftKasir = new ShiftKasir();
-            shiftKasir.Show();
-            Hide();
-        }
-
-        private void buttonPersewaan_Click(object sender, EventArgs e)
-        {
-            PersewaanProduk persewaanproduk = new PersewaanProduk();
-            persewaanproduk.Show();
+            KasirDashboard kasirDashboard = new KasirDashboard();
+            kasirDashboard.Show();
             Hide();
         }
     }

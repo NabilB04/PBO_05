@@ -1,6 +1,7 @@
-﻿namespace TaniAttire
+﻿
+namespace TaniAttire.Views.Kasir
 {
-    partial class KasirDashboard
+    partial class PersewaanProduk
     {
         /// <summary>
         /// Required designer variable.
@@ -28,12 +29,27 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(KasirDashboard));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PersewaanProduk));
+            button6 = new Button();
             buttonShiftKasir = new Button();
             buttonPersewaan = new Button();
             buttonTransaksi = new Button();
-            button6 = new Button();
             SuspendLayout();
+            // 
+            // button6
+            // 
+            button6.BackColor = Color.FromArgb(192, 0, 0);
+            button6.BackgroundImage = (Image)resources.GetObject("button6.BackgroundImage");
+            button6.BackgroundImageLayout = ImageLayout.Zoom;
+            button6.ForeColor = Color.White;
+            button6.ImageAlign = ContentAlignment.MiddleLeft;
+            button6.Location = new Point(98, 568);
+            button6.Name = "button6";
+            button6.Padding = new Padding(30, 0, 0, 0);
+            button6.Size = new Size(206, 60);
+            button6.TabIndex = 13;
+            button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // buttonShiftKasir
             // 
@@ -46,7 +62,7 @@
             buttonShiftKasir.Name = "buttonShiftKasir";
             buttonShiftKasir.Padding = new Padding(30, 0, 0, 0);
             buttonShiftKasir.Size = new Size(334, 60);
-            buttonShiftKasir.TabIndex = 7;
+            buttonShiftKasir.TabIndex = 12;
             buttonShiftKasir.UseVisualStyleBackColor = false;
             buttonShiftKasir.Click += buttonShiftKasir_Click;
             // 
@@ -61,7 +77,7 @@
             buttonPersewaan.Name = "buttonPersewaan";
             buttonPersewaan.Padding = new Padding(30, 0, 0, 0);
             buttonPersewaan.Size = new Size(334, 60);
-            buttonPersewaan.TabIndex = 6;
+            buttonPersewaan.TabIndex = 11;
             buttonPersewaan.UseVisualStyleBackColor = false;
             buttonPersewaan.Click += buttonPersewaan_Click;
             // 
@@ -76,26 +92,11 @@
             buttonTransaksi.Name = "buttonTransaksi";
             buttonTransaksi.Padding = new Padding(30, 0, 0, 0);
             buttonTransaksi.Size = new Size(334, 60);
-            buttonTransaksi.TabIndex = 5;
+            buttonTransaksi.TabIndex = 10;
             buttonTransaksi.UseVisualStyleBackColor = false;
             buttonTransaksi.Click += buttonTransaksi_Click;
             // 
-            // button6
-            // 
-            button6.BackColor = Color.FromArgb(192, 0, 0);
-            button6.BackgroundImage = (Image)resources.GetObject("button6.BackgroundImage");
-            button6.BackgroundImageLayout = ImageLayout.Zoom;
-            button6.ForeColor = Color.White;
-            button6.ImageAlign = ContentAlignment.MiddleLeft;
-            button6.Location = new Point(98, 568);
-            button6.Name = "button6";
-            button6.Padding = new Padding(30, 0, 0, 0);
-            button6.Size = new Size(206, 60);
-            button6.TabIndex = 9;
-            button6.UseVisualStyleBackColor = false;
-            button6.Click += button6_Click;
-            // 
-            // KasirDashboard
+            // PersewaanProduk
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -107,17 +108,17 @@
             Controls.Add(buttonPersewaan);
             Controls.Add(buttonTransaksi);
             DoubleBuffered = true;
-            Name = "KasirDashboard";
-            Text = "Dashboard";
-            Load += Dashboard_Load_1;
+            Name = "PersewaanProduk";
+            Text = "PersewaanProduk";
+            Load += PersewaanProduk_Load;
             ResumeLayout(false);
         }
 
         #endregion
 
+        private Button button6;
         private Button buttonShiftKasir;
         private Button buttonPersewaan;
         private Button buttonTransaksi;
-        private Button button6;
     }
 }

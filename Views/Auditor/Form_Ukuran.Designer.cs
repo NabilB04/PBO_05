@@ -68,6 +68,7 @@
             button3.Size = new Size(334, 60);
             button3.TabIndex = 15;
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
