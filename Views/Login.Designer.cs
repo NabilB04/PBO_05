@@ -31,13 +31,13 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Constantia", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.Font = new Font("Elephant", 27.7499962F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ImageAlign = ContentAlignment.TopRight;
-            label1.Location = new Point(72, 43);
+            label1.Location = new Point(161, 29);
             label1.Name = "label1";
-            label1.Size = new Size(240, 37);
+            label1.Size = new Size(171, 47);
             label1.TabIndex = 0;
-            label1.Text = "Selamat Datang";
+            label1.Text = "LOGIN";
             label1.TextAlign = ContentAlignment.TopCenter;
             label1.Click += label1_Click;
             // 
@@ -46,10 +46,9 @@
             button2.BackColor = Color.DarkGreen;
             button2.Font = new Font("Constantia", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button2.ForeColor = SystemColors.ButtonFace;
-            button2.Location = new Point(55, 327);
-            button2.Margin = new Padding(3, 4, 3, 4);
+            button2.Location = new Point(113, 275);
             button2.Name = "button2";
-            button2.Size = new Size(250, 49);
+            button2.Size = new Size(258, 52);
             button2.TabIndex = 2;
             button2.Text = "Login";
             button2.UseVisualStyleBackColor = false;
@@ -58,20 +57,19 @@
             // textBox1
             // 
             textBox1.ForeColor = SystemColors.WindowFrame;
-            textBox1.Location = new Point(55, 155);
-            textBox1.Margin = new Padding(3, 4, 3, 4);
+            textBox1.Location = new Point(113, 140);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(250, 27);
+            textBox1.Size = new Size(219, 23);
             textBox1.TabIndex = 3;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
             // textBox2
             // 
             textBox2.ForeColor = SystemColors.WindowFrame;
-            textBox2.Location = new Point(55, 235);
-            textBox2.Margin = new Padding(3, 4, 3, 4);
+            textBox2.Location = new Point(110, 216);
             textBox2.Name = "textBox2";
-            textBox2.Size = new Size(250, 27);
+            textBox2.PasswordChar = '*';
+            textBox2.Size = new Size(219, 23);
             textBox2.TabIndex = 4;
             textBox2.TextChanged += textBox2_TextChanged;
             // 
@@ -88,44 +86,44 @@
             panel1.Controls.Add(textBox1);
             panel1.Controls.Add(button2);
             panel1.Controls.Add(label1);
-            panel1.Location = new Point(347, 105);
-            panel1.Margin = new Padding(3, 4, 3, 4);
+            panel1.Location = new Point(701, 152);
             panel1.Name = "panel1";
-            panel1.Size = new Size(356, 439);
+            panel1.Size = new Size(494, 372);
             panel1.TabIndex = 5;
             panel1.Paint += panel1_Paint;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Constantia", 12F);
-            label3.Location = new Point(55, 125);
+            label3.Font = new Font("Constantia", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label3.Location = new Point(110, 108);
             label3.Name = "label3";
-            label3.Size = new Size(100, 24);
+            label3.Size = new Size(128, 29);
             label3.TabIndex = 6;
             label3.Text = "Username";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Constantia", 12F);
-            label2.Location = new Point(55, 205);
+            label2.Font = new Font("Constantia", 18F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label2.Location = new Point(110, 184);
             label2.Name = "label2";
-            label2.Size = new Size(93, 24);
+            label2.Size = new Size(119, 29);
             label2.TabIndex = 5;
             label2.Text = "Password";
             label2.Click += label2_Click;
             // 
             // Login
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(777, 600);
+            ClientSize = new Size(1264, 681);
             Controls.Add(panel1);
-            Margin = new Padding(3, 4, 3, 4);
+            DoubleBuffered = true;
             Name = "Login";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += Form1_Load;
             panel1.ResumeLayout(false);
