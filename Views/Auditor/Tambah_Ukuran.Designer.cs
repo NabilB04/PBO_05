@@ -37,11 +37,12 @@
             button2 = new Button();
             button1 = new Button();
             label1 = new Label();
-            comboBox1 = new ComboBox();
+            comboBoxKategori = new ComboBox();
             label2 = new Label();
             label3 = new Label();
             button7 = new Button();
-            textBox1 = new TextBox();
+            textBoxNilaiUkuran = new TextBox();
+            button8 = new Button();
             SuspendLayout();
             // 
             // buttonBeranda
@@ -162,21 +163,22 @@
             label1.Text = "Masukkan Ukuran";
             label1.Click += label1_Click;
             // 
-            // comboBox1
+            // comboBoxKategori
             // 
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Items.AddRange(new object[] { "Pakaian", "Sepatu" });
-            comboBox1.Location = new Point(692, 377);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(232, 28);
-            comboBox1.TabIndex = 26;
+            comboBoxKategori.FormattingEnabled = true;
+            comboBoxKategori.Items.AddRange(new object[] { "Pakaian", "Sepatu" });
+            comboBoxKategori.Location = new Point(692, 357);
+            comboBoxKategori.Name = "comboBoxKategori";
+            comboBoxKategori.Size = new Size(435, 28);
+            comboBoxKategori.TabIndex = 26;
+            comboBoxKategori.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // label2
             // 
             label2.AutoSize = true;
             label2.BackColor = Color.White;
             label2.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(692, 354);
+            label2.Location = new Point(692, 331);
             label2.Name = "label2";
             label2.Size = new Size(74, 23);
             label2.TabIndex = 27;
@@ -188,7 +190,7 @@
             label3.AutoSize = true;
             label3.BackColor = Color.White;
             label3.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(1060, 354);
+            label3.Location = new Point(692, 436);
             label3.Name = "label3";
             label3.Size = new Size(105, 23);
             label3.TabIndex = 28;
@@ -197,7 +199,7 @@
             // button7
             // 
             button7.BackColor = Color.LimeGreen;
-            button7.Location = new Point(1176, 461);
+            button7.Location = new Point(1012, 567);
             button7.Name = "button7";
             button7.Size = new Size(115, 44);
             button7.TabIndex = 30;
@@ -205,12 +207,24 @@
             button7.UseVisualStyleBackColor = false;
             button7.Click += button7_Click;
             // 
-            // textBox1
+            // textBoxNilaiUkuran
             // 
-            textBox1.Location = new Point(1060, 384);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(231, 27);
-            textBox1.TabIndex = 31;
+            textBoxNilaiUkuran.Location = new Point(692, 462);
+            textBoxNilaiUkuran.Name = "textBoxNilaiUkuran";
+            textBoxNilaiUkuran.Size = new Size(435, 27);
+            textBoxNilaiUkuran.TabIndex = 31;
+            // 
+            // button8
+            // 
+            button8.BackColor = Color.Red;
+            button8.ForeColor = SystemColors.ControlLight;
+            button8.Location = new Point(876, 567);
+            button8.Name = "button8";
+            button8.Size = new Size(115, 44);
+            button8.TabIndex = 32;
+            button8.Text = "Batal";
+            button8.UseVisualStyleBackColor = false;
+            button8.Click += button8_Click;
             // 
             // Tambah_Ukuran
             // 
@@ -219,11 +233,12 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1445, 908);
-            Controls.Add(textBox1);
+            Controls.Add(button8);
+            Controls.Add(textBoxNilaiUkuran);
             Controls.Add(button7);
             Controls.Add(label3);
             Controls.Add(label2);
-            Controls.Add(comboBox1);
+            Controls.Add(comboBoxKategori);
             Controls.Add(label1);
             Controls.Add(buttonBeranda);
             Controls.Add(button6);
@@ -249,11 +264,12 @@
         private Button button2;
         private Button button1;
         private Label label1;
-        private ComboBox comboBox1;
+        private ComboBox comboBoxKategori;
         private Label label2;
         private Label label3;
         private ComboBox comboBox2;
         private Button button7;
-        private TextBox textBox1;
+        private TextBox textBoxNilaiUkuran;
+        private Button button8;
     }
 }

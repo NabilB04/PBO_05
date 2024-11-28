@@ -41,11 +41,12 @@ namespace TaniAttire.App.Controllers
         {
             using (var conn = DataWrapper.openConnection())
             {
-                string query = "INSERT INTO Ukuran (Kategori, Nilai_Ukuran) VALUES(@Kategori, @Nilai_Ukuran)";
+                string query = "INSERT INTO Ukuran (Kategori, Nilai_Ukuran, Status) VALUES(@Kategori, @Nilai_Ukuran, @Status)";
                 using (var cmd = new NpgsqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("Kategori", ukuran1.Kategori);
                     cmd.Parameters.AddWithValue("Nilai_Ukuran", ukuran1.Nilai_Ukuran);
+                    cmd.Parameters.AddWithValue("Status", ukuran1.Status);
                     cmd.ExecuteNonQuery();
                 }
             }

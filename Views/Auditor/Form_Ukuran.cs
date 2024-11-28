@@ -23,7 +23,9 @@ namespace TaniAttire.Views.Auditor
         }
         private void SetupDataGridView()
         {
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.AllCells;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
             if (!dataGridView1.Columns.Contains("Delete"))
             {
                 var deleteButtonColumn = new DataGridViewButtonColumn
@@ -43,8 +45,6 @@ namespace TaniAttire.Views.Auditor
                 ukuranControllers controller = new ukuranControllers();
                 var ukuranList = controller.GetAllukuran();
                 dataGridView1.DataSource = ukuranList;
-
-                dataGridView1.AutoResizeColumns(DataGridViewAutoSizeColumnsMode.AllCells);
 
                 if (dataGridView1.Columns.Contains("Delete"))
                 {
@@ -130,7 +130,9 @@ namespace TaniAttire.Views.Auditor
 
         private void button8_Click(object sender, EventArgs e)
         {
-
+            Tambah_Ukuran tambahukuran = new Tambah_Ukuran();
+            tambahukuran.Show();
+            this.Hide();
         }
     }
 }
