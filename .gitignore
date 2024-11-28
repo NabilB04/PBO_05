@@ -2,6 +2,8 @@
 .vs/
 *.user
 *.suo
+*.v2
+*.cache
 
 # Build results
 /bin/

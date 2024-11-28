@@ -15,41 +15,10 @@ namespace TaniAttire
 {
     public partial class AuditorDashboard : Form
     {
-        private ukuranControllers _controller;
 
         public AuditorDashboard()
         {
             InitializeComponent();
-            _controller = new ukuranControllers();
-            LoadDataUkuran();
-            SetupDataGridView();
-
-        }
-
-        private void SetupDataGridView()
-        {
-            var deleteButtonColumn = new DataGridViewButtonColumn
-            {
-                HeaderText = "Aksi",
-                Text = "Delete",
-                UseColumnTextForButtonValue = true,
-                Name = "Delete"
-            };
-            dataGridView1.Columns.Add(deleteButtonColumn);
-        }
-
-        private void LoadDataUkuran()
-        {
-            try
-            {
-                ukuranControllers controller = new ukuranControllers();
-                var ukuranList = controller.GetAllukuran(); // Data hanya dengan Status = true
-                dataGridView1.DataSource = ukuranList;
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Terjadi kesalahan saat memuat data: {ex.Message}");
-            }
         }
 
         private void btnHome_Click(object sender, EventArgs e)
@@ -107,21 +76,6 @@ namespace TaniAttire
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == dataGridView1.Columns["Delete"].Index)
-            {
-                try
-                {
-                    int Id_Ukuran = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["Id_Ukuran"].Value);
-                    ukuranControllers.DeleteUkuran(Id_Ukuran);
-                    MessageBox.Show("Data berhasil dihapus.");
-
-                    LoadDataUkuran();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show($"Terjadi kesalahan saat menghapus data: {ex.Message}");
-                }
-            }
         }
         private void buttonBeranda_Click(object sender, EventArgs e)
         {
