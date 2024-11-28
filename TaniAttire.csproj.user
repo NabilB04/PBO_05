@@ -1,10 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Compile Update="Views\AuditorDashboard.cs">
+    <Compile Update="Views\Auditor\AuditorDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Views\KasirDashboard.cs">
+    <Compile Update="Views\Auditor\Form_Ukuran.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Auditor\Mnj_Karyawan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Auditor\Mnj_Produk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Auditor\Penjualan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Auditor\Persewaan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Kasir\KasirDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Kasir\PersewaanProduk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Kasir\ShiftKasir.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\Login.cs">
