@@ -1,4 +1,4 @@
-﻿namespace TaniAttire
+namespace TaniAttire
 {
     partial class AuditorDashboard
     {

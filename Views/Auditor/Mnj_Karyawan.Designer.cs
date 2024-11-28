@@ -1,4 +1,4 @@
-﻿namespace TaniAttire.Views.Auditor
+namespace TaniAttire.Views.Auditor
 {
     partial class Mnj_Karyawan
     {

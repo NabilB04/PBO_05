@@ -73,6 +73,19 @@ D:\kuliah\semester 3\pbo\pemrograman\PBO_5\obj\Debug\net8.0-windows\refint\TaniA
 D:\kuliah\semester 3\pbo\pemrograman\PBO_5\obj\Debug\net8.0-windows\TaniAttire.pdb
 D:\kuliah\semester 3\pbo\pemrograman\PBO_5\obj\Debug\net8.0-windows\TaniAttire.genruntimeconfig.cache
 D:\kuliah\semester 3\pbo\pemrograman\PBO_5\obj\Debug\net8.0-windows\ref\TaniAttire.dll
+E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.csproj.AssemblyReference.cache
+E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Properties.Resources.resources
+E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Mnj_Produk.resources
+E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Penjualan.resources
+E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Persewaan.resources
+E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Tambah_Ukuran.resources
+E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.KasirDashboard.resources
+E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.PersewaanProduk.resources
+E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.ShiftKasir.resources
+E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Login.resources
+E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.csproj.GenerateResource.cache
+E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.AuditorDashboard.resources
+E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Mnj_Karyawan.resources
 E:\pbo\PBO_05\PBO_05\bin\Debug\net8.0-windows\TaniAttire.exe
 E:\pbo\PBO_05\PBO_05\bin\Debug\net8.0-windows\TaniAttire.deps.json
 E:\pbo\PBO_05\PBO_05\bin\Debug\net8.0-windows\TaniAttire.runtimeconfig.json
@@ -88,17 +101,7 @@ E:\pbo\PBO_05\PBO_05\bin\Debug\net8.0-windows\Npgsql.dll
 E:\pbo\PBO_05\PBO_05\bin\Debug\net8.0-windows\RestSharp.dll
 E:\pbo\PBO_05\PBO_05\bin\Debug\net8.0-windows\System.Management.dll
 E:\pbo\PBO_05\PBO_05\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Management.dll
-E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.csproj.AssemblyReference.cache
-E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Properties.Resources.resources
-E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.AuditorDashboard.resources
 E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Form_Ukuran.resources
-E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Mnj_Karyawan.resources
-E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Mnj_Produk.resources
-E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Penjualan.resources
-E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Persewaan.resources
-E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.KasirDashboard.resources
-E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Login.resources
-E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.csproj.GenerateResource.cache
 E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.GeneratedMSBuildEditorConfig.editorconfig
 E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.AssemblyInfoInputs.cache
 E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.AssemblyInfo.cs
@@ -110,4 +113,3 @@ E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\refint\TaniAttire.dll
 E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.pdb
 E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.genruntimeconfig.cache
 E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\ref\TaniAttire.dll
-E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Tambah_Ukuran.resources
