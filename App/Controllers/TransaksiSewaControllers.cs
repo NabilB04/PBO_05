@@ -81,5 +81,24 @@ namespace TaniAttire.App.Controllers
             }
             return transaksiSewaList;
         }
+        public int GetTotalSewa()
+        {
+            int totalSewa = 0;
+            using (var conn = DataWrapper.openConnection())
+            {
+                string query = "SELECT COUNT(*) FROM TransaksiSewa";
+                using (var cmd = new NpgsqlCommand(query, conn))
+                {
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            totalSewa = reader.GetInt32(0);
+                        }
+                    }
+                }
+            }
+            return totalSewa;
+        }
     }
 }

@@ -113,3 +113,43 @@ E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\refint\TaniAttire.dll
 E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.pdb
 E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.genruntimeconfig.cache
 E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\ref\TaniAttire.dll
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\bin\Debug\net8.0-windows\TaniAttire.exe
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\bin\Debug\net8.0-windows\TaniAttire.deps.json
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\bin\Debug\net8.0-windows\TaniAttire.runtimeconfig.json
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\bin\Debug\net8.0-windows\TaniAttire.dll
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\bin\Debug\net8.0-windows\TaniAttire.pdb
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\bin\Debug\net8.0-windows\Bunifu.Licensing.dll
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\bin\Debug\net8.0-windows\Bunifu.UI.WinForms.dll
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\bin\Debug\net8.0-windows\Guna.UI2.dll
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\bin\Debug\net8.0-windows\Npgsql.dll
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\bin\Debug\net8.0-windows\RestSharp.dll
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\bin\Debug\net8.0-windows\System.Management.dll
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Management.dll
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.csproj.AssemblyReference.cache
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Properties.Resources.resources
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.AuditorDashboard.resources
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Form_Ukuran.resources
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Mnj_Karyawan.resources
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Mnj_Produk.resources
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Penjualan.resources
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Persewaan.resources
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Tambah_Ukuran.resources
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.KasirDashboard.resources
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.PersewaanProduk.resources
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.ShiftKasir.resources
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Login.resources
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.csproj.GenerateResource.cache
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.GeneratedMSBuildEditorConfig.editorconfig
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.AssemblyInfoInputs.cache
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.AssemblyInfo.cs
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.csproj.CoreCompileInputs.cache
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.sourcelink.json
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.csproj.Up2Date
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.dll
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\refint\TaniAttire.dll
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.pdb
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.genruntimeconfig.cache
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\ref\TaniAttire.dll

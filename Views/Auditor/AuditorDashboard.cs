@@ -32,6 +32,20 @@ namespace TaniAttire
         }
         private void Dashboard_Load_1(object sender, EventArgs e)
         {
+            usersControllers usersControllers1 = new usersControllers(); 
+            int totalEmployees = usersControllers1.GetTotalEmployees();
+            ProdukControllers ProdukControllers1 = new ProdukControllers();
+            int totalProduk= ProdukControllers1.GetTotalProduk();
+            TransaksiJualControllers TransaksiJualControllers1 = new TransaksiJualControllers();
+            int totalJual = TransaksiJualControllers1.GetTotalJual();
+            TransaksiSewaControllers TransaksiSewaControllers1 = new TransaksiSewaControllers();
+            int totalSewa = TransaksiSewaControllers1.GetTotalSewa();
+
+            label1.Text = "Total Produk: " + totalProduk.ToString();
+            label2.Text = "Total Karyawan: " + totalEmployees.ToString();
+            label3.Text = "Total Penjualan: " + totalJual.ToString();
+            label4.Text = "Total Penyewaan: " + totalSewa.ToString();
+
         }
 
         private void buttonLaporan_Click(object sender, EventArgs e)
@@ -122,6 +136,11 @@ namespace TaniAttire
             Login login = new Login();
             login.Show();
             this.Hide();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -22,5 +22,10 @@ namespace TaniAttire.App.Models
 
         [StringLength(255, ErrorMessage = "Foto produk tidak boleh lebih dari 255 karakter.")]
         public string Foto_Produk { get; set; }
+
+        [Required]
+        [Column(TypeName = "decimal(10, 2)")]
+        [Range(0, double.MaxValue, ErrorMessage = "Denda Per hari harus diisi")]
+        public decimal Denda_Perhari { get; set; }
     }
 }

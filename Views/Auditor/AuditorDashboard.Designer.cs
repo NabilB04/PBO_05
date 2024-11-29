@@ -56,11 +56,10 @@ namespace TaniAttire
             buttonBeranda.BackgroundImageLayout = ImageLayout.Zoom;
             buttonBeranda.ForeColor = Color.White;
             buttonBeranda.ImageAlign = ContentAlignment.MiddleLeft;
-            buttonBeranda.Location = new Point(37, 221);
-            buttonBeranda.Margin = new Padding(3, 4, 3, 4);
+            buttonBeranda.Location = new Point(32, 166);
             buttonBeranda.Name = "buttonBeranda";
-            buttonBeranda.Padding = new Padding(34, 0, 0, 0);
-            buttonBeranda.Size = new Size(382, 80);
+            buttonBeranda.Padding = new Padding(30, 0, 0, 0);
+            buttonBeranda.Size = new Size(334, 60);
             buttonBeranda.TabIndex = 0;
             buttonBeranda.UseVisualStyleBackColor = false;
             buttonBeranda.Click += buttonBeranda_Click;
@@ -74,11 +73,10 @@ namespace TaniAttire
             button1.BackgroundImageLayout = ImageLayout.Zoom;
             button1.ForeColor = Color.White;
             button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(37, 309);
-            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Location = new Point(32, 232);
             button1.Name = "button1";
-            button1.Padding = new Padding(34, 0, 0, 0);
-            button1.Size = new Size(382, 80);
+            button1.Padding = new Padding(30, 0, 0, 0);
+            button1.Size = new Size(334, 60);
             button1.TabIndex = 3;
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
@@ -90,11 +88,10 @@ namespace TaniAttire
             button2.BackgroundImageLayout = ImageLayout.Zoom;
             button2.ForeColor = Color.White;
             button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(37, 397);
-            button2.Margin = new Padding(3, 4, 3, 4);
+            button2.Location = new Point(32, 298);
             button2.Name = "button2";
-            button2.Padding = new Padding(34, 0, 0, 0);
-            button2.Size = new Size(382, 80);
+            button2.Padding = new Padding(30, 0, 0, 0);
+            button2.Size = new Size(334, 60);
             button2.TabIndex = 4;
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
@@ -106,11 +103,10 @@ namespace TaniAttire
             button3.BackgroundImageLayout = ImageLayout.Zoom;
             button3.ForeColor = Color.White;
             button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(37, 485);
-            button3.Margin = new Padding(3, 4, 3, 4);
+            button3.Location = new Point(32, 364);
             button3.Name = "button3";
-            button3.Padding = new Padding(34, 0, 0, 0);
-            button3.Size = new Size(382, 80);
+            button3.Padding = new Padding(30, 0, 0, 0);
+            button3.Size = new Size(334, 60);
             button3.TabIndex = 7;
             button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
@@ -122,11 +118,10 @@ namespace TaniAttire
             button4.BackgroundImageLayout = ImageLayout.Zoom;
             button4.ForeColor = Color.White;
             button4.ImageAlign = ContentAlignment.MiddleLeft;
-            button4.Location = new Point(37, 573);
-            button4.Margin = new Padding(3, 4, 3, 4);
+            button4.Location = new Point(32, 430);
             button4.Name = "button4";
-            button4.Padding = new Padding(34, 0, 0, 0);
-            button4.Size = new Size(382, 80);
+            button4.Padding = new Padding(30, 0, 0, 0);
+            button4.Size = new Size(334, 60);
             button4.TabIndex = 6;
             button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
@@ -138,11 +133,10 @@ namespace TaniAttire
             button5.BackgroundImageLayout = ImageLayout.Zoom;
             button5.ForeColor = Color.White;
             button5.ImageAlign = ContentAlignment.MiddleLeft;
-            button5.Location = new Point(37, 661);
-            button5.Margin = new Padding(3, 4, 3, 4);
+            button5.Location = new Point(32, 496);
             button5.Name = "button5";
-            button5.Padding = new Padding(34, 0, 0, 0);
-            button5.Size = new Size(382, 80);
+            button5.Padding = new Padding(30, 0, 0, 0);
+            button5.Size = new Size(334, 60);
             button5.TabIndex = 5;
             button5.UseVisualStyleBackColor = false;
             button5.Click += button5_Click;
@@ -154,126 +148,130 @@ namespace TaniAttire
             button6.BackgroundImageLayout = ImageLayout.Zoom;
             button6.ForeColor = Color.White;
             button6.ImageAlign = ContentAlignment.MiddleLeft;
-            button6.Location = new Point(37, 787);
-            button6.Margin = new Padding(3, 4, 3, 4);
+            button6.Location = new Point(32, 590);
             button6.Name = "button6";
-            button6.Padding = new Padding(34, 0, 0, 0);
-            button6.Size = new Size(382, 80);
+            button6.Padding = new Padding(30, 0, 0, 0);
+            button6.Size = new Size(334, 60);
             button6.TabIndex = 8;
             button6.UseVisualStyleBackColor = false;
             button6.Click += button6_Click;
             // 
             // button7
             // 
-            button7.Location = new Point(533, 281);
+            button7.Location = new Point(466, 211);
+            button7.Margin = new Padding(3, 2, 3, 2);
             button7.Name = "button7";
-            button7.Size = new Size(400, 137);
+            button7.Size = new Size(350, 103);
             button7.TabIndex = 9;
             button7.UseVisualStyleBackColor = true;
             // 
             // button8
             // 
-            button8.Location = new Point(992, 281);
+            button8.Location = new Point(868, 211);
+            button8.Margin = new Padding(3, 2, 3, 2);
             button8.Name = "button8";
-            button8.Size = new Size(400, 137);
+            button8.Size = new Size(350, 103);
             button8.TabIndex = 10;
             button8.UseVisualStyleBackColor = true;
             // 
             // button9
             // 
-            button9.Location = new Point(533, 516);
+            button9.Location = new Point(466, 387);
+            button9.Margin = new Padding(3, 2, 3, 2);
             button9.Name = "button9";
-            button9.Size = new Size(400, 137);
+            button9.Size = new Size(350, 103);
             button9.TabIndex = 11;
             button9.UseVisualStyleBackColor = true;
             // 
             // button10
             // 
-            button10.Location = new Point(992, 516);
+            button10.Location = new Point(868, 387);
+            button10.Margin = new Padding(3, 2, 3, 2);
             button10.Name = "button10";
-            button10.Size = new Size(400, 137);
+            button10.Size = new Size(350, 103);
             button10.TabIndex = 12;
             button10.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(707, 339);
+            label1.Location = new Point(619, 254);
             label1.Name = "label1";
-            label1.Size = new Size(50, 20);
+            label1.Size = new Size(38, 15);
             label1.TabIndex = 13;
             label1.Text = "label1";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(1177, 339);
+            label2.Location = new Point(1030, 254);
             label2.Name = "label2";
-            label2.Size = new Size(50, 20);
+            label2.Size = new Size(38, 15);
             label2.TabIndex = 14;
             label2.Text = "label2";
+            label2.Click += label2_Click;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(707, 574);
+            label3.Location = new Point(619, 430);
             label3.Name = "label3";
-            label3.Size = new Size(50, 20);
+            label3.Size = new Size(38, 15);
             label3.TabIndex = 15;
             label3.Text = "label3";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(1177, 573);
+            label4.Location = new Point(1030, 430);
             label4.Name = "label4";
-            label4.Size = new Size(50, 20);
+            label4.Size = new Size(38, 15);
             label4.TabIndex = 16;
             label4.Text = "label4";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(533, 240);
+            label5.Location = new Point(466, 180);
             label5.Name = "label5";
-            label5.Size = new Size(92, 20);
+            label5.Size = new Size(73, 15);
             label5.TabIndex = 17;
             label5.Text = "Total Produk";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(992, 240);
+            label6.Location = new Point(868, 180);
             label6.Name = "label6";
-            label6.Size = new Size(110, 20);
+            label6.Size = new Size(86, 15);
             label6.TabIndex = 18;
             label6.Text = "Total Karyawan";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(533, 485);
+            label7.Location = new Point(466, 364);
             label7.Name = "label7";
-            label7.Size = new Size(134, 20);
+            label7.Size = new Size(105, 15);
             label7.TabIndex = 19;
             label7.Text = "Total Transaksi Jual";
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(992, 485);
+            label8.Location = new Point(868, 364);
             label8.Name = "label8";
-            label8.Size = new Size(144, 20);
+            label8.Size = new Size(112, 15);
             label8.TabIndex = 20;
             label8.Text = "Total Transaksi Sewa";
             // 
             // AuditorDashboard
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1445, 908);
+            ClientSize = new Size(1199, 562);
             Controls.Add(label8);
             Controls.Add(label7);
             Controls.Add(label6);
@@ -294,7 +292,6 @@ namespace TaniAttire
             Controls.Add(button1);
             Controls.Add(buttonBeranda);
             DoubleBuffered = true;
-            Margin = new Padding(3, 4, 3, 4);
             Name = "AuditorDashboard";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Dashboard";

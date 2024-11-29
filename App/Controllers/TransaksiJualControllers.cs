@@ -9,7 +9,7 @@ using Npgsql;
 
 namespace TaniAttire.App.Controllers
 {
-    public class TransaksiJualController
+    public class TransaksiJualControllers
     {
         public List<TransaksiJualDetail> GetAllTransaksiJual()
         {
@@ -68,6 +68,25 @@ namespace TaniAttire.App.Controllers
                 }
             }
             return transaksiList;
+        }
+        public int GetTotalJual()
+        {
+            int totalJual = 0;
+            using (var conn = DataWrapper.openConnection())
+            {
+                string query = "SELECT COUNT(*) FROM TransaksiJual";
+                using (var cmd = new NpgsqlCommand(query, conn))
+                {
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            totalJual = reader.GetInt32(0);
+                        }
+                    }
+                }
+            }
+            return totalJual;
         }
     }
 }

@@ -107,5 +107,25 @@ namespace TaniAttire.App.Controllers
 
             DataWrapper.commandExecutor(query, parameters);
         }
+
+        public int GetTotalEmployees()
+        {
+            int totalEmployees = 0;
+            using (var conn = DataWrapper.openConnection())
+            {
+                string query = "SELECT COUNT(*) FROM Users";
+                using (var cmd = new NpgsqlCommand(query, conn))
+                {
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            totalEmployees = reader.GetInt32(0);
+                        }
+                    }
+                }
+            }
+            return totalEmployees;
+        }
     }
 }
