@@ -361,3 +361,13 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+.vs/ProjectEvaluation/taniattire.strings.v9.bin
+obj/Debug/net8.0-windows/TaniAttire.AssemblyInfo.cs
+obj/Debug/net8.0-windows/TaniAttire.AssemblyInfoInputs.cache
+obj/Debug/net8.0-windows/TaniAttire.assets.cache
+obj/Debug/net8.0-windows/TaniAttire.csproj.AssemblyReference.cache
+obj/Debug/net8.0-windows/TaniAttire.GeneratedMSBuildEditorConfig.editorconfig
+obj/project.assets.json
+obj/project.nuget.cache
+obj/TaniAttire.csproj.nuget.dgspec.json
+obj/TaniAttire.csproj.nuget.g.props

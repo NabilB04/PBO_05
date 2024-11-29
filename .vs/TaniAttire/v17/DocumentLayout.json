@@ -1,30 +1,54 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\",
+  "WorkspaceRootPath": "D:\\Home\\Pembelajaran Kuliah\\PBO nya danish\\nyoba\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\kuliah\\semester 3\\pbo\\pemrograman\\pbo_05\\app\\controllers\\ukurancontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\home\\pembelajaran kuliah\\pbo nya danish\\nyoba\\views\\auditor\\mnj_karyawan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\auditor\\mnj_karyawan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\home\\pembelajaran kuliah\\pbo nya danish\\nyoba\\views\\auditor\\mnj_karyawan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\auditor\\mnj_karyawan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\home\\pembelajaran kuliah\\pbo nya danish\\nyoba\\views\\auditor\\tambah_karyawan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\auditor\\tambah_karyawan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\home\\pembelajaran kuliah\\pbo nya danish\\nyoba\\views\\auditor\\tambah_karyawan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\auditor\\tambah_karyawan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\home\\pembelajaran kuliah\\pbo nya danish\\nyoba\\app\\core\\datawrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\core\\datawrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\home\\pembelajaran kuliah\\pbo nya danish\\nyoba\\views\\auditor\\tambah_ukuran.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\auditor\\tambah_ukuran.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\home\\pembelajaran kuliah\\pbo nya danish\\nyoba\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\home\\pembelajaran kuliah\\pbo nya danish\\nyoba\\app\\controllers\\ukurancontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\controllers\\ukurancontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\kuliah\\semester 3\\pbo\\pemrograman\\pbo_05\\app\\models\\ukuran.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\home\\pembelajaran kuliah\\pbo nya danish\\nyoba\\app\\models\\ukuran.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\models\\ukuran.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\kuliah\\semester 3\\pbo\\pemrograman\\pbo_05\\views\\auditor\\tambah_ukuran.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\home\\pembelajaran kuliah\\pbo nya danish\\nyoba\\views\\auditor\\tambah_ukuran.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\auditor\\tambah_ukuran.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\kuliah\\semester 3\\pbo\\pemrograman\\pbo_05\\views\\auditor\\mnj_karyawan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\home\\pembelajaran kuliah\\pbo nya danish\\nyoba\\views\\auditor\\mnj_karyawan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\auditor\\mnj_karyawan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\views\\auditor\\auditordashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|D:\\Home\\Pembelajaran Kuliah\\PBO nya danish\\nyoba\\views\\auditor\\auditordashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\auditor\\auditordashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|d:\\kuliah\\semester 3\\pbo\\pemrograman\\pbo_05\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
-      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,11 +58,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 8,
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
               "$type": "Bookmark",
@@ -46,84 +90,158 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ukuranControllers.cs",
-              "DocumentMoniker": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\App\\Controllers\\ukuranControllers.cs",
-              "RelativeDocumentMoniker": "App\\Controllers\\ukuranControllers.cs",
-              "ToolTip": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\App\\Controllers\\ukuranControllers.cs",
-              "RelativeToolTip": "App\\Controllers\\ukuranControllers.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAAADMAAAANAAAAAAAAAA==",
+              "Title": "Mnj_Karyawan.cs",
+              "DocumentMoniker": "D:\\Home\\Pembelajaran Kuliah\\PBO nya danish\\nyoba\\Views\\Auditor\\Mnj_Karyawan.cs",
+              "RelativeDocumentMoniker": "Views\\Auditor\\Mnj_Karyawan.cs",
+              "ToolTip": "D:\\Home\\Pembelajaran Kuliah\\PBO nya danish\\nyoba\\Views\\Auditor\\Mnj_Karyawan.cs",
+              "RelativeToolTip": "Views\\Auditor\\Mnj_Karyawan.cs",
+              "ViewState": "AgIAAHcAAAAAAAAAAAArwJEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T00:50:02.965Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Tambah_Ukuran.cs",
-              "DocumentMoniker": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\Views\\Auditor\\Tambah_Ukuran.cs",
-              "RelativeDocumentMoniker": "Views\\Auditor\\Tambah_Ukuran.cs",
-              "ToolTip": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\Views\\Auditor\\Tambah_Ukuran.cs",
-              "RelativeToolTip": "Views\\Auditor\\Tambah_Ukuran.cs",
-              "ViewState": "AgIAADIAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T00:48:59.569Z",
+              "WhenOpened": "2024-11-29T03:02:09.236Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Ukuran.cs",
-              "DocumentMoniker": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\App\\Models\\Ukuran.cs",
-              "RelativeDocumentMoniker": "App\\Models\\Ukuran.cs",
-              "ToolTip": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\App\\Models\\Ukuran.cs",
-              "RelativeToolTip": "App\\Models\\Ukuran.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "Mnj_Karyawan.cs [Design]",
+              "DocumentMoniker": "D:\\Home\\Pembelajaran Kuliah\\PBO nya danish\\nyoba\\Views\\Auditor\\Mnj_Karyawan.cs",
+              "RelativeDocumentMoniker": "Views\\Auditor\\Mnj_Karyawan.cs",
+              "ToolTip": "D:\\Home\\Pembelajaran Kuliah\\PBO nya danish\\nyoba\\Views\\Auditor\\Mnj_Karyawan.cs [Design]",
+              "RelativeToolTip": "Views\\Auditor\\Mnj_Karyawan.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T00:48:17.778Z",
+              "WhenOpened": "2024-11-29T03:02:05.709Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DataWrapper.cs",
+              "DocumentMoniker": "D:\\Home\\Pembelajaran Kuliah\\PBO nya danish\\nyoba\\App\\Core\\DataWrapper.cs",
+              "RelativeDocumentMoniker": "App\\Core\\DataWrapper.cs",
+              "ToolTip": "D:\\Home\\Pembelajaran Kuliah\\PBO nya danish\\nyoba\\App\\Core\\DataWrapper.cs",
+              "RelativeToolTip": "App\\Core\\DataWrapper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T03:01:08.369Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Tambah_Karyawan.cs [Design]",
+              "DocumentMoniker": "D:\\Home\\Pembelajaran Kuliah\\PBO nya danish\\nyoba\\Views\\Auditor\\Tambah_Karyawan.cs",
+              "RelativeDocumentMoniker": "Views\\Auditor\\Tambah_Karyawan.cs",
+              "ToolTip": "D:\\Home\\Pembelajaran Kuliah\\PBO nya danish\\nyoba\\Views\\Auditor\\Tambah_Karyawan.cs [Design]",
+              "RelativeToolTip": "Views\\Auditor\\Tambah_Karyawan.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T03:00:49.69Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Tambah_Karyawan.cs",
+              "DocumentMoniker": "D:\\Home\\Pembelajaran Kuliah\\PBO nya danish\\nyoba\\Views\\Auditor\\Tambah_Karyawan.cs",
+              "RelativeDocumentMoniker": "Views\\Auditor\\Tambah_Karyawan.cs",
+              "ToolTip": "D:\\Home\\Pembelajaran Kuliah\\PBO nya danish\\nyoba\\Views\\Auditor\\Tambah_Karyawan.cs",
+              "RelativeToolTip": "Views\\Auditor\\Tambah_Karyawan.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwBAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T03:00:40.855Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": ".gitignore",
-              "DocumentMoniker": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\.gitignore",
-              "RelativeDocumentMoniker": ".gitignore",
-              "ToolTip": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\.gitignore",
-              "RelativeToolTip": ".gitignore",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAABYAAAAMAAAAAAAAAA==",
-              "Icon": "00000000-0000-0000-0000-000000000000.000000|iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAF8SURBVDhPjVNLTgJBEG1lwpoFB3GNK9fieA48hD8iwT/ihwgSDAIHgAGXXsEV18CNzL/LquqZdsYM6kteXqcy3fWqpmpNRBgOhyABBEgpAFVKPIMUcYzUyOU\u002BXM/b2qtU3vkSfRjjZTCAMAw1A2LwzdFoBPP5HNqdzuL27n4juibWI\u002BUshBA1DIkhEx9iEorFotgslQqGYbxxAGFEqt1MxmPWJLbLZdZ\u002Bv89q5PMFPiTR6z2zdaxR0fXA0XTBcVywkb4fwHXjRteecIDNQ7UmExVYAdPcxYaqclN46na5WenMKjtlVnTYwcXlVYaDqImW9beD5N/TeGy32QHXm6hZ03ZgiSQHp2fnWQ4oBmJqWSqwAqZpZjt4aLXAD4J0VqyZsmoubfB8H2r1eoaD6NXZ9HcHO\u002BSA3f4AjifXl8rItOETM8ckB9WTWpYD9RdeZ1PWVWAHWXPQaDb59f/w8LiqHeh1pvGkCaP6qB8yXusoxmuNZ7XmII4O9vGuEF86osuDYRkpYQAAAABJRU5ErkJggg==",
-              "WhenOpened": "2024-11-29T00:42:08.978Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AuditorDashboard.cs [Design]",
-              "DocumentMoniker": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\Views\\Auditor\\AuditorDashboard.cs",
-              "RelativeDocumentMoniker": "Views\\Auditor\\AuditorDashboard.cs",
-              "ToolTip": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\Views\\Auditor\\AuditorDashboard.cs [Design]",
-              "RelativeToolTip": "Views\\Auditor\\AuditorDashboard.cs [Design]",
+              "Title": "Tambah_Ukuran.cs [Design]",
+              "DocumentMoniker": "D:\\Home\\Pembelajaran Kuliah\\PBO nya danish\\nyoba\\Views\\Auditor\\Tambah_Ukuran.cs",
+              "RelativeDocumentMoniker": "Views\\Auditor\\Tambah_Ukuran.cs",
+              "ToolTip": "D:\\Home\\Pembelajaran Kuliah\\PBO nya danish\\nyoba\\Views\\Auditor\\Tambah_Ukuran.cs [Design]",
+              "RelativeToolTip": "Views\\Auditor\\Tambah_Ukuran.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T00:42:13.687Z",
+              "WhenOpened": "2024-11-29T02:55:27.832Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Home\\Pembelajaran Kuliah\\PBO nya danish\\nyoba\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Home\\Pembelajaran Kuliah\\PBO nya danish\\nyoba\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T02:55:06.315Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ukuranControllers.cs",
+              "DocumentMoniker": "D:\\Home\\Pembelajaran Kuliah\\PBO nya danish\\nyoba\\App\\Controllers\\ukuranControllers.cs",
+              "RelativeDocumentMoniker": "App\\Controllers\\ukuranControllers.cs",
+              "ToolTip": "D:\\Home\\Pembelajaran Kuliah\\PBO nya danish\\nyoba\\App\\Controllers\\ukuranControllers.cs",
+              "RelativeToolTip": "App\\Controllers\\ukuranControllers.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T00:50:02.965Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Tambah_Ukuran.cs",
+              "DocumentMoniker": "D:\\Home\\Pembelajaran Kuliah\\PBO nya danish\\nyoba\\Views\\Auditor\\Tambah_Ukuran.cs",
+              "RelativeDocumentMoniker": "Views\\Auditor\\Tambah_Ukuran.cs",
+              "ToolTip": "D:\\Home\\Pembelajaran Kuliah\\PBO nya danish\\nyoba\\Views\\Auditor\\Tambah_Ukuran.cs",
+              "RelativeToolTip": "Views\\Auditor\\Tambah_Ukuran.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T00:48:59.569Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Ukuran.cs",
+              "DocumentMoniker": "D:\\Home\\Pembelajaran Kuliah\\PBO nya danish\\nyoba\\App\\Models\\Ukuran.cs",
+              "RelativeDocumentMoniker": "App\\Models\\Ukuran.cs",
+              "ToolTip": "D:\\Home\\Pembelajaran Kuliah\\PBO nya danish\\nyoba\\App\\Models\\Ukuran.cs",
+              "RelativeToolTip": "App\\Models\\Ukuran.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T00:48:17.778Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Mnj_Karyawan.Designer.cs",
-              "DocumentMoniker": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\Views\\Auditor\\Mnj_Karyawan.Designer.cs",
+              "DocumentMoniker": "D:\\Home\\Pembelajaran Kuliah\\PBO nya danish\\nyoba\\Views\\Auditor\\Mnj_Karyawan.Designer.cs",
               "RelativeDocumentMoniker": "Views\\Auditor\\Mnj_Karyawan.Designer.cs",
-              "ToolTip": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\Views\\Auditor\\Mnj_Karyawan.Designer.cs",
+              "ToolTip": "D:\\Home\\Pembelajaran Kuliah\\PBO nya danish\\nyoba\\Views\\Auditor\\Mnj_Karyawan.Designer.cs",
               "RelativeToolTip": "Views\\Auditor\\Mnj_Karyawan.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-29T00:42:14.057Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AuditorDashboard.cs [Design]",
+              "DocumentMoniker": "D:\\Home\\Pembelajaran Kuliah\\PBO nya danish\\nyoba\\Views\\Auditor\\AuditorDashboard.cs",
+              "RelativeDocumentMoniker": "Views\\Auditor\\AuditorDashboard.cs",
+              "ToolTip": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\Views\\Auditor\\AuditorDashboard.cs [Design]",
+              "RelativeToolTip": "..\\..\\..\\..\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\Views\\Auditor\\AuditorDashboard.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-29T00:42:13.687Z"
             }
           ]
         }

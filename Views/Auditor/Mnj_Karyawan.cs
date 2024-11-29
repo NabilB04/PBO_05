@@ -133,5 +133,17 @@ namespace TaniAttire.Views.Auditor
                 }
             }
         }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            Tambah_Karyawan tambah_Karyawan = new Tambah_Karyawan();
+            tambah_Karyawan.Show();
+
+            tambah_Karyawan.OnDataUpdated += (s, args) =>
+            {
+                LoadDataKaryawan(); // Refresh data karyawan
+            };
+
+        }
     }
 }

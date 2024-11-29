@@ -640,24 +640,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\fachr\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\syahr\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\TaniAttire.csproj",
+      "projectUniqueName": "D:\\Home\\Pembelajaran Kuliah\\PBO nya danish\\nyoba\\TaniAttire.csproj",
       "projectName": "TaniAttire",
-      "projectPath": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\TaniAttire.csproj",
-      "packagesPath": "C:\\Users\\fachr\\.nuget\\packages\\",
-      "outputPath": "D:\\kuliah\\semester 3\\pbo\\pemrograman\\PBO_05\\obj\\",
+      "projectPath": "D:\\Home\\Pembelajaran Kuliah\\PBO nya danish\\nyoba\\TaniAttire.csproj",
+      "packagesPath": "C:\\Users\\syahr\\.nuget\\packages\\",
+      "outputPath": "D:\\Home\\Pembelajaran Kuliah\\PBO nya danish\\nyoba\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\fachr\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\syahr\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -681,9 +676,8 @@
       "restoreAuditProperties": {
         "enableAudit": "true",
         "auditLevel": "low",
-        "auditMode": "all"
-      },
-      "SdkAnalysisLevel": "9.0.100"
+        "auditMode": "direct"
+      }
     },
     "frameworks": {
       "net8.0-windows7.0": {
@@ -721,30 +715,8 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100-rc.1.24452.12/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
       }
     }
-  },
-  "logs": [
-    {
-      "code": "NU1902",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'RestSharp' 110.2.0 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-4rr6-2v9v-wcpc",
-      "libraryId": "RestSharp",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    },
-    {
-      "code": "NU1903",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Package 'System.Text.Json' 7.0.2 has a known high severity vulnerability, https://github.com/advisories/GHSA-hh2w-p6rv-4g7w",
-      "libraryId": "System.Text.Json",
-      "targetGraphs": [
-        "net8.0-windows7.0"
-      ]
-    }
-  ]
+  }
 }

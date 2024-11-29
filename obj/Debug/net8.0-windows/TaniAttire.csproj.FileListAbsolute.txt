@@ -153,3 +153,44 @@ D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\refint\Tani
 D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.pdb
 D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.genruntimeconfig.cache
 D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\ref\TaniAttire.dll
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\bin\Debug\net8.0-windows\TaniAttire.exe
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\bin\Debug\net8.0-windows\TaniAttire.deps.json
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\bin\Debug\net8.0-windows\TaniAttire.runtimeconfig.json
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\bin\Debug\net8.0-windows\TaniAttire.dll
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\bin\Debug\net8.0-windows\TaniAttire.pdb
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\bin\Debug\net8.0-windows\Bunifu.Licensing.dll
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\bin\Debug\net8.0-windows\Bunifu.UI.WinForms.dll
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\bin\Debug\net8.0-windows\Guna.UI2.dll
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\bin\Debug\net8.0-windows\Newtonsoft.Json.dll
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\bin\Debug\net8.0-windows\Npgsql.dll
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\bin\Debug\net8.0-windows\RestSharp.dll
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\bin\Debug\net8.0-windows\System.Management.dll
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\bin\Debug\net8.0-windows\runtimes\win\lib\net8.0\System.Management.dll
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\obj\Debug\net8.0-windows\TaniAttire.csproj.AssemblyReference.cache
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\obj\Debug\net8.0-windows\TaniAttire.Properties.Resources.resources
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\obj\Debug\net8.0-windows\TaniAttire.AuditorDashboard.resources
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Form_Ukuran.resources
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Mnj_Karyawan.resources
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Mnj_Produk.resources
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Penjualan.resources
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Persewaan.resources
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Tambah_Karyawan.resources
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Tambah_Ukuran.resources
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\obj\Debug\net8.0-windows\TaniAttire.KasirDashboard.resources
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.PersewaanProduk.resources
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.ShiftKasir.resources
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\obj\Debug\net8.0-windows\TaniAttire.Login.resources
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\obj\Debug\net8.0-windows\TaniAttire.csproj.GenerateResource.cache
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\obj\Debug\net8.0-windows\TaniAttire.GeneratedMSBuildEditorConfig.editorconfig
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\obj\Debug\net8.0-windows\TaniAttire.AssemblyInfoInputs.cache
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\obj\Debug\net8.0-windows\TaniAttire.AssemblyInfo.cs
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\obj\Debug\net8.0-windows\TaniAttire.csproj.CoreCompileInputs.cache
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\obj\Debug\net8.0-windows\TaniAttire.sourcelink.json
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\obj\Debug\net8.0-windows\TaniAttire.csproj.Up2Date
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\obj\Debug\net8.0-windows\TaniAttire.dll
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\obj\Debug\net8.0-windows\refint\TaniAttire.dll
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\obj\Debug\net8.0-windows\TaniAttire.pdb
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\obj\Debug\net8.0-windows\TaniAttire.genruntimeconfig.cache
+D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\obj\Debug\net8.0-windows\ref\TaniAttire.dll

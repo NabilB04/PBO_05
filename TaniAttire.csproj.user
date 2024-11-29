@@ -19,6 +19,9 @@
     <Compile Update="Views\Auditor\Persewaan.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Views\Auditor\Tambah_Karyawan.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\Kasir\KasirDashboard.cs">
       <SubType>Form</SubType>
     </Compile>

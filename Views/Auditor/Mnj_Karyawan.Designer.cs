@@ -48,11 +48,10 @@ namespace TaniAttire.Views.Auditor
             button6.BackgroundImageLayout = ImageLayout.Zoom;
             button6.ForeColor = Color.White;
             button6.ImageAlign = ContentAlignment.MiddleLeft;
-            button6.Location = new Point(39, 789);
-            button6.Margin = new Padding(3, 4, 3, 4);
+            button6.Location = new Point(34, 592);
             button6.Name = "button6";
-            button6.Padding = new Padding(34, 0, 0, 0);
-            button6.Size = new Size(382, 80);
+            button6.Padding = new Padding(30, 0, 0, 0);
+            button6.Size = new Size(334, 60);
             button6.TabIndex = 16;
             button6.UseVisualStyleBackColor = false;
             button6.Click += button6_Click;
@@ -64,11 +63,10 @@ namespace TaniAttire.Views.Auditor
             button3.BackgroundImageLayout = ImageLayout.Zoom;
             button3.ForeColor = Color.White;
             button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(39, 488);
-            button3.Margin = new Padding(3, 4, 3, 4);
+            button3.Location = new Point(34, 366);
             button3.Name = "button3";
-            button3.Padding = new Padding(34, 0, 0, 0);
-            button3.Size = new Size(382, 80);
+            button3.Padding = new Padding(30, 0, 0, 0);
+            button3.Size = new Size(334, 60);
             button3.TabIndex = 15;
             button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
@@ -80,11 +78,10 @@ namespace TaniAttire.Views.Auditor
             button4.BackgroundImageLayout = ImageLayout.Zoom;
             button4.ForeColor = Color.White;
             button4.ImageAlign = ContentAlignment.MiddleLeft;
-            button4.Location = new Point(39, 576);
-            button4.Margin = new Padding(3, 4, 3, 4);
+            button4.Location = new Point(34, 432);
             button4.Name = "button4";
-            button4.Padding = new Padding(34, 0, 0, 0);
-            button4.Size = new Size(382, 80);
+            button4.Padding = new Padding(30, 0, 0, 0);
+            button4.Size = new Size(334, 60);
             button4.TabIndex = 14;
             button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
@@ -96,11 +93,10 @@ namespace TaniAttire.Views.Auditor
             button5.BackgroundImageLayout = ImageLayout.Zoom;
             button5.ForeColor = Color.White;
             button5.ImageAlign = ContentAlignment.MiddleLeft;
-            button5.Location = new Point(39, 664);
-            button5.Margin = new Padding(3, 4, 3, 4);
+            button5.Location = new Point(34, 498);
             button5.Name = "button5";
-            button5.Padding = new Padding(34, 0, 0, 0);
-            button5.Size = new Size(382, 80);
+            button5.Padding = new Padding(30, 0, 0, 0);
+            button5.Size = new Size(334, 60);
             button5.TabIndex = 13;
             button5.UseVisualStyleBackColor = false;
             button5.Click += button5_Click;
@@ -112,11 +108,10 @@ namespace TaniAttire.Views.Auditor
             button2.BackgroundImageLayout = ImageLayout.Zoom;
             button2.ForeColor = Color.White;
             button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(39, 400);
-            button2.Margin = new Padding(3, 4, 3, 4);
+            button2.Location = new Point(34, 300);
             button2.Name = "button2";
-            button2.Padding = new Padding(34, 0, 0, 0);
-            button2.Size = new Size(382, 80);
+            button2.Padding = new Padding(30, 0, 0, 0);
+            button2.Size = new Size(334, 60);
             button2.TabIndex = 12;
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
@@ -128,11 +123,10 @@ namespace TaniAttire.Views.Auditor
             button1.BackgroundImageLayout = ImageLayout.Zoom;
             button1.ForeColor = Color.White;
             button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(39, 312);
-            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Location = new Point(34, 234);
             button1.Name = "button1";
-            button1.Padding = new Padding(34, 0, 0, 0);
-            button1.Size = new Size(382, 80);
+            button1.Padding = new Padding(30, 0, 0, 0);
+            button1.Size = new Size(334, 60);
             button1.TabIndex = 11;
             button1.UseVisualStyleBackColor = false;
             // 
@@ -140,10 +134,11 @@ namespace TaniAttire.Views.Auditor
             // 
             dataGridView1.BackgroundColor = Color.DarkSeaGreen;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(521, 252);
+            dataGridView1.Location = new Point(456, 189);
+            dataGridView1.Margin = new Padding(3, 2, 3, 2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(901, 451);
+            dataGridView1.Size = new Size(788, 338);
             dataGridView1.TabIndex = 10;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -154,11 +149,10 @@ namespace TaniAttire.Views.Auditor
             buttonBeranda.BackgroundImageLayout = ImageLayout.Zoom;
             buttonBeranda.ForeColor = Color.White;
             buttonBeranda.ImageAlign = ContentAlignment.MiddleLeft;
-            buttonBeranda.Location = new Point(39, 224);
-            buttonBeranda.Margin = new Padding(3, 4, 3, 4);
+            buttonBeranda.Location = new Point(34, 168);
             buttonBeranda.Name = "buttonBeranda";
-            buttonBeranda.Padding = new Padding(34, 0, 0, 0);
-            buttonBeranda.Size = new Size(382, 80);
+            buttonBeranda.Padding = new Padding(30, 0, 0, 0);
+            buttonBeranda.Size = new Size(334, 60);
             buttonBeranda.TabIndex = 9;
             buttonBeranda.UseVisualStyleBackColor = false;
             buttonBeranda.Click += buttonBeranda_Click;
@@ -168,20 +162,22 @@ namespace TaniAttire.Views.Auditor
             button8.BackColor = Color.Green;
             button8.Font = new Font("Segoe UI Historic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button8.ForeColor = SystemColors.Control;
-            button8.Location = new Point(1252, 178);
+            button8.Location = new Point(1096, 134);
+            button8.Margin = new Padding(3, 2, 3, 2);
             button8.Name = "button8";
-            button8.Size = new Size(147, 54);
+            button8.Size = new Size(129, 40);
             button8.TabIndex = 20;
             button8.Text = "Tambah";
             button8.UseVisualStyleBackColor = false;
+            button8.Click += button8_Click;
             // 
             // Mnj_Karyawan
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1445, 908);
+            ClientSize = new Size(1264, 681);
             Controls.Add(button8);
             Controls.Add(button6);
             Controls.Add(button3);
@@ -192,7 +188,6 @@ namespace TaniAttire.Views.Auditor
             Controls.Add(dataGridView1);
             Controls.Add(buttonBeranda);
             DoubleBuffered = true;
-            Margin = new Padding(3, 4, 3, 4);
             Name = "Mnj_Karyawan";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Mnj_Krayawan";
