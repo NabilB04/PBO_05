@@ -132,6 +132,21 @@ namespace TaniAttire.Views.Auditor
                     MessageBox.Show($"Terjadi kesalahan saat menghapus data: {ex.Message}");
                 }
             }
+            if (e.ColumnIndex == dataGridView1.Columns["Update"].Index)
+            {
+                try
+                {
+                    int Id_Users = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["Id_Users"].Value);
+                    Ubah_Karyawan ubahKaryawan = new Ubah_Karyawan(Id_Users);
+                    ubahKaryawan.Show();
+                    LoadDataKaryawan();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Terjadi kesalahan saat membuka form update");
+                }
+            }
+
         }
 
         private void button8_Click(object sender, EventArgs e)
@@ -143,6 +158,11 @@ namespace TaniAttire.Views.Auditor
             {
                 LoadDataKaryawan(); // Refresh data karyawan
             };
+
+        }
+
+        private void Mnj_Karyawan_Load(object sender, EventArgs e)
+        {
 
         }
     }

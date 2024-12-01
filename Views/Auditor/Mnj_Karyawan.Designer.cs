@@ -162,10 +162,10 @@ namespace TaniAttire.Views.Auditor
             button8.BackColor = Color.Green;
             button8.Font = new Font("Segoe UI Historic", 13.8F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button8.ForeColor = SystemColors.Control;
-            button8.Location = new Point(1096, 134);
+            button8.Location = new Point(1064, 134);
             button8.Margin = new Padding(3, 2, 3, 2);
             button8.Name = "button8";
-            button8.Size = new Size(129, 40);
+            button8.Size = new Size(180, 38);
             button8.TabIndex = 20;
             button8.Text = "Tambah";
             button8.UseVisualStyleBackColor = false;
@@ -191,6 +191,7 @@ namespace TaniAttire.Views.Auditor
             Name = "Mnj_Karyawan";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Mnj_Krayawan";
+            Load += Mnj_Karyawan_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }

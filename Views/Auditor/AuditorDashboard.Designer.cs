@@ -158,55 +158,89 @@ namespace TaniAttire
             // 
             // button7
             // 
-            button7.Location = new Point(466, 211);
+            button7.BackColor = Color.Transparent;
+            button7.BackgroundImage = (Image)resources.GetObject("button7.BackgroundImage");
+            button7.BackgroundImageLayout = ImageLayout.Stretch;
+            button7.FlatAppearance.BorderSize = 0;
+            button7.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            button7.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button7.FlatStyle = FlatStyle.Flat;
+            button7.Location = new Point(427, 187);
             button7.Margin = new Padding(3, 2, 3, 2);
             button7.Name = "button7";
-            button7.Size = new Size(350, 103);
+            button7.Size = new Size(375, 163);
             button7.TabIndex = 9;
-            button7.UseVisualStyleBackColor = true;
+            button7.UseVisualStyleBackColor = false;
             // 
             // button8
             // 
-            button8.Location = new Point(868, 211);
+            button8.BackColor = SystemColors.ButtonHighlight;
+            button8.BackgroundImage = (Image)resources.GetObject("button8.BackgroundImage");
+            button8.BackgroundImageLayout = ImageLayout.Stretch;
+            button8.FlatAppearance.BorderSize = 0;
+            button8.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            button8.FlatAppearance.MouseOverBackColor = Color.Transparent;
+            button8.FlatStyle = FlatStyle.Flat;
+            button8.Location = new Point(829, 187);
             button8.Margin = new Padding(3, 2, 3, 2);
             button8.Name = "button8";
-            button8.Size = new Size(350, 103);
+            button8.Size = new Size(375, 163);
             button8.TabIndex = 10;
-            button8.UseVisualStyleBackColor = true;
+            button8.UseVisualStyleBackColor = false;
             // 
             // button9
             // 
-            button9.Location = new Point(466, 387);
+            button9.BackColor = SystemColors.ButtonHighlight;
+            button9.BackgroundImage = (Image)resources.GetObject("button9.BackgroundImage");
+            button9.BackgroundImageLayout = ImageLayout.Stretch;
+            button9.FlatAppearance.BorderSize = 0;
+            button9.FlatAppearance.CheckedBackColor = Color.Transparent;
+            button9.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            button9.FlatStyle = FlatStyle.Flat;
+            button9.Location = new Point(428, 460);
             button9.Margin = new Padding(3, 2, 3, 2);
             button9.Name = "button9";
-            button9.Size = new Size(350, 103);
+            button9.Size = new Size(375, 163);
             button9.TabIndex = 11;
-            button9.UseVisualStyleBackColor = true;
+            button9.UseVisualStyleBackColor = false;
             // 
             // button10
             // 
-            button10.Location = new Point(868, 387);
+            button10.BackColor = SystemColors.ButtonHighlight;
+            button10.BackgroundImage = (Image)resources.GetObject("button10.BackgroundImage");
+            button10.BackgroundImageLayout = ImageLayout.Stretch;
+            button10.FlatAppearance.BorderSize = 0;
+            button10.FlatAppearance.CheckedBackColor = Color.Transparent;
+            button10.FlatAppearance.MouseDownBackColor = Color.Transparent;
+            button10.FlatStyle = FlatStyle.Flat;
+            button10.Location = new Point(830, 460);
             button10.Margin = new Padding(3, 2, 3, 2);
             button10.Name = "button10";
-            button10.Size = new Size(350, 103);
+            button10.Size = new Size(375, 163);
             button10.TabIndex = 12;
-            button10.UseVisualStyleBackColor = true;
+            button10.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(619, 254);
+            label1.BackColor = Color.DarkGreen;
+            label1.Font = new Font("Segoe UI Symbol", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.White;
+            label1.Location = new Point(493, 291);
             label1.Name = "label1";
-            label1.Size = new Size(38, 15);
+            label1.Size = new Size(74, 30);
             label1.TabIndex = 13;
             label1.Text = "label1";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(1030, 254);
+            label2.BackColor = Color.DarkGreen;
+            label2.Font = new Font("Segoe UI Symbol", 15.75F, FontStyle.Bold);
+            label2.ForeColor = SystemColors.ButtonFace;
+            label2.Location = new Point(893, 291);
             label2.Name = "label2";
-            label2.Size = new Size(38, 15);
+            label2.Size = new Size(74, 30);
             label2.TabIndex = 14;
             label2.Text = "label2";
             label2.Click += label2_Click;
@@ -214,54 +248,68 @@ namespace TaniAttire
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(619, 430);
+            label3.BackColor = Color.DarkGreen;
+            label3.Font = new Font("Segoe UI Symbol", 15.75F, FontStyle.Bold);
+            label3.ForeColor = SystemColors.ButtonHighlight;
+            label3.Location = new Point(493, 563);
             label3.Name = "label3";
-            label3.Size = new Size(38, 15);
+            label3.Size = new Size(74, 30);
             label3.TabIndex = 15;
             label3.Text = "label3";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(1030, 430);
+            label4.BackColor = Color.DarkGreen;
+            label4.Font = new Font("Segoe UI Symbol", 15.75F, FontStyle.Bold);
+            label4.ForeColor = SystemColors.ButtonHighlight;
+            label4.Location = new Point(893, 563);
             label4.Name = "label4";
-            label4.Size = new Size(38, 15);
+            label4.Size = new Size(74, 30);
             label4.TabIndex = 16;
             label4.Text = "label4";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(466, 180);
+            label5.BackColor = SystemColors.ButtonHighlight;
+            label5.Font = new Font("Constantia", 18F, FontStyle.Bold);
+            label5.Location = new Point(428, 142);
             label5.Name = "label5";
-            label5.Size = new Size(73, 15);
+            label5.Size = new Size(160, 29);
             label5.TabIndex = 17;
             label5.Text = "Total Produk";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(868, 180);
+            label6.BackColor = SystemColors.ButtonHighlight;
+            label6.Font = new Font("Constantia", 18F, FontStyle.Bold);
+            label6.Location = new Point(830, 142);
             label6.Name = "label6";
-            label6.Size = new Size(86, 15);
+            label6.Size = new Size(188, 29);
             label6.TabIndex = 18;
             label6.Text = "Total Karyawan";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(466, 364);
+            label7.BackColor = SystemColors.ButtonHighlight;
+            label7.Font = new Font("Constantia", 18F, FontStyle.Bold);
+            label7.Location = new Point(428, 404);
             label7.Name = "label7";
-            label7.Size = new Size(105, 15);
+            label7.Size = new Size(237, 29);
             label7.TabIndex = 19;
             label7.Text = "Total Transaksi Jual";
             // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(868, 364);
+            label8.BackColor = SystemColors.ButtonHighlight;
+            label8.Font = new Font("Constantia", 18F, FontStyle.Bold);
+            label8.Location = new Point(830, 404);
             label8.Name = "label8";
-            label8.Size = new Size(112, 15);
+            label8.Size = new Size(249, 29);
             label8.TabIndex = 20;
             label8.Text = "Total Transaksi Sewa";
             // 
@@ -271,7 +319,7 @@ namespace TaniAttire
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1199, 562);
+            ClientSize = new Size(1264, 681);
             Controls.Add(label8);
             Controls.Add(label7);
             Controls.Add(label6);

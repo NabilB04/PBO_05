@@ -1,7 +1,6 @@
-﻿
-namespace TaniAttire.Views.Auditor
+﻿namespace TaniAttire.Views.Auditor
 {
-    partial class Tambah_Karyawan
+    partial class Ubah_Karyawan
     {
         /// <summary>
         /// Required designer variable.
@@ -29,16 +28,20 @@ namespace TaniAttire.Views.Auditor
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tambah_Karyawan));
-            textboxNama = new TextBox();
-            labelNama = new Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ubah_Karyawan));
+            button7 = new Button();
+            textBox1 = new TextBox();
             label1 = new Label();
             label2 = new Label();
+            textBox2 = new TextBox();
             label3 = new Label();
-            textboxUsername = new TextBox();
-            textboxPassword = new TextBox();
-            textboxNotelp = new TextBox();
-            buttonTambah = new Button();
+            textBox3 = new TextBox();
+            label4 = new Label();
+            textBox4 = new TextBox();
+            label5 = new Label();
+            textBox5 = new TextBox();
+            label6 = new Label();
+            buttonSimpan = new Button();
             button6 = new Button();
             button3 = new Button();
             button4 = new Button();
@@ -46,90 +49,122 @@ namespace TaniAttire.Views.Auditor
             button2 = new Button();
             button1 = new Button();
             buttonBeranda = new Button();
-            label4 = new Label();
             SuspendLayout();
             // 
-            // textboxNama
+            // button7
             // 
-            textboxNama.Location = new Point(714, 227);
-            textboxNama.Name = "textboxNama";
-            textboxNama.Size = new Size(326, 23);
-            textboxNama.TabIndex = 0;
-            textboxNama.TextChanged += textBox1_TextChanged;
+            button7.BackColor = Color.DarkSeaGreen;
+            button7.ForeColor = Color.DarkSeaGreen;
+            button7.Location = new Point(585, 220);
+            button7.Name = "button7";
+            button7.Size = new Size(511, 297);
+            button7.TabIndex = 24;
+            button7.UseVisualStyleBackColor = false;
             // 
-            // labelNama
+            // textBox1
             // 
-            labelNama.AutoSize = true;
-            labelNama.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
-            labelNama.Location = new Point(594, 229);
-            labelNama.Name = "labelNama";
-            labelNama.Size = new Size(52, 21);
-            labelNama.TabIndex = 1;
-            labelNama.Text = "Nama";
+            textBox1.Location = new Point(739, 256);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(264, 23);
+            textBox1.TabIndex = 26;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
-            label1.Location = new Point(594, 278);
+            label1.Location = new Point(642, 259);
             label1.Name = "label1";
-            label1.Size = new Size(83, 21);
-            label1.TabIndex = 2;
+            label1.Size = new Size(60, 15);
+            label1.TabIndex = 27;
             label1.Text = "Username";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
-            label2.Location = new Point(594, 325);
+            label2.Location = new Point(642, 300);
             label2.Name = "label2";
-            label2.Size = new Size(79, 21);
-            label2.TabIndex = 3;
+            label2.Size = new Size(57, 15);
+            label2.TabIndex = 29;
             label2.Text = "Password";
+            // 
+            // textBox2
+            // 
+            textBox2.Location = new Point(739, 292);
+            textBox2.Name = "textBox2";
+            textBox2.Size = new Size(264, 23);
+            textBox2.TabIndex = 28;
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
-            label3.Location = new Point(594, 371);
+            label3.Location = new Point(642, 346);
             label3.Name = "label3";
-            label3.Size = new Size(94, 21);
-            label3.TabIndex = 4;
-            label3.Text = "No Telepon";
+            label3.Size = new Size(30, 15);
+            label3.TabIndex = 31;
+            label3.Text = "Role";
             // 
-            // textboxUsername
+            // textBox3
             // 
-            textboxUsername.Location = new Point(714, 273);
-            textboxUsername.Name = "textboxUsername";
-            textboxUsername.Size = new Size(326, 23);
-            textboxUsername.TabIndex = 5;
+            textBox3.Location = new Point(739, 338);
+            textBox3.Name = "textBox3";
+            textBox3.Size = new Size(264, 23);
+            textBox3.TabIndex = 30;
             // 
-            // textboxPassword
+            // label4
             // 
-            textboxPassword.Location = new Point(714, 320);
-            textboxPassword.Name = "textboxPassword";
-            textboxPassword.Size = new Size(326, 23);
-            textboxPassword.TabIndex = 6;
+            label4.AutoSize = true;
+            label4.Location = new Point(642, 383);
+            label4.Name = "label4";
+            label4.Size = new Size(39, 15);
+            label4.TabIndex = 33;
+            label4.Text = "Nama";
             // 
-            // textboxNotelp
+            // textBox4
             // 
-            textboxNotelp.Location = new Point(714, 366);
-            textboxNotelp.Name = "textboxNotelp";
-            textboxNotelp.Size = new Size(326, 23);
-            textboxNotelp.TabIndex = 7;
+            textBox4.Location = new Point(739, 375);
+            textBox4.Name = "textBox4";
+            textBox4.Size = new Size(264, 23);
+            textBox4.TabIndex = 32;
             // 
-            // buttonTambah
+            // label5
             // 
-            buttonTambah.BackColor = Color.DarkGreen;
-            buttonTambah.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            buttonTambah.ForeColor = SystemColors.Control;
-            buttonTambah.Location = new Point(856, 443);
-            buttonTambah.Name = "buttonTambah";
-            buttonTambah.Size = new Size(184, 43);
-            buttonTambah.TabIndex = 8;
-            buttonTambah.Text = "Tambah";
-            buttonTambah.UseVisualStyleBackColor = false;
-            buttonTambah.Click += buttonTambah_Click;
+            label5.AutoSize = true;
+            label5.Location = new Point(642, 427);
+            label5.Name = "label5";
+            label5.Size = new Size(67, 15);
+            label5.TabIndex = 35;
+            label5.Text = "No Telepon";
+            // 
+            // textBox5
+            // 
+            textBox5.Location = new Point(739, 424);
+            textBox5.Name = "textBox5";
+            textBox5.Size = new Size(264, 23);
+            textBox5.TabIndex = 34;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.BackColor = SystemColors.ButtonHighlight;
+            label6.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(714, 146);
+            label6.Name = "label6";
+            label6.Size = new Size(288, 37);
+            label6.TabIndex = 36;
+            label6.Text = "Ubah Data Karyawan";
+            // 
+            // buttonSimpan
+            // 
+            buttonSimpan.BackColor = Color.DarkGreen;
+            buttonSimpan.BackgroundImageLayout = ImageLayout.Stretch;
+            buttonSimpan.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            buttonSimpan.ForeColor = SystemColors.Control;
+            buttonSimpan.Location = new Point(778, 465);
+            buttonSimpan.Name = "buttonSimpan";
+            buttonSimpan.Size = new Size(162, 32);
+            buttonSimpan.TabIndex = 37;
+            buttonSimpan.Text = "Simpan";
+            buttonSimpan.UseVisualStyleBackColor = false;
+            buttonSimpan.Click += buttonSimpan_Click;
             // 
             // button6
             // 
@@ -138,11 +173,11 @@ namespace TaniAttire.Views.Auditor
             button6.BackgroundImageLayout = ImageLayout.Zoom;
             button6.ForeColor = Color.White;
             button6.ImageAlign = ContentAlignment.MiddleLeft;
-            button6.Location = new Point(34, 603);
+            button6.Location = new Point(35, 594);
             button6.Name = "button6";
             button6.Padding = new Padding(30, 0, 0, 0);
             button6.Size = new Size(334, 60);
-            button6.TabIndex = 23;
+            button6.TabIndex = 44;
             button6.UseVisualStyleBackColor = false;
             // 
             // button3
@@ -152,11 +187,11 @@ namespace TaniAttire.Views.Auditor
             button3.BackgroundImageLayout = ImageLayout.Zoom;
             button3.ForeColor = Color.White;
             button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(34, 377);
+            button3.Location = new Point(35, 368);
             button3.Name = "button3";
             button3.Padding = new Padding(30, 0, 0, 0);
             button3.Size = new Size(334, 60);
-            button3.TabIndex = 22;
+            button3.TabIndex = 43;
             button3.UseVisualStyleBackColor = false;
             // 
             // button4
@@ -166,11 +201,11 @@ namespace TaniAttire.Views.Auditor
             button4.BackgroundImageLayout = ImageLayout.Zoom;
             button4.ForeColor = Color.White;
             button4.ImageAlign = ContentAlignment.MiddleLeft;
-            button4.Location = new Point(34, 443);
+            button4.Location = new Point(35, 434);
             button4.Name = "button4";
             button4.Padding = new Padding(30, 0, 0, 0);
             button4.Size = new Size(334, 60);
-            button4.TabIndex = 21;
+            button4.TabIndex = 42;
             button4.UseVisualStyleBackColor = false;
             // 
             // button5
@@ -180,11 +215,11 @@ namespace TaniAttire.Views.Auditor
             button5.BackgroundImageLayout = ImageLayout.Zoom;
             button5.ForeColor = Color.White;
             button5.ImageAlign = ContentAlignment.MiddleLeft;
-            button5.Location = new Point(34, 509);
+            button5.Location = new Point(35, 500);
             button5.Name = "button5";
             button5.Padding = new Padding(30, 0, 0, 0);
             button5.Size = new Size(334, 60);
-            button5.TabIndex = 20;
+            button5.TabIndex = 41;
             button5.UseVisualStyleBackColor = false;
             // 
             // button2
@@ -194,11 +229,11 @@ namespace TaniAttire.Views.Auditor
             button2.BackgroundImageLayout = ImageLayout.Zoom;
             button2.ForeColor = Color.White;
             button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(34, 311);
+            button2.Location = new Point(35, 302);
             button2.Name = "button2";
             button2.Padding = new Padding(30, 0, 0, 0);
             button2.Size = new Size(334, 60);
-            button2.TabIndex = 19;
+            button2.TabIndex = 40;
             button2.UseVisualStyleBackColor = false;
             // 
             // button1
@@ -208,11 +243,11 @@ namespace TaniAttire.Views.Auditor
             button1.BackgroundImageLayout = ImageLayout.Zoom;
             button1.ForeColor = Color.White;
             button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(34, 245);
+            button1.Location = new Point(35, 236);
             button1.Name = "button1";
             button1.Padding = new Padding(30, 0, 0, 0);
             button1.Size = new Size(334, 60);
-            button1.TabIndex = 18;
+            button1.TabIndex = 39;
             button1.UseVisualStyleBackColor = false;
             // 
             // buttonBeranda
@@ -222,32 +257,20 @@ namespace TaniAttire.Views.Auditor
             buttonBeranda.BackgroundImageLayout = ImageLayout.Zoom;
             buttonBeranda.ForeColor = Color.White;
             buttonBeranda.ImageAlign = ContentAlignment.MiddleLeft;
-            buttonBeranda.Location = new Point(34, 179);
+            buttonBeranda.Location = new Point(35, 170);
             buttonBeranda.Name = "buttonBeranda";
             buttonBeranda.Padding = new Padding(30, 0, 0, 0);
             buttonBeranda.Size = new Size(334, 60);
-            buttonBeranda.TabIndex = 17;
+            buttonBeranda.TabIndex = 38;
             buttonBeranda.UseVisualStyleBackColor = false;
             // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Constantia", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.Location = new Point(516, 156);
-            label4.Name = "label4";
-            label4.Size = new Size(247, 33);
-            label4.TabIndex = 24;
-            label4.Text = "Tambah Karyawan";
-            // 
-            // Tambah_Karyawan
+            // Ubah_Karyawan
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.White;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1264, 681);
-            Controls.Add(label4);
             Controls.Add(button6);
             Controls.Add(button3);
             Controls.Add(button4);
@@ -255,34 +278,42 @@ namespace TaniAttire.Views.Auditor
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(buttonBeranda);
-            Controls.Add(buttonTambah);
-            Controls.Add(textboxNotelp);
-            Controls.Add(textboxPassword);
-            Controls.Add(textboxUsername);
+            Controls.Add(buttonSimpan);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(textBox5);
+            Controls.Add(label4);
+            Controls.Add(textBox4);
             Controls.Add(label3);
+            Controls.Add(textBox3);
             Controls.Add(label2);
+            Controls.Add(textBox2);
             Controls.Add(label1);
-            Controls.Add(labelNama);
-            Controls.Add(textboxNama);
+            Controls.Add(textBox1);
+            Controls.Add(button7);
             DoubleBuffered = true;
-            Name = "Tambah_Karyawan";
+            Name = "Ubah_Karyawan";
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "TambahKaryawan";
+            Text = "Tambah_Karyawan";
+            Load += Ubah_Karyawan_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private TextBox textboxNama;
-        private Label labelNama;
+        private Button button7;
+        private TextBox textBox1;
         private Label label1;
         private Label label2;
+        private TextBox textBox2;
         private Label label3;
-        private TextBox textboxUsername;
-        private TextBox textboxPassword;
-        private TextBox textboxNotelp;
-        private Button buttonTambah;
+        private TextBox textBox3;
+        private Label label4;
+        private TextBox textBox4;
+        private Label label5;
+        private TextBox textBox5;
+        private Label label6;
+        private Button buttonSimpan;
         private Button button6;
         private Button button3;
         private Button button4;
@@ -290,6 +321,6 @@ namespace TaniAttire.Views.Auditor
         private Button button2;
         private Button button1;
         private Button buttonBeranda;
-        private Label label4;
     }
 }
+

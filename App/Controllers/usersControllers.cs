@@ -127,5 +127,34 @@ namespace TaniAttire.App.Controllers
             }
             return totalEmployees;
         }
+        public Users GetUserById(int id)
+        {
+            Users user = null;
+            using (var conn = DataWrapper.openConnection())
+            {
+                string query = "SELECT * FROM users WHERE id_users = @id";
+                using (var cmd = new NpgsqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("id", id);
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            user = new Users
+                            {
+                                Id_Users = reader.GetInt32(0),
+                                Username = reader.GetString(1),
+                                Password = reader.GetString(2),
+                                Role = reader.GetString(3),
+                                Nama = reader.GetString(4),
+                                No_Telpon = reader.GetString(5)
+                            };
+                        }
+                    }
+                }
+            }
+            return user;
+        }
+
     }
 }
