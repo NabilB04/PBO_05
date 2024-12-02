@@ -1,5 +1,6 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
   <ItemGroup>
     <Compile Update="Views\Auditor\AuditorDashboard.cs">
       <SubType>Form</SubType>
@@ -22,6 +23,12 @@
     <Compile Update="Views\Auditor\Tambah_Karyawan.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Views\Auditor\Tambah_Produk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Auditor\Ubah_Karyawan.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\Kasir\KasirDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -34,16 +41,5 @@
     <Compile Update="Views\Login.cs">
       <SubType>Form</SubType>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Update="Views\Auditor\AuditorDashboard.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\Auditor\Form_Ukuran.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Update="Views\Auditor\Mnj_Karyawan.resx">
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
   </ItemGroup>
 </Project>

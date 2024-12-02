@@ -79,18 +79,18 @@ namespace TaniAttire.App.Controllers
             }
             return users1;
         }
-        public void UpdateKaryawan(int id, string username, string password, string nama, string noTelpon)
+        public void UpdateKaryawan(int Id_Users, string username, string password, string nama, string no_telpon)
         {
             using (var conn = DataWrapper.openConnection())
             {
-                string query = "UPDATE users SET username = @username, password = @password, nama = @nama, no_telpon = @no_telpon WHERE id = @id";
+                string query = "UPDATE users SET username = @username, password = @password, nama = @nama, no_telpon = @no_telpon WHERE Id_Users = @Id_Users";
                 using (var cmd = new NpgsqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("id", id);
+                    cmd.Parameters.AddWithValue("Id_Users", Id_Users);
                     cmd.Parameters.AddWithValue("username", username);
                     cmd.Parameters.AddWithValue("password", password);
                     cmd.Parameters.AddWithValue("nama", nama);
-                    cmd.Parameters.AddWithValue("no_telpon", noTelpon);
+                    cmd.Parameters.AddWithValue("no_telpon", no_telpon);
                     cmd.ExecuteNonQuery();
                 }
             }

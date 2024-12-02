@@ -139,6 +139,7 @@ namespace TaniAttire.Views.Auditor
                     int Id_Users = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["Id_Users"].Value);
                     Ubah_Karyawan ubahKaryawan = new Ubah_Karyawan(Id_Users);
                     ubahKaryawan.Show();
+                    this.Close();
                     LoadDataKaryawan();
                 }
                 catch (Exception ex)

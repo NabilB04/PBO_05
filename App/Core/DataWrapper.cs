@@ -13,16 +13,15 @@ namespace TaniAttire.App.Core
     public static class DataWrapper
     {
         private static readonly string DB_HOST = "localhost";
-        private static readonly string DB_DATABASE = "TaniAttire1";
+        private static readonly string DB_DATABASE = "TaniAttire";
         private static readonly string DB_USERNAME = "postgres";
-        private static readonly string DB_PASSWORD = "123";
+        private static readonly string DB_PASSWORD = "NabilBaihaqi04";
         private static readonly string DB_PORT = "5432";
 
         private static NpgsqlConnection connection;
         private static NpgsqlCommand command;
 
 
-        // Method open dan close Koneksi
         public static NpgsqlConnection openConnection()
         {
             if (connection == null || connection.State == ConnectionState.Closed)

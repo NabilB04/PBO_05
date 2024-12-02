@@ -194,3 +194,6 @@ D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\obj\Debug\net8.0-windows\refint
 D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\obj\Debug\net8.0-windows\TaniAttire.pdb
 D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\obj\Debug\net8.0-windows\TaniAttire.genruntimeconfig.cache
 D:\Home\Pembelajaran Kuliah\PBO nya danish\nyoba\obj\Debug\net8.0-windows\ref\TaniAttire.dll
+E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Tambah_Karyawan.resources
+E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Tambah_Produk.resources
+E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Ubah_Karyawan.resources

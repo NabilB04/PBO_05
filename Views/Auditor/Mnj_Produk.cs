@@ -7,19 +7,59 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TaniAttire.App.Controllers;
+using TaniAttire.App.Models;
 
 namespace TaniAttire.Views.Auditor
 {
     public partial class Mnj_Produk : Form
     {
+        private produk1Controllers _controller;
         public Mnj_Produk()
         {
             InitializeComponent();
+            _controller = new produk1Controllers();
+            SetupDataGridView();
         }
+        private void SetupDataGridView()
+        {
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
+            if (!dataGridView1.Columns.Contains("Delete"))
+            {
+                var deleteButtonColumn = new DataGridViewButtonColumn
+                {
+                    HeaderText = "Aksi",
+                    Text = "Delete",
+                    UseColumnTextForButtonValue = true,
+                    Name = "Delete"
+                };
+                dataGridView1.Columns.Add(deleteButtonColumn);
+            }
+        }
+        private void LoadDataProduk()
+        {
+            try
+            {
+                List<Produk> produkList = _controller.GetAllProduk();
+                BindingSource bindingSource = new BindingSource();
+                bindingSource.DataSource = produkList;
+                dataGridView1.DataSource = bindingSource;
+
+                if (dataGridView1.Columns.Contains("Delete"))
+                {
+                    dataGridView1.Columns["Delete"].DisplayIndex = dataGridView1.Columns.Count - 1;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Terjadi kesalahan saat memuat data: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
         private void Mnj_Produk_Load(object sender, EventArgs e)
         {
-
+            LoadDataProduk();
         }
 
         private void buttonBeranda_Click(object sender, EventArgs e)
@@ -65,6 +105,18 @@ namespace TaniAttire.Views.Auditor
         }
 
         private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Tambah_Produk tambahproduk = new Tambah_Produk();
+            tambahproduk.Show();
+            this.Hide();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

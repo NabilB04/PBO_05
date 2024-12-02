@@ -81,5 +81,15 @@ namespace TaniAttire.Views.Auditor
             formukuran.Show();
             this.Hide();
         }
+
+        private void buttonBeranda_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

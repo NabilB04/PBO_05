@@ -43,6 +43,8 @@
             button7 = new Button();
             textBoxNilaiUkuran = new TextBox();
             button8 = new Button();
+            panel1 = new Panel();
+            panel1.SuspendLayout();
             SuspendLayout();
             // 
             // buttonBeranda
@@ -59,6 +61,7 @@
             buttonBeranda.Size = new Size(382, 80);
             buttonBeranda.TabIndex = 24;
             buttonBeranda.UseVisualStyleBackColor = false;
+            buttonBeranda.Click += buttonBeranda_Click;
             // 
             // button6
             // 
@@ -154,9 +157,9 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = Color.White;
+            label1.BackColor = Color.PaleGreen;
             label1.Font = new Font("Arial", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(770, 186);
+            label1.Location = new Point(781, 213);
             label1.Name = "label1";
             label1.Size = new Size(340, 44);
             label1.TabIndex = 25;
@@ -167,7 +170,7 @@
             // 
             comboBoxKategori.FormattingEnabled = true;
             comboBoxKategori.Items.AddRange(new object[] { "Pakaian", "Sepatu" });
-            comboBoxKategori.Location = new Point(692, 357);
+            comboBoxKategori.Location = new Point(703, 384);
             comboBoxKategori.Name = "comboBoxKategori";
             comboBoxKategori.Size = new Size(435, 28);
             comboBoxKategori.TabIndex = 26;
@@ -176,9 +179,9 @@
             // label2
             // 
             label2.AutoSize = true;
-            label2.BackColor = Color.White;
+            label2.BackColor = Color.PaleGreen;
             label2.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(692, 331);
+            label2.Location = new Point(703, 358);
             label2.Name = "label2";
             label2.Size = new Size(74, 23);
             label2.TabIndex = 27;
@@ -188,9 +191,9 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.BackColor = Color.White;
+            label3.BackColor = Color.PaleGreen;
             label3.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(692, 436);
+            label3.Location = new Point(703, 463);
             label3.Name = "label3";
             label3.Size = new Size(105, 23);
             label3.TabIndex = 28;
@@ -199,7 +202,8 @@
             // button7
             // 
             button7.BackColor = Color.LimeGreen;
-            button7.Location = new Point(1012, 567);
+            button7.ForeColor = Color.White;
+            button7.Location = new Point(550, 420);
             button7.Name = "button7";
             button7.Size = new Size(115, 44);
             button7.TabIndex = 30;
@@ -209,7 +213,7 @@
             // 
             // textBoxNilaiUkuran
             // 
-            textBoxNilaiUkuran.Location = new Point(692, 462);
+            textBoxNilaiUkuran.Location = new Point(703, 489);
             textBoxNilaiUkuran.Name = "textBoxNilaiUkuran";
             textBoxNilaiUkuran.Size = new Size(435, 27);
             textBoxNilaiUkuran.TabIndex = 31;
@@ -218,13 +222,24 @@
             // 
             button8.BackColor = Color.Red;
             button8.ForeColor = SystemColors.ControlLight;
-            button8.Location = new Point(876, 567);
+            button8.Location = new Point(407, 420);
             button8.Name = "button8";
             button8.Size = new Size(115, 44);
             button8.TabIndex = 32;
             button8.Text = "Batal";
             button8.UseVisualStyleBackColor = false;
             button8.Click += button8_Click;
+            // 
+            // panel1
+            // 
+            panel1.BackColor = Color.PaleGreen;
+            panel1.Controls.Add(button8);
+            panel1.Controls.Add(button7);
+            panel1.Location = new Point(599, 174);
+            panel1.Name = "panel1";
+            panel1.Size = new Size(715, 519);
+            panel1.TabIndex = 33;
+            panel1.Paint += panel1_Paint;
             // 
             // Tambah_Ukuran
             // 
@@ -233,9 +248,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1445, 908);
-            Controls.Add(button8);
             Controls.Add(textBoxNilaiUkuran);
-            Controls.Add(button7);
             Controls.Add(label3);
             Controls.Add(label2);
             Controls.Add(comboBoxKategori);
@@ -247,9 +260,11 @@
             Controls.Add(button5);
             Controls.Add(button2);
             Controls.Add(button1);
+            Controls.Add(panel1);
             Name = "Tambah_Ukuran";
             Text = "Tambah_Ukuran";
             Load += Tambah_Ukuran_Load;
+            panel1.ResumeLayout(false);
             ResumeLayout(false);
             PerformLayout();
         }
@@ -271,5 +286,6 @@
         private Button button7;
         private TextBox textBoxNilaiUkuran;
         private Button button8;
+        private Panel panel1;
     }
 }
