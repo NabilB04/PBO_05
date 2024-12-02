@@ -137,6 +137,7 @@
             button1.Size = new Size(382, 80);
             button1.TabIndex = 18;
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // buttonBeranda
             // 

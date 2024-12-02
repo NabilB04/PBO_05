@@ -6,6 +6,8 @@ using System.Text;
 using System.Threading.Tasks;
 using TaniAttire.App.Core;
 using TaniAttire.App.Models;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TaniAttire.App.Controllers
 {
@@ -39,8 +41,34 @@ namespace TaniAttire.App.Controllers
         }
         public void AddUkuran(Ukuran ukuran1)
         {
+
+            var validationContext = new ValidationContext(ukuran1, serviceProvider: null, items: null);
+            var validationResults = new List<ValidationResult>();
+
+            if (!Validator.TryValidateObject(ukuran1, validationContext, validationResults, true))
+            {
+                throw new ValidationException(string.Join("; ", validationResults.Select(v => v.ErrorMessage)));
+            }
+
             using (var conn = DataWrapper.openConnection())
             {
+
+                string checkQuery = "SELECT COUNT(*) FROM Ukuran WHERE Kategori = @Kategori AND Nilai_Ukuran = @Nilai_Ukuran AND Status = @Status";
+                using (var checkCmd = new NpgsqlCommand(checkQuery, conn))
+                {
+                    checkCmd.Parameters.AddWithValue("Kategori", ukuran1.Kategori);
+                    checkCmd.Parameters.AddWithValue("Nilai_Ukuran", ukuran1.Nilai_Ukuran);
+                    checkCmd.Parameters.AddWithValue("Status", true);
+
+
+                    int count = Convert.ToInt32(checkCmd.ExecuteScalar());
+                    if (count > 0)
+                    {
+                        throw new Exception("Ukuran sudah ada.");
+                    }
+                }
+
+
                 string query = "INSERT INTO Ukuran (Kategori, Nilai_Ukuran, Status) VALUES(@Kategori, @Nilai_Ukuran, @Status)";
                 using (var cmd = new NpgsqlCommand(query, conn))
                 {

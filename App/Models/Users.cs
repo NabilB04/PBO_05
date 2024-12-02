@@ -16,7 +16,6 @@ namespace TaniAttire.App.Models
         public string Username { get; set; }
         [Required(ErrorMessage = "Password harus diisi.")]
         public string Password { get; set; }
-        [Required(ErrorMessage = "Role harus diisi.")]
         public string Role { get; set; }
         [Required(ErrorMessage = "Nama harus diisi.")]
         public string Nama { get; set; }

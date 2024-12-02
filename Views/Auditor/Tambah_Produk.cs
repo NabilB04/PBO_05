@@ -69,7 +69,7 @@ namespace TaniAttire.Views.Auditor
                     Foto_Produk = targetPath
                 };
 
-                _controller.AddProduk(produk); 
+                _controller.AddProduk(produk);
 
                 MessageBox.Show("Produk berhasil disimpan.", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
@@ -103,6 +103,11 @@ namespace TaniAttire.Views.Auditor
         }
 
         private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
         {
 
         }

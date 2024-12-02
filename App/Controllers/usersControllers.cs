@@ -8,6 +8,8 @@ using TaniAttire.App.Models;
 using TaniAttire.App.Core;
 using Microsoft.VisualBasic.ApplicationServices;
 using static System.ComponentModel.Design.ObjectSelectorEditor;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TaniAttire.App.Controllers
 {
@@ -40,6 +42,8 @@ namespace TaniAttire.App.Controllers
         }
         public void AddUsers(Users users1)
         {
+            var validationContext = new ValidationContext(users1, serviceProvider: null, items: null);
+            var validationResults = new List<ValidationResult>();
             using (var conn = DataWrapper.openConnection())
             {
                 string query = "INSERT INTO users (username,password,role,nama,no_telpon) VALUES(@username, @password, 2,@nama, @no_telpon)";
@@ -81,6 +85,19 @@ namespace TaniAttire.App.Controllers
         }
         public void UpdateKaryawan(int Id_Users, string username, string password, string nama, string no_telpon)
         {
+            var Users1 = new Users
+            {
+                Id_Users = Id_Users,
+                Username = username,
+                Password = password,
+                Nama = nama,
+                No_Telpon = no_telpon
+            };
+            
+
+            var validationContext = new ValidationContext(Users1, serviceProvider: null, items: null);
+            var validationResults = new List<ValidationResult>();
+
             using (var conn = DataWrapper.openConnection())
             {
                 string query = "UPDATE users SET username = @username, password = @password, nama = @nama, no_telpon = @no_telpon WHERE Id_Users = @Id_Users";
