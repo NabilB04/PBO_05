@@ -62,7 +62,7 @@ namespace TaniAttire.Views.Auditor
 
                 _controller.UpdateKaryawan(Id_Users, username, password, nama, no_telpon);
                 MessageBox.Show(Id_Users.ToString());
-                Mnj_Karyawan manajemenkaryawan = new Mnj_Karyawan();    
+                Mnj_Karyawan manajemenkaryawan = new Mnj_Karyawan();
                 manajemenkaryawan.Show();
                 this.Close();
             }
@@ -74,8 +74,51 @@ namespace TaniAttire.Views.Auditor
 
         private void button8_Click(object sender, EventArgs e)
         {
-            Mnj_Karyawan manajemenkaryawan = new Mnj_Karyawan();   
+            Mnj_Karyawan manajemenkaryawan = new Mnj_Karyawan();
             manajemenkaryawan.Show();
+            this.Hide();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Anda telah Logout");
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            Persewaan persewaan = new Persewaan();
+            persewaan.Show();
+            this.Hide();
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            Penjualan penjualan = new Penjualan();
+            penjualan.Show();
+            this.Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Form_Ukuran ukuran = new Form_Ukuran();
+            ukuran.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Mnj_Produk manajemenproduk = new Mnj_Produk();
+            manajemenproduk.Show();
+            this.Hide();
+        }
+
+        private void buttonBeranda_Click(object sender, EventArgs e)
+        {
+            AuditorDashboard auditorDashboard = new AuditorDashboard();
+            auditorDashboard.Show();
             this.Hide();
         }
     }

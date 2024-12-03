@@ -47,6 +47,7 @@ namespace TaniAttire.Views.Auditor
             button1 = new Button();
             buttonBeranda = new Button();
             label4 = new Label();
+            button7 = new Button();
             SuspendLayout();
             // 
             // textboxNama
@@ -144,6 +145,7 @@ namespace TaniAttire.Views.Auditor
             button6.Size = new Size(334, 60);
             button6.TabIndex = 23;
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // button3
             // 
@@ -158,6 +160,7 @@ namespace TaniAttire.Views.Auditor
             button3.Size = new Size(334, 60);
             button3.TabIndex = 22;
             button3.UseVisualStyleBackColor = false;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -172,6 +175,7 @@ namespace TaniAttire.Views.Auditor
             button4.Size = new Size(334, 60);
             button4.TabIndex = 21;
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
@@ -186,6 +190,7 @@ namespace TaniAttire.Views.Auditor
             button5.Size = new Size(334, 60);
             button5.TabIndex = 20;
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // button2
             // 
@@ -200,6 +205,7 @@ namespace TaniAttire.Views.Auditor
             button2.Size = new Size(334, 60);
             button2.TabIndex = 19;
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -228,6 +234,7 @@ namespace TaniAttire.Views.Auditor
             buttonBeranda.Size = new Size(334, 60);
             buttonBeranda.TabIndex = 17;
             buttonBeranda.UseVisualStyleBackColor = false;
+            buttonBeranda.Click += buttonBeranda_Click;
             // 
             // label4
             // 
@@ -239,6 +246,19 @@ namespace TaniAttire.Views.Auditor
             label4.TabIndex = 24;
             label4.Text = "Tambah Karyawan";
             // 
+            // button7
+            // 
+            button7.BackColor = Color.Firebrick;
+            button7.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            button7.ForeColor = SystemColors.Control;
+            button7.Location = new Point(657, 443);
+            button7.Name = "button7";
+            button7.Size = new Size(184, 43);
+            button7.TabIndex = 25;
+            button7.Text = "Batal";
+            button7.UseVisualStyleBackColor = false;
+            button7.Click += button7_Click;
+            // 
             // Tambah_Karyawan
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -247,6 +267,7 @@ namespace TaniAttire.Views.Auditor
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1264, 681);
+            Controls.Add(button7);
             Controls.Add(label4);
             Controls.Add(button6);
             Controls.Add(button3);
@@ -268,6 +289,7 @@ namespace TaniAttire.Views.Auditor
             Name = "Tambah_Karyawan";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "TambahKaryawan";
+            Load += Tambah_Karyawan_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -291,5 +313,6 @@ namespace TaniAttire.Views.Auditor
         private Button button1;
         private Button buttonBeranda;
         private Label label4;
+        private Button button7;
     }
 }

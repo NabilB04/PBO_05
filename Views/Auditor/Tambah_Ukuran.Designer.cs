@@ -54,11 +54,10 @@
             buttonBeranda.BackgroundImageLayout = ImageLayout.Zoom;
             buttonBeranda.ForeColor = Color.White;
             buttonBeranda.ImageAlign = ContentAlignment.MiddleLeft;
-            buttonBeranda.Location = new Point(45, 215);
-            buttonBeranda.Margin = new Padding(3, 4, 3, 4);
+            buttonBeranda.Location = new Point(39, 161);
             buttonBeranda.Name = "buttonBeranda";
-            buttonBeranda.Padding = new Padding(34, 0, 0, 0);
-            buttonBeranda.Size = new Size(382, 80);
+            buttonBeranda.Padding = new Padding(30, 0, 0, 0);
+            buttonBeranda.Size = new Size(334, 60);
             buttonBeranda.TabIndex = 24;
             buttonBeranda.UseVisualStyleBackColor = false;
             buttonBeranda.Click += buttonBeranda_Click;
@@ -70,13 +69,13 @@
             button6.BackgroundImageLayout = ImageLayout.Zoom;
             button6.ForeColor = Color.White;
             button6.ImageAlign = ContentAlignment.MiddleLeft;
-            button6.Location = new Point(45, 780);
-            button6.Margin = new Padding(3, 4, 3, 4);
+            button6.Location = new Point(39, 585);
             button6.Name = "button6";
-            button6.Padding = new Padding(34, 0, 0, 0);
-            button6.Size = new Size(382, 80);
+            button6.Padding = new Padding(30, 0, 0, 0);
+            button6.Size = new Size(334, 60);
             button6.TabIndex = 23;
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // button3
             // 
@@ -85,11 +84,10 @@
             button3.BackgroundImageLayout = ImageLayout.Zoom;
             button3.ForeColor = Color.White;
             button3.ImageAlign = ContentAlignment.MiddleLeft;
-            button3.Location = new Point(45, 479);
-            button3.Margin = new Padding(3, 4, 3, 4);
+            button3.Location = new Point(39, 359);
             button3.Name = "button3";
-            button3.Padding = new Padding(34, 0, 0, 0);
-            button3.Size = new Size(382, 80);
+            button3.Padding = new Padding(30, 0, 0, 0);
+            button3.Size = new Size(334, 60);
             button3.TabIndex = 22;
             button3.UseVisualStyleBackColor = false;
             // 
@@ -100,13 +98,13 @@
             button4.BackgroundImageLayout = ImageLayout.Zoom;
             button4.ForeColor = Color.White;
             button4.ImageAlign = ContentAlignment.MiddleLeft;
-            button4.Location = new Point(45, 567);
-            button4.Margin = new Padding(3, 4, 3, 4);
+            button4.Location = new Point(39, 425);
             button4.Name = "button4";
-            button4.Padding = new Padding(34, 0, 0, 0);
-            button4.Size = new Size(382, 80);
+            button4.Padding = new Padding(30, 0, 0, 0);
+            button4.Size = new Size(334, 60);
             button4.TabIndex = 21;
             button4.UseVisualStyleBackColor = false;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
@@ -115,13 +113,13 @@
             button5.BackgroundImageLayout = ImageLayout.Zoom;
             button5.ForeColor = Color.White;
             button5.ImageAlign = ContentAlignment.MiddleLeft;
-            button5.Location = new Point(45, 655);
-            button5.Margin = new Padding(3, 4, 3, 4);
+            button5.Location = new Point(39, 491);
             button5.Name = "button5";
-            button5.Padding = new Padding(34, 0, 0, 0);
-            button5.Size = new Size(382, 80);
+            button5.Padding = new Padding(30, 0, 0, 0);
+            button5.Size = new Size(334, 60);
             button5.TabIndex = 20;
             button5.UseVisualStyleBackColor = false;
+            button5.Click += button5_Click;
             // 
             // button2
             // 
@@ -130,13 +128,13 @@
             button2.BackgroundImageLayout = ImageLayout.Zoom;
             button2.ForeColor = Color.White;
             button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(45, 391);
-            button2.Margin = new Padding(3, 4, 3, 4);
+            button2.Location = new Point(39, 293);
             button2.Name = "button2";
-            button2.Padding = new Padding(34, 0, 0, 0);
-            button2.Size = new Size(382, 80);
+            button2.Padding = new Padding(30, 0, 0, 0);
+            button2.Size = new Size(334, 60);
             button2.TabIndex = 19;
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // button1
             // 
@@ -145,11 +143,10 @@
             button1.BackgroundImageLayout = ImageLayout.Zoom;
             button1.ForeColor = Color.White;
             button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(45, 303);
-            button1.Margin = new Padding(3, 4, 3, 4);
+            button1.Location = new Point(39, 227);
             button1.Name = "button1";
-            button1.Padding = new Padding(34, 0, 0, 0);
-            button1.Size = new Size(382, 80);
+            button1.Padding = new Padding(30, 0, 0, 0);
+            button1.Size = new Size(334, 60);
             button1.TabIndex = 18;
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
@@ -157,11 +154,11 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.BackColor = Color.PaleGreen;
+            label1.BackColor = Color.DarkSeaGreen;
             label1.Font = new Font("Arial", 22.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(781, 213);
+            label1.Location = new Point(683, 160);
             label1.Name = "label1";
-            label1.Size = new Size(340, 44);
+            label1.Size = new Size(273, 35);
             label1.TabIndex = 25;
             label1.Text = "Masukkan Ukuran";
             label1.Click += label1_Click;
@@ -170,20 +167,21 @@
             // 
             comboBoxKategori.FormattingEnabled = true;
             comboBoxKategori.Items.AddRange(new object[] { "Pakaian", "Sepatu" });
-            comboBoxKategori.Location = new Point(703, 384);
+            comboBoxKategori.Location = new Point(615, 288);
+            comboBoxKategori.Margin = new Padding(3, 2, 3, 2);
             comboBoxKategori.Name = "comboBoxKategori";
-            comboBoxKategori.Size = new Size(435, 28);
+            comboBoxKategori.Size = new Size(381, 23);
             comboBoxKategori.TabIndex = 26;
             comboBoxKategori.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.BackColor = Color.PaleGreen;
+            label2.BackColor = Color.DarkSeaGreen;
             label2.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(703, 358);
+            label2.Location = new Point(615, 268);
             label2.Name = "label2";
-            label2.Size = new Size(74, 23);
+            label2.Size = new Size(62, 19);
             label2.TabIndex = 27;
             label2.Text = "Kategori";
             label2.Click += label2_Click;
@@ -191,21 +189,23 @@
             // label3
             // 
             label3.AutoSize = true;
-            label3.BackColor = Color.PaleGreen;
+            label3.BackColor = Color.DarkSeaGreen;
             label3.Font = new Font("Segoe UI Semibold", 10.2F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(703, 463);
+            label3.Location = new Point(615, 347);
             label3.Name = "label3";
-            label3.Size = new Size(105, 23);
+            label3.Size = new Size(88, 19);
             label3.TabIndex = 28;
             label3.Text = "Nilai Ukuran";
             // 
             // button7
             // 
-            button7.BackColor = Color.LimeGreen;
+            button7.BackColor = Color.ForestGreen;
+            button7.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
             button7.ForeColor = Color.White;
-            button7.Location = new Point(550, 420);
+            button7.Location = new Point(463, 315);
+            button7.Margin = new Padding(3, 2, 3, 2);
             button7.Name = "button7";
-            button7.Size = new Size(115, 44);
+            button7.Size = new Size(124, 40);
             button7.TabIndex = 30;
             button7.Text = "Tambah";
             button7.UseVisualStyleBackColor = false;
@@ -213,18 +213,21 @@
             // 
             // textBoxNilaiUkuran
             // 
-            textBoxNilaiUkuran.Location = new Point(703, 489);
+            textBoxNilaiUkuran.Location = new Point(615, 367);
+            textBoxNilaiUkuran.Margin = new Padding(3, 2, 3, 2);
             textBoxNilaiUkuran.Name = "textBoxNilaiUkuran";
-            textBoxNilaiUkuran.Size = new Size(435, 27);
+            textBoxNilaiUkuran.Size = new Size(381, 23);
             textBoxNilaiUkuran.TabIndex = 31;
             // 
             // button8
             // 
-            button8.BackColor = Color.Red;
+            button8.BackColor = Color.Firebrick;
+            button8.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
             button8.ForeColor = SystemColors.ControlLight;
-            button8.Location = new Point(407, 420);
+            button8.Location = new Point(333, 315);
+            button8.Margin = new Padding(3, 2, 3, 2);
             button8.Name = "button8";
-            button8.Size = new Size(115, 44);
+            button8.Size = new Size(124, 40);
             button8.TabIndex = 32;
             button8.Text = "Batal";
             button8.UseVisualStyleBackColor = false;
@@ -232,22 +235,23 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.PaleGreen;
+            panel1.BackColor = Color.DarkSeaGreen;
             panel1.Controls.Add(button8);
             panel1.Controls.Add(button7);
-            panel1.Location = new Point(599, 174);
+            panel1.Location = new Point(524, 130);
+            panel1.Margin = new Padding(3, 2, 3, 2);
             panel1.Name = "panel1";
-            panel1.Size = new Size(715, 519);
+            panel1.Size = new Size(626, 389);
             panel1.TabIndex = 33;
             panel1.Paint += panel1_Paint;
             // 
             // Tambah_Ukuran
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1445, 908);
+            ClientSize = new Size(1264, 681);
             Controls.Add(textBoxNilaiUkuran);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -261,7 +265,9 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(panel1);
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Tambah_Ukuran";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Tambah_Ukuran";
             Load += Tambah_Ukuran_Load;
             panel1.ResumeLayout(false);
