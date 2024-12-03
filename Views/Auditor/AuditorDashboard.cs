@@ -35,7 +35,7 @@ namespace TaniAttire
             usersControllers usersControllers1 = new usersControllers(); 
             int totalEmployees = usersControllers1.GetTotalEmployees();
             ProdukControllers ProdukControllers1 = new ProdukControllers();
-            int totalProduk= ProdukControllers1.GetTotalProduk();
+            int totalProduk= ProdukControllers1.GetJumlahProduk();
             TransaksiJualControllers TransaksiJualControllers1 = new TransaksiJualControllers();
             int totalJual = TransaksiJualControllers1.GetTotalJual();
             TransaksiSewaControllers TransaksiSewaControllers1 = new TransaksiSewaControllers();

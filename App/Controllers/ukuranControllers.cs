@@ -39,6 +39,27 @@ namespace TaniAttire.App.Controllers
             }
             return ukuranList;
         }
+
+        public List<string> GetNilaiUkuran()
+        {
+            List<string> nilaiUkuranList = new List<string>();
+            using (var conn = DataWrapper.openConnection())
+            {
+                string query = "SELECT Nilai_Ukuran FROM Ukuran WHERE Status = @Status";
+                using (var cmd = new NpgsqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@Status", true);
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            nilaiUkuranList.Add(reader.GetString(0));
+                        }
+                    }
+                }
+            }
+            return nilaiUkuranList;
+        }
         public void AddUkuran(Ukuran ukuran1)
         {
 

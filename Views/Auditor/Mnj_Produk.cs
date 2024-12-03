@@ -14,11 +14,11 @@ namespace TaniAttire.Views.Auditor
 {
     public partial class Mnj_Produk : Form
     {
-        private produk1Controllers _controller;
+        private ProdukControllers _controller;
         public Mnj_Produk()
         {
             InitializeComponent();
-            _controller = new produk1Controllers();
+            _controller = new ProdukControllers();
             SetupDataGridView();
         }
         private void SetupDataGridView()
@@ -42,7 +42,7 @@ namespace TaniAttire.Views.Auditor
         {
             try
             {
-                List<Produk> produkList = _controller.GetAllProduk();
+                List<GetProduk> produkList = _controller.GetTotalProduk();
                 BindingSource bindingSource = new BindingSource();
                 bindingSource.DataSource = produkList;
                 dataGridView1.DataSource = bindingSource;
