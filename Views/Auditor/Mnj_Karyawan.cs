@@ -23,7 +23,9 @@ namespace TaniAttire.Views.Auditor
         }
         private void SetupDataGridView()
         {
-            // Tambahkan kolom Update jika belum ada
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+
             if (!dataGridView1.Columns.Contains("Update"))
             {
                 var updateButtonColumn = new DataGridViewButtonColumn
@@ -36,7 +38,6 @@ namespace TaniAttire.Views.Auditor
                 dataGridView1.Columns.Add(updateButtonColumn);
             }
 
-            // Tambahkan kolom Delete jika belum ada
             if (!dataGridView1.Columns.Contains("Delete"))
             {
                 var deleteButtonColumn = new DataGridViewButtonColumn
@@ -57,7 +58,6 @@ namespace TaniAttire.Views.Auditor
                 var usersList = controller.GetAllusers();
                 dataGridView1.DataSource = usersList;
 
-                // Pastikan posisi kolom Update dan Delete
                 if (dataGridView1.Columns.Contains("Update"))
                 {
                     dataGridView1.Columns["Update"].DisplayIndex = dataGridView1.Columns.Count - 1;

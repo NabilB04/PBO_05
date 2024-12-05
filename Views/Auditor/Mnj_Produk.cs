@@ -23,9 +23,17 @@ namespace TaniAttire.Views.Auditor
         }
         private void SetupDataGridView()
         {
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-
+            if (!dataGridView1.Columns.Contains("Update"))
+            {
+                var updateButtonColumn = new DataGridViewButtonColumn
+                {
+                    HeaderText = "Aksi",
+                    Text = "Update",
+                    UseColumnTextForButtonValue = true,
+                    Name = "Update"
+                };
+                dataGridView1.Columns.Add(updateButtonColumn);
+            }
             if (!dataGridView1.Columns.Contains("Delete"))
             {
                 var deleteButtonColumn = new DataGridViewButtonColumn
@@ -46,6 +54,11 @@ namespace TaniAttire.Views.Auditor
                 BindingSource bindingSource = new BindingSource();
                 bindingSource.DataSource = produkList;
                 dataGridView1.DataSource = bindingSource;
+
+                if (dataGridView1.Columns.Contains("Update"))
+                {
+                    dataGridView1.Columns["Update"].DisplayIndex = dataGridView1.Columns.Count - 1;
+                }
 
                 if (dataGridView1.Columns.Contains("Delete"))
                 {
@@ -119,7 +132,49 @@ namespace TaniAttire.Views.Auditor
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            // Pastikan indeks baris dan kolom valid
+            if (e.RowIndex >= 0 && e.ColumnIndex >= 0)
+            {
+                string columnName = dataGridView1.Columns[e.ColumnIndex].Name;
 
+                if (columnName == "Update")
+                {
+                    var selectedProduk = (GetProduk)dataGridView1.Rows[e.RowIndex].DataBoundItem;
+                    if (selectedProduk != null)
+                    {
+                        // Ambil detail stok untuk produk yang dipilih
+                        Detail_Stok detailStok = _controller.GetDetailStokByProdukId(selectedProduk.Id_Produk);
+
+                        if (detailStok != null)
+                        {
+                            // Panggil form Ubah_Produk menggunakan constructor yang sudah benar
+                            Ubah_Produk ubahProdukForm = new Ubah_Produk(selectedProduk, detailStok);
+                            ubahProdukForm.ShowDialog();
+
+                            // Refresh data setelah update
+                            LoadDataProduk();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Detail stok tidak ditemukan.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        }
+                    }
+                }
+                else if (columnName == "Delete")
+                {
+                    if (e.RowIndex >= 0 && e.ColumnIndex == dataGridView1.Columns["Delete"].Index)
+                    {
+                        var selectedProduk = (GetProduk)dataGridView1.Rows[e.RowIndex].DataBoundItem;
+
+                        if (MessageBox.Show("Apakah Anda yakin ingin menghapus produk ini?", "Konfirmasi", MessageBoxButtons.YesNo) == DialogResult.Yes)
+                        {
+                            _controller.SoftDeleteProduk(selectedProduk.Id_Produk);
+                            MessageBox.Show("Produk berhasil dihapus.");
+                            LoadDataProduk();
+                        }
+                    }
+                }
+            }
         }
     }
 }

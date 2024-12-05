@@ -56,7 +56,6 @@ namespace TaniAttire.Views.Auditor
                     return;
                 }
 
-                // Validasi angka pada textBox
                 if (!int.TryParse(textBox2.Text, out int stokSewa) || !int.TryParse(textBox3.Text, out int stokJual) ||
                     !decimal.TryParse(textBox4.Text, out decimal hargaSewa) || !decimal.TryParse(textBox5.Text, out decimal hargaJual) ||
                     !decimal.TryParse(textBox1.Text, out decimal dendaPerHari))
@@ -65,7 +64,6 @@ namespace TaniAttire.Views.Auditor
                     return;
                 }
 
-                // Salin gambar ke folder lokal
                 string targetDir = Path.Combine(Application.StartupPath, "Images");
                 if (!Directory.Exists(targetDir))
                 {
@@ -80,7 +78,7 @@ namespace TaniAttire.Views.Auditor
                     File.Copy(pictureBoxGambar.ImageLocation, targetPath);
                 }
 
-                // Ambil Id_Ukuran berdasarkan ukuran yang dipilih
+               
                 int idUkuran = _ukuranController.GetAllukuran()
                     .FirstOrDefault(u => u.Nilai_Ukuran == selectedUkuran)?.Id_Ukuran ?? 0;
 
@@ -90,7 +88,7 @@ namespace TaniAttire.Views.Auditor
                     return;
                 }
 
-                // Buat objek produk
+               
                 Produk produk = new Produk
                 {
                     Nama_Produk = textBoxNamaProduk.Text,
@@ -98,7 +96,7 @@ namespace TaniAttire.Views.Auditor
                     Denda_Perhari = dendaPerHari
                 };
 
-                // Buat objek detail stok
+              
                 Detail_Stok detailStok = new Detail_Stok
                 {
                     Stok_Sewa = stokSewa,
@@ -107,12 +105,10 @@ namespace TaniAttire.Views.Auditor
                     Harga_Jual = hargaJual
                 };
 
-                // Simpan data produk
                 _controller.AddProduk(produk, pictureBoxGambar.ImageLocation, idUkuran, detailStok);
 
                 MessageBox.Show("Produk berhasil disimpan.", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // Reset form
                 pictureBoxGambar.Image = null;
                 textBoxNamaProduk.Clear();
                 textBox1.Clear();
@@ -122,7 +118,6 @@ namespace TaniAttire.Views.Auditor
                 textBox5.Clear();
                 comboBox1.SelectedIndex = -1;
 
-                // Buka halaman manajemen produk
                 Mnj_Produk manajemenproduk = new Mnj_Produk();
                 manajemenproduk.Show();
                 this.Hide();
@@ -229,6 +224,16 @@ namespace TaniAttire.Views.Auditor
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
         }

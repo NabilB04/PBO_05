@@ -61,8 +61,8 @@ namespace TaniAttire.Views.Auditor
                 string no_telpon = textBox5.Text;
 
                 _controller.UpdateKaryawan(Id_Users, username, password, nama, no_telpon);
-                MessageBox.Show(Id_Users.ToString());
-                Mnj_Karyawan manajemenkaryawan = new Mnj_Karyawan();
+                MessageBox.Show("ubah data berhasil");
+                Mnj_Karyawan manajemenkaryawan = new Mnj_Karyawan();    
                 manajemenkaryawan.Show();
                 this.Close();
             }

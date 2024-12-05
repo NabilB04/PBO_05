@@ -8,6 +8,7 @@ using Npgsql;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using NpgsqlTypes;
 
 namespace TaniAttire.App.Controllers
 {
@@ -19,28 +20,28 @@ namespace TaniAttire.App.Controllers
             using (var conn = DataWrapper.openConnection())
             {
                 string query = @"
-            SELECT 
-                p.Id_Produk,
-                p.Nama_Produk,
-                p.Foto_Produk,
-                u.Nilai_Ukuran,
-                ds.Stok_Jual,
-                ds.Stok_Sewa,
-                ds.Harga_Sewa,
-                ds.Harga_Jual,
-                p.Denda_Perhari
-            FROM 
-                Produk p
-            INNER JOIN 
-                Detail_Produk dp ON p.Id_Produk = dp.Id_Produk
-            INNER JOIN 
-                Ukuran u ON dp.Id_Ukuran = u.Id_Ukuran
-            INNER JOIN 
-                Detail_Stok ds ON dp.Id_Detail_Produk = ds.Id_Detail_Produk
-            WHERE 
-                p.Status = TRUE AND u.Status = TRUE
-            ORDER BY 
-                p.Id_Produk;
+        SELECT 
+            p.Id_Produk,
+            p.Nama_Produk,
+            p.Foto_Produk,
+            u.Nilai_Ukuran,
+            ds.Stok_Jual,
+            ds.Stok_Sewa,
+            ds.Harga_Sewa,
+            ds.Harga_Jual,
+            p.Denda_Perhari
+        FROM 
+            Produk p
+        INNER JOIN 
+            Detail_Produk dp ON p.Id_Produk = dp.Id_Produk
+        INNER JOIN 
+            Ukuran u ON dp.Id_Ukuran = u.Id_Ukuran
+        INNER JOIN 
+            Detail_Stok ds ON dp.Id_Detail_Produk = ds.Id_Detail_Produk
+        WHERE 
+            p.Status = TRUE AND u.Status = TRUE
+        ORDER BY 
+            p.Id_Produk;
         ";
 
                 using (var cmd = new NpgsqlCommand(query, conn))
@@ -165,6 +166,154 @@ namespace TaniAttire.App.Controllers
                 }
             }
         }
+        public Produk GetProdukById(int idProduk)
+        {
+            Produk produk = null;
+            using (var conn = DataWrapper.openConnection())
+            {
+                string query = @"
+            SELECT 
+                Id_Produk, 
+                Nama_Produk, 
+                Foto_Produk, 
+                Denda_Perhari
+            FROM Produk
+            WHERE Id_Produk = @Id_Produk AND Status = TRUE";
+
+                using (var cmd = new NpgsqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("Id_Produk", idProduk);
+
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            produk = new Produk
+                            {
+                                Id_Produk = reader.GetInt32(0),
+                                Nama_Produk = reader.GetString(1),
+                                Foto_Produk = reader.IsDBNull(2) ? null : reader.GetString(2),
+                                Denda_Perhari = reader.GetDecimal(3)
+                            };
+                        }
+                    }
+                }
+            }
+            return produk;
+        }
+
+        public Detail_Stok GetDetailStokByProdukId(int idProduk)
+        {
+            Detail_Stok detailStok = null;
+            using (var conn = DataWrapper.openConnection())
+            {
+                string query = @"
+            SELECT 
+                ds.Stok_Jual, 
+                ds.Stok_Sewa, 
+                ds.Harga_Jual, 
+                ds.Harga_Sewa
+            FROM Detail_Stok ds
+            INNER JOIN Detail_Produk dp ON ds.Id_Detail_Produk = dp.Id_Detail_Produk
+            WHERE dp.Id_Produk = @Id_Produk";
+
+                using (var cmd = new NpgsqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("Id_Produk", idProduk);
+
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            detailStok = new Detail_Stok
+                            {
+                                Stok_Jual = reader.GetInt32(0),
+                                Stok_Sewa = reader.GetInt32(1),
+                                Harga_Jual = reader.GetDecimal(2),
+                                Harga_Sewa = reader.GetDecimal(3)
+                            };
+                        }
+                    }
+                }
+            }
+            return detailStok;
+        }
+
+        public void UpdateProduk(Produk produk, string fotoProduk, int idUkuran, Detail_Stok detailStok)
+        {
+            using (var conn = DataWrapper.openConnection())
+            using (var transaction = conn.BeginTransaction())
+            {
+                try
+                {
+                    string queryProduk = @"
+                UPDATE Produk 
+                SET Nama_Produk = @Nama_Produk, 
+                    Foto_Produk = @Foto_Produk, 
+                    Denda_Perhari = @Denda_Perhari 
+                WHERE Id_Produk = @Id_Produk";
+
+                    using (var cmd = new NpgsqlCommand(queryProduk, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@Nama_Produk", produk.Nama_Produk);
+                        cmd.Parameters.AddWithValue("@Foto_Produk", fotoProduk);
+                        cmd.Parameters.AddWithValue("@Denda_Perhari", produk.Denda_Perhari);
+                        cmd.Parameters.AddWithValue("@Id_Produk", produk.Id_Produk);
+                        cmd.ExecuteNonQuery();
+                    }
+
+                    // Update Detail Stok
+                    string queryDetailStok = @"
+                UPDATE Detail_Stok 
+                SET Stok_Sewa = @Stok_Sewa, 
+                    Stok_Jual = @Stok_Jual, 
+                    Harga_Sewa = @Harga_Sewa, 
+                    Harga_Jual = @Harga_Jual 
+                WHERE Id_Detail_Produk = (
+                    SELECT Id_Detail_Produk 
+                    FROM Detail_Produk 
+                    WHERE Id_Produk = @Id_Produk AND Id_Ukuran = @Id_Ukuran
+                )";
+
+                    using (var cmd = new NpgsqlCommand(queryDetailStok, conn))
+                    {
+                        cmd.Parameters.AddWithValue("@Stok_Sewa", detailStok.Stok_Sewa);
+                        cmd.Parameters.AddWithValue("@Stok_Jual", detailStok.Stok_Jual);
+                        cmd.Parameters.AddWithValue("@Harga_Sewa", detailStok.Harga_Sewa);
+                        cmd.Parameters.AddWithValue("@Harga_Jual", detailStok.Harga_Jual);
+                        cmd.Parameters.AddWithValue("@Id_Produk", produk.Id_Produk);
+                        cmd.Parameters.AddWithValue("@Id_Ukuran", idUkuran);
+                        cmd.ExecuteNonQuery();
+                    }
+
+                    transaction.Commit();
+                }
+                catch (Exception ex)
+                {
+                    transaction.Rollback();
+                    throw new Exception("Terjadi kesalahan saat memperbarui produk: " + ex.Message);
+                }
+            }
+        }
+
+        public void SoftDeleteProduk(int idProduk)
+        {
+            using (var conn = DataWrapper.openConnection())
+            {
+                // Update status menjadi false (soft delete)
+                string query = @"
+            UPDATE Produk
+            SET Status = FALSE
+            WHERE Id_Produk = @Id_Produk";
+
+                using (var cmd = new NpgsqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@Id_Produk", idProduk);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+
 
     }
 }

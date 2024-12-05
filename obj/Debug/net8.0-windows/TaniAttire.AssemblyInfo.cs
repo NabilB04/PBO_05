@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TaniAttire")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e2c7dbaee7d8336b08662547bfbd830d4059763")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1222f88abd001ae2f05479ceac95514315c65ddc")]
 [assembly: System.Reflection.AssemblyProductAttribute("TaniAttire")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TaniAttire")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
