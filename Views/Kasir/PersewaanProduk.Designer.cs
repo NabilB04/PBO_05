@@ -34,6 +34,9 @@ namespace TaniAttire.Views.Kasir
             buttonShiftKasir = new Button();
             buttonPersewaan = new Button();
             buttonTransaksi = new Button();
+            buttonTambah = new Button();
+            dataGridView1 = new DataGridView();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // button6
@@ -96,6 +99,26 @@ namespace TaniAttire.Views.Kasir
             buttonTransaksi.UseVisualStyleBackColor = false;
             buttonTransaksi.Click += buttonTransaksi_Click;
             // 
+            // buttonTambah
+            // 
+            buttonTambah.BackColor = Color.DarkGreen;
+            buttonTambah.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            buttonTambah.ForeColor = SystemColors.Control;
+            buttonTambah.Location = new Point(1068, 111);
+            buttonTambah.Name = "buttonTambah";
+            buttonTambah.Size = new Size(184, 43);
+            buttonTambah.TabIndex = 15;
+            buttonTambah.Text = "Tambah";
+            buttonTambah.UseVisualStyleBackColor = false;
+            // 
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(450, 160);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.Size = new Size(802, 495);
+            dataGridView1.TabIndex = 14;
+            // 
             // PersewaanProduk
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -103,14 +126,18 @@ namespace TaniAttire.Views.Kasir
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1264, 681);
+            Controls.Add(buttonTambah);
+            Controls.Add(dataGridView1);
             Controls.Add(button6);
             Controls.Add(buttonShiftKasir);
             Controls.Add(buttonPersewaan);
             Controls.Add(buttonTransaksi);
             DoubleBuffered = true;
             Name = "PersewaanProduk";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "PersewaanProduk";
             Load += PersewaanProduk_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }
 
@@ -120,5 +147,7 @@ namespace TaniAttire.Views.Kasir
         private Button buttonShiftKasir;
         private Button buttonPersewaan;
         private Button buttonTransaksi;
+        private Button buttonTambah;
+        private DataGridView dataGridView1;
     }
 }

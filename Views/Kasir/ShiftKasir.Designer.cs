@@ -107,6 +107,7 @@
             Controls.Add(buttonTransaksi);
             DoubleBuffered = true;
             Name = "ShiftKasir";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "ShiftKasir";
             ResumeLayout(false);
         }

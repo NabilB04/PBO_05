@@ -55,9 +55,15 @@ namespace TaniAttire.Views.Auditor
 
         private void button6_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Anda telah Logout");
             Login login = new Login();
             login.Show();
             this.Hide();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

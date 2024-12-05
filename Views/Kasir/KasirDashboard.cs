@@ -49,5 +49,12 @@ namespace TaniAttire
             persewaanproduk.Show();
             Hide();
         }
+
+        private void buttonTambah_Click(object sender, EventArgs e)
+        {
+            FormJual formJual = new FormJual();
+            formJual.Show();
+            Hide();
+        }
     }
 }
