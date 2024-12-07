@@ -136,6 +136,7 @@ namespace TaniAttire.Views.Auditor
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     pictureBoxGambar.ImageLocation = openFileDialog.FileName;
+                    pictureBoxGambar.SizeMode = PictureBoxSizeMode.Zoom;
                 }
             }
         }

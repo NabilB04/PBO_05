@@ -201,3 +201,6 @@ D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.
 D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Tambah_Produk.resources
 D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Ubah_Karyawan.resources
 E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Ubah_Produk.resources
+E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Card.CardProduk.resources
+E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.FormJual.resources
+E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.FormSewa.resources

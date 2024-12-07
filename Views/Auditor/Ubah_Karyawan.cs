@@ -60,15 +60,10 @@ namespace TaniAttire.Views.Auditor
                 string nama = textBox4.Text;
                 string no_telpon = textBox5.Text;
 
-<<<<<<< HEAD
-                _controller.UpdateKaryawan(UserId, username, password, nama, no_telpon);
-                MessageBox.Show("Data karyawan berhasil di update");
-=======
                 _controller.UpdateKaryawan(Id_Users, username, password, nama, no_telpon);
                 MessageBox.Show("ubah data berhasil");
                 Mnj_Karyawan manajemenkaryawan = new Mnj_Karyawan();    
                 manajemenkaryawan.Show();
->>>>>>> 60194a81460d9b91b6088819effea94beb25fc25
                 this.Close();
             }
             catch (Exception ex)
@@ -76,12 +71,6 @@ namespace TaniAttire.Views.Auditor
                 MessageBox.Show($"Data inputan salah, periksa kembali{ex.Message}");
             }
         }
-
-<<<<<<< HEAD
-        private void button2_Click(object sender, EventArgs e)
-        {
-
-=======
         private void button8_Click(object sender, EventArgs e)
         {
             Mnj_Karyawan manajemenkaryawan = new Mnj_Karyawan();
@@ -130,7 +119,6 @@ namespace TaniAttire.Views.Auditor
             AuditorDashboard auditorDashboard = new AuditorDashboard();
             auditorDashboard.Show();
             this.Hide();
->>>>>>> 60194a81460d9b91b6088819effea94beb25fc25
         }
     }
 }

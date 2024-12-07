@@ -139,13 +139,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-<<<<<<< HEAD
-            ClientSize = new Size(1264, 681);
-            Controls.Add(flowLayoutPanel1);
-            Controls.Add(buttonTambah);
-=======
             ClientSize = new Size(1445, 908);
->>>>>>> 60194a81460d9b91b6088819effea94beb25fc25
             Controls.Add(button6);
             Controls.Add(buttonShiftKasir);
             Controls.Add(buttonPersewaan);

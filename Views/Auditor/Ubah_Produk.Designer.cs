@@ -338,6 +338,7 @@
             pictureBoxGambar.Size = new Size(267, 217);
             pictureBoxGambar.TabIndex = 4;
             pictureBoxGambar.TabStop = false;
+            pictureBoxGambar.Click += pictureBoxGambar_Click;
             // 
             // label1
             // 

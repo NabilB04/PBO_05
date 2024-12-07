@@ -159,9 +159,15 @@ namespace TaniAttire.Views.Auditor
                 if (openFileDialog.ShowDialog() == DialogResult.OK)
                 {
                     _selectedImagePath = openFileDialog.FileName;
+                    pictureBoxGambar.SizeMode = PictureBoxSizeMode.Zoom;
                     pictureBoxGambar.ImageLocation = _selectedImagePath;
                 }
             }
+        }
+
+        private void pictureBoxGambar_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
