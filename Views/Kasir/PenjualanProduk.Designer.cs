@@ -39,6 +39,7 @@
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
+            flowLayoutPanel2 = new FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)bindingSource1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)bindingSource2).BeginInit();
             SuspendLayout();
@@ -135,6 +136,15 @@
             button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
+            // flowLayoutPanel2
+            // 
+            flowLayoutPanel2.AutoScroll = true;
+            flowLayoutPanel2.Location = new Point(430, 110);
+            flowLayoutPanel2.Name = "flowLayoutPanel2";
+            flowLayoutPanel2.Size = new Size(832, 479);
+            flowLayoutPanel2.TabIndex = 35;
+            flowLayoutPanel2.Paint += flowLayoutPanel2_Paint;
+            // 
             // PenjualanProduk
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -142,6 +152,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1264, 681);
+            Controls.Add(flowLayoutPanel2);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
@@ -166,5 +177,6 @@
         private Button button1;
         private Button button2;
         private Button button3;
+        private FlowLayoutPanel flowLayoutPanel2;
     }
 }
