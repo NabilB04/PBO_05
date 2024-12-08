@@ -23,29 +23,35 @@ namespace TaniAttire.App.Controllers
                         p.Nama_Pelanggan,
                         usr.Nama AS Nama_Karyawan,
                         pr.Nama_Produk,
+                        pr.Denda_Perhari,
                         u.Nilai_Ukuran,
                         ds.Harga_Sewa,
                         ts.Tanggal_Transaksi,
                         ts.Tanggal_Kembali,
                         ts.Tanggal_Pengembalian,
                         ts.Status_Pengembalian,
-                        ts.Denda_Total
                         CASE 
-                             WHEN ts.Tanggal_Pengembalian > ts.Tanggal_Kembali THEN 
-                                  ((DATE_PART('day', ts.Tanggal_Pengembalian - ts.Tanggal_Kembali) * ts.Denda_Total) + ds.Harga_Sewa)
-                             ELSE 
-                                  ds.Harga_Sewa
+                            WHEN ts.Tanggal_Pengembalian > ts.Tanggal_Kembali THEN 
+                                (DATE_PART('day', ts.Tanggal_Pengembalian - ts.Tanggal_Kembali) * pr.Denda_Perhari) -- Denda per hari * jumlah hari terlambat
+                            ELSE 
+                                0 
+                        END AS Denda_Total,
+                         CASE 
+                            WHEN ts.Tanggal_Pengembalian > ts.Tanggal_Kembali THEN 
+                                (ds.Harga_Sewa + (DATE_PART('day', ts.Tanggal_Pengembalian - ts.Tanggal_Kembali) * pr.Denda_Perhari)) 
+                            ELSE 
+                                ds.Harga_Sewa 
                         END AS Total_Harga
                     FROM 
-                        DetailTransaksi dt
+                        Detail_Transaksi dt
                     INNER JOIN 
                         TransaksiSewa ts ON dt.Id_Transaksi_Sewa = ts.Id_TransaksiSewa
                     INNER JOIN 
                         Pelanggan p ON ts.Id_Pelanggan = p.Id_Pelanggan
                     INNER JOIN 
-                        DetailStok ds ON dt.Id_Detail_Stok = ds.Id_Detail_Stok
+                        Detail_Stok ds ON dt.Id_Detail_Stok = ds.Id_Detail_Stok
                     INNER JOIN 
-                        DetailProduk dp ON ds.Id_Detail_Produk = dp.Id_Detail_Produk
+                        Detail_Produk dp ON ds.Id_Detail_Produk = dp.Id_Detail_Produk
                     INNER JOIN 
                         Produk pr ON dp.Id_Produk = pr.Id_Produk
                     INNER JOIN 
@@ -73,9 +79,11 @@ namespace TaniAttire.App.Controllers
                             Tanggal_Kembali = reader.GetDateTime(7),
                             Tanggal_Pengembalian = reader.IsDBNull(8) ? (DateTime?)null : reader.GetDateTime(8),
                             Status_Pengembalian = reader.GetBoolean(9),
-                            Denda_Total = reader.GetDecimal(10),
-                            Total_Harga = reader.GetDecimal(11)
+                            Denda_Perhari = reader.GetDecimal(10),
+                            Denda_Total = reader.IsDBNull(11) ? 0 : reader.GetDecimal(11),
+                            Total_Harga = reader.IsDBNull(12) ? 0 : reader.GetDecimal(12)
                         });
+
                     }
                 }
             }

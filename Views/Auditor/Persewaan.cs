@@ -7,15 +7,38 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using TaniAttire.App.Models;
+using TaniAttire.App.Controllers;
 
 namespace TaniAttire.Views.Auditor
 {
     public partial class Persewaan : Form
     {
+        private TransaksiSewaControllers _controller;
         public Persewaan()
         {
             InitializeComponent();
+            _controller = new TransaksiSewaControllers();
+            SetupDataGridView();
+            LoadTransaksiSewa();
+        }
+        private void SetupDataGridView()
+        {
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+        }
+
+        private void LoadTransaksiSewa()
+        {
+            try
+            {
+                TransaksiSewaControllers controller = new TransaksiSewaControllers();
+                var TransaksiList = controller.GetAllTransaksiSewa();
+                dataGridView1.DataSource = TransaksiList;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Terjadi kesalahan saat memuat data: {ex.Message}");
+            }
         }
 
         private void buttonBeranda_Click(object sender, EventArgs e)
@@ -64,6 +87,11 @@ namespace TaniAttire.Views.Auditor
         private void button5_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            LoadTransaksiSewa();
         }
     }
 }

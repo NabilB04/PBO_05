@@ -39,6 +39,7 @@ namespace TaniAttire.App.Models
         [Required]
         public bool Status_Pengembalian { get; set; } = false;
         [Column(TypeName = "decimal(10, 2)")]
+        public decimal Denda_Perhari { get; set; } = 0;
         public decimal Denda_Total { get; set; } = 0;
         public decimal Total_Harga { get; set; }
     }

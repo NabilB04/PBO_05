@@ -30,7 +30,7 @@ namespace TaniAttire.App.Models
         public DateTime? Tanggal_Pengembalian { get; set; } 
 
         [Required]
-        public bool Status_Pengembalian { get; set; } = false; 
+        public bool Status_Pengembalian { get; set; } = false;
 
         [Column(TypeName = "decimal(10, 2)")]
         public decimal Denda_Total { get; set; } = 0;
