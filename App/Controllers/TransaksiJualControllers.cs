@@ -20,12 +20,12 @@ namespace TaniAttire.App.Controllers
                     SELECT 
                         dt.Id_Detail_Transaksi,
                         p.Nama_Pelanggan,
-                        usr.Nama AS Nama_Karyawan
+                        usr.Nama AS Nama_Karyawan,
                         pr.Nama_Produk,
-                        tj.Tanggal_Transaksi
+                        tj.Tanggal_Transaksi,
                         u.Nilai_Ukuran,
                         dt.Jumlah,
-                        ds.Harga_jual AS Harga_Satuan
+                        ds.Harga_jual AS Harga_Satuan,
                         (dt.Jumlah * ds.Harga_Jual) AS Total_Harga
                     FROM 
                         Detail_Transaksi dt
@@ -34,9 +34,9 @@ namespace TaniAttire.App.Controllers
                     INNER JOIN 
                         Pelanggan p ON tj.Id_Pelanggan = p.Id_Pelanggan
                     INNER JOIN 
-                        DetailStok ds ON dt.Id_Detail_Stok = ds.Id_Detail_Stok
+                        Detail_Stok ds ON dt.Id_Detail_Stok = ds.Id_Detail_Stok
                     INNER JOIN 
-                        DetailProduk dp ON ds.Id_Detail_Produk = dp.Id_Detail_Produk
+                        Detail_Produk dp ON ds.Id_Detail_Produk = dp.Id_Detail_Produk
                     INNER JOIN 
                         Produk pr ON dp.Id_Produk = pr.Id_Produk
                     INNER JOIN 

@@ -172,6 +172,43 @@ namespace TaniAttire.App.Controllers
             }
             return user;
         }
+        public List<Users> SearchKaryawan(string keyword)
+        {
+            List<Users> usersList = new List<Users>();
+
+            using (var conn = DataWrapper.openConnection())
+            {
+                string query = @"
+            SELECT * 
+            FROM users 
+            WHERE LOWER(username) LIKE @keyword 
+               OR LOWER(nama) LIKE @keyword 
+               OR LOWER(no_telpon) LIKE @keyword";
+
+                using (var cmd = new NpgsqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("keyword", $"%{keyword.ToLower()}%");
+
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            usersList.Add(new Users
+                            {
+                                Id_Users = reader.GetInt32(0),
+                                Username = reader.GetString(1),
+                                Password = reader.GetString(2),
+                                Role = reader.GetString(3),
+                                Nama = reader.GetString(4),
+                                No_Telpon = reader.GetString(5)
+                            });
+                        }
+                    }
+                }
+            }
+
+            return usersList;
+        }
 
     }
 }

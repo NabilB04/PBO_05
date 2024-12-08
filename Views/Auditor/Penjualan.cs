@@ -7,14 +7,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TaniAttire.App.Controllers;
 
 namespace TaniAttire.Views.Auditor
 {
     public partial class Penjualan : Form
     {
+        private TransaksiJualControllers _controller;
         public Penjualan()
         {
             InitializeComponent();
+            _controller = new TransaksiJualControllers();
+            SetupDataGridView();
+            LoadTransaksiJual();
+        }
+        private void SetupDataGridView()
+        {
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridView1.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+        }
+        private void LoadTransaksiJual()
+        {
+            try
+            {
+                TransaksiJualControllers controller = new TransaksiJualControllers();
+                var TransaksiList = controller.GetAllTransaksiJual();
+                dataGridView1.DataSource = TransaksiList;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Terjadi kesalahan saat memuat data: {ex.Message}");
+            }
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -58,6 +81,16 @@ namespace TaniAttire.Views.Auditor
             Login login = new Login();
             login.Show();
             this.Hide();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            LoadTransaksiJual();
+        }
+
+        private void Penjualan_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
