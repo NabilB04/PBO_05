@@ -49,7 +49,7 @@ namespace TaniAttire
                     {
                         MessageBox.Show("Login berhasil! Anda masuk sebagai Kasir.", "Login Sukses");
                         // Arahkan ke halaman kasir
-                        KasirDashboard kasirdashboard = new KasirDashboard();
+                        PenjualanProduk kasirdashboard = new PenjualanProduk();
                         kasirdashboard.Show();
                         this.Hide();
                     }

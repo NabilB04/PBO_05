@@ -11,9 +11,9 @@ using TaniAttire.Views.Kasir;
 
 namespace TaniAttire
 {
-    public partial class KasirDashboard : Form
+    public partial class PenjualanProduk : Form
     {
-        public KasirDashboard()
+        public PenjualanProduk()
         {
             InitializeComponent();
 
@@ -36,12 +36,12 @@ namespace TaniAttire
 
         }
 
-        private void buttonShiftKasir_Click(object sender, EventArgs e)
-        {
-            ShiftKasir shiftKasir = new ShiftKasir();
-            shiftKasir.Show();
-            Hide();
-        }
+        //private void buttonShiftKasir_Click(object sender, EventArgs e)
+        //{
+        //    ShiftKasir shiftKasir = new ShiftKasir();
+        //    shiftKasir.Show();
+        //    Hide();
+        //}
 
         private void buttonPersewaan_Click(object sender, EventArgs e)
         {
@@ -55,6 +55,28 @@ namespace TaniAttire
             FormJual formJual = new FormJual();
             formJual.Show();
             Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            PersewaanProduk persewaanProduk = new PersewaanProduk();
+            persewaanProduk.Show();
+            Hide();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            TrackPersewaan trackPersewaan = new TrackPersewaan();
+            trackPersewaan.Show();
+            Hide();
+        }
+
+        private void button6_Click_1(object sender, EventArgs e)
+        {
+            MessageBox.Show("Anda telah Logout");
+            Login login = new Login();
+            login.Show();
+            this.Hide();
         }
     }
 }

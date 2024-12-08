@@ -10,32 +10,33 @@ using System.Windows.Forms;
 
 namespace TaniAttire.Views.Kasir
 {
-    public partial class ShiftKasir : Form
+    public partial class TrackPersewaan : Form
     {
-        public ShiftKasir()
+        public TrackPersewaan()
         {
             InitializeComponent();
         }
 
-        private void buttonPersewaan_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
+        {
+            PenjualanProduk penjualanProduk = new PenjualanProduk();
+            penjualanProduk.Show();
+            this.Hide();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
         {
             PersewaanProduk persewaanProduk = new PersewaanProduk();
             persewaanProduk.Show();
-            Hide();
+            this.Hide();
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
+            MessageBox.Show("Anda telah Logout");
             Login login = new Login();
             login.Show();
-            Hide();
-        }
-
-        private void buttonTransaksi_Click(object sender, EventArgs e)
-        {
-            KasirDashboard kasirDashboard = new KasirDashboard();
-            kasirDashboard.Show();
-            Hide();
+            this.Hide();
         }
     }
 }

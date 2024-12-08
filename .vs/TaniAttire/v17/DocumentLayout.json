@@ -1,8 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\pbo\\PBO_05\\PBO_05\\",
+  "WorkspaceRootPath": "C:\\Users\\admin\\Documents\\TUGAS KULIAH AIS\\SEMESTER 3\\PBO C#\\PROJECT UAS B5\\kode\\",
   "Documents": [
     {
+<<<<<<< Updated upstream
       "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|e:\\pbo\\pbo_05\\pbo_05\\app\\controllers\\transaksisewacontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\controllers\\transaksisewacontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -65,6 +66,30 @@
     {
       "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|e:\\pbo\\pbo_05\\pbo_05\\app\\models\\pelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\models\\pelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|c:\\users\\admin\\documents\\tugas kuliah ais\\semester 3\\pbo c#\\project uas b5\\kode\\views\\kasir\\formtbhpelanggan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\kasir\\formtbhpelanggan.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|c:\\users\\admin\\documents\\tugas kuliah ais\\semester 3\\pbo c#\\project uas b5\\kode\\views\\kasir\\formtbhpelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\kasir\\formtbhpelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|c:\\users\\admin\\documents\\tugas kuliah ais\\semester 3\\pbo c#\\project uas b5\\kode\\views\\kasir\\formtbhpelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\kasir\\formtbhpelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|c:\\users\\admin\\documents\\tugas kuliah ais\\semester 3\\pbo c#\\project uas b5\\kode\\views\\auditor\\ubah_produk.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\auditor\\ubah_produk.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|c:\\users\\admin\\documents\\tugas kuliah ais\\semester 3\\pbo c#\\project uas b5\\kode\\views\\auditor\\auditordashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\auditor\\auditordashboard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|c:\\users\\admin\\documents\\tugas kuliah ais\\semester 3\\pbo c#\\project uas b5\\kode\\app\\models\\transaksijualdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\models\\transaksijualdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> Stashed changes
     }
   ],
   "DocumentGroupContainers": [
@@ -74,6 +99,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
+<<<<<<< Updated upstream
           "SelectedChildIndex": 5,
           "Children": [
             {
@@ -143,10 +169,26 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-08T02:24:31.559Z",
               "EditorCaption": ""
+=======
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TransaksiJualDetail.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\TUGAS KULIAH AIS\\SEMESTER 3\\PBO C#\\PROJECT UAS B5\\kode\\App\\Models\\TransaksiJualDetail.cs",
+              "RelativeDocumentMoniker": "App\\Models\\TransaksiJualDetail.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\TUGAS KULIAH AIS\\SEMESTER 3\\PBO C#\\PROJECT UAS B5\\kode\\App\\Models\\TransaksiJualDetail.cs",
+              "RelativeToolTip": "App\\Models\\TransaksiJualDetail.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T11:38:26.104Z"
+>>>>>>> Stashed changes
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< Updated upstream
               "Title": "TransaksiSewaControllers.cs",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\App\\Controllers\\TransaksiSewaControllers.cs",
               "RelativeDocumentMoniker": "App\\Controllers\\TransaksiSewaControllers.cs",
@@ -220,6 +262,16 @@
               "ViewState": "AQIAAD8AAAAAAAAAAAAAwEgAAABdAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-08T01:28:04.282Z",
+=======
+              "Title": "FormTbhPelanggan.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\TUGAS KULIAH AIS\\SEMESTER 3\\PBO C#\\PROJECT UAS B5\\kode\\Views\\Kasir\\FormTbhPelanggan.Designer.cs",
+              "RelativeDocumentMoniker": "Views\\Kasir\\FormTbhPelanggan.Designer.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\TUGAS KULIAH AIS\\SEMESTER 3\\PBO C#\\PROJECT UAS B5\\kode\\Views\\Kasir\\FormTbhPelanggan.Designer.cs",
+              "RelativeToolTip": "Views\\Kasir\\FormTbhPelanggan.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T13:35:34.937Z",
+>>>>>>> Stashed changes
               "EditorCaption": ""
             },
             {
@@ -228,22 +280,43 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:149:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{228e1580-0ef9-329a-bf07-81ebc3dcbf7e}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
-            },
-            {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 9,
               "Title": "Penjualan.cs [Design]",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Auditor\\Penjualan.cs",
@@ -252,10 +325,46 @@
               "RelativeToolTip": "Views\\Auditor\\Penjualan.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-08T00:08:13.87Z",
+=======
+              "DocumentIndex": 2,
+              "Title": "FormTbhPelanggan.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\TUGAS KULIAH AIS\\SEMESTER 3\\PBO C#\\PROJECT UAS B5\\kode\\Views\\Kasir\\FormTbhPelanggan.cs",
+              "RelativeDocumentMoniker": "Views\\Kasir\\FormTbhPelanggan.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\TUGAS KULIAH AIS\\SEMESTER 3\\PBO C#\\PROJECT UAS B5\\kode\\Views\\Kasir\\FormTbhPelanggan.cs",
+              "RelativeToolTip": "Views\\Kasir\\FormTbhPelanggan.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAADgvy8AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T12:49:22.121Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Ubah_Produk.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\TUGAS KULIAH AIS\\SEMESTER 3\\PBO C#\\PROJECT UAS B5\\kode\\Views\\Auditor\\Ubah_Produk.Designer.cs",
+              "RelativeDocumentMoniker": "Views\\Auditor\\Ubah_Produk.Designer.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\TUGAS KULIAH AIS\\SEMESTER 3\\PBO C#\\PROJECT UAS B5\\kode\\Views\\Auditor\\Ubah_Produk.Designer.cs",
+              "RelativeToolTip": "Views\\Auditor\\Ubah_Produk.Designer.cs",
+              "ViewState": "AgIAAD4AAAAAAAAAAAAQwEwAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T05:59:15.557Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "FormTbhPelanggan.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\TUGAS KULIAH AIS\\SEMESTER 3\\PBO C#\\PROJECT UAS B5\\kode\\Views\\Kasir\\FormTbhPelanggan.cs",
+              "RelativeDocumentMoniker": "Views\\Kasir\\FormTbhPelanggan.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\TUGAS KULIAH AIS\\SEMESTER 3\\PBO C#\\PROJECT UAS B5\\kode\\Views\\Kasir\\FormTbhPelanggan.cs [Design]",
+              "RelativeToolTip": "Views\\Kasir\\FormTbhPelanggan.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T05:56:02.143Z",
+>>>>>>> Stashed changes
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
+<<<<<<< Updated upstream
               "DocumentIndex": 7,
               "Title": "TransaksiJualControllers.cs",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\App\\Controllers\\TransaksiJualControllers.cs",
@@ -305,6 +414,17 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-03T11:38:26.104Z",
               "EditorCaption": ""
+=======
+              "DocumentIndex": 4,
+              "Title": "AuditorDashboard.cs",
+              "DocumentMoniker": "C:\\Users\\admin\\Documents\\TUGAS KULIAH AIS\\SEMESTER 3\\PBO C#\\PROJECT UAS B5\\kode\\Views\\Auditor\\AuditorDashboard.cs",
+              "RelativeDocumentMoniker": "Views\\Auditor\\AuditorDashboard.cs",
+              "ToolTip": "C:\\Users\\admin\\Documents\\TUGAS KULIAH AIS\\SEMESTER 3\\PBO C#\\PROJECT UAS B5\\kode\\Views\\Auditor\\AuditorDashboard.cs",
+              "RelativeToolTip": "Views\\Auditor\\AuditorDashboard.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAUwEgAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-03T11:38:26.098Z"
+>>>>>>> Stashed changes
             }
           ]
         }
