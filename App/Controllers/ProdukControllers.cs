@@ -9,6 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using NpgsqlTypes;
+using Microsoft.VisualBasic.ApplicationServices;
+using System.ComponentModel.DataAnnotations;
 
 namespace TaniAttire.App.Controllers
 {
@@ -72,7 +74,7 @@ namespace TaniAttire.App.Controllers
             int totalProduk = 0;
             using (var conn = DataWrapper.openConnection())
             {
-                string query = "SELECT COUNT(*) FROM Produk";
+                string query = "SELECT COUNT(*) FROM Produk WHERE Status = TRUE";
                 using (var cmd = new NpgsqlCommand(query, conn))
                 {
                     using (var reader = cmd.ExecuteReader())
@@ -89,6 +91,13 @@ namespace TaniAttire.App.Controllers
 
         public void AddProduk(Produk produk, string filePath, int idUkuran, Detail_Stok detailStok)
         {
+            var validationContext = new ValidationContext(produk, serviceProvider: null, items: null);
+            var validationResults = new List<ValidationResult>();
+
+            if (!Validator.TryValidateObject(produk, validationContext, validationResults, true))
+            {
+                throw new ValidationException(string.Join("; ", validationResults.Select(v => v.ErrorMessage)));
+            }
             if (!File.Exists(filePath))
             {
                 throw new FileNotFoundException("File tidak ditemukan pada path yang diberikan.");
@@ -111,7 +120,20 @@ namespace TaniAttire.App.Controllers
                 {
                     try
                     {
-                        
+                        string checkQuery = "SELECT COUNT(*) FROM Produk WHERE Nama_produk = @nama_produk  AND Status = @Status";
+                        using (var checkCmd = new NpgsqlCommand(checkQuery, conn))
+                        {
+                            checkCmd.Parameters.AddWithValue("Nama_produk", produk.Nama_Produk);
+                            checkCmd.Parameters.AddWithValue("Status", true);
+
+
+                            int count = Convert.ToInt32(checkCmd.ExecuteScalar());
+                            if (count > 0)
+                            {
+                                throw new Exception("Produk sudah ada.");
+                            }
+                        }
+
                         string queryProduk = @"INSERT INTO Produk (Nama_Produk, Foto_Produk, Denda_Perhari) 
                                VALUES (@nama_produk, @foto_produk, @denda_perhari)
                                RETURNING Id_Produk";
@@ -241,11 +263,32 @@ namespace TaniAttire.App.Controllers
 
         public void UpdateProduk(Produk produk, string fotoProduk, int idUkuran, Detail_Stok detailStok)
         {
+            var validationContext = new ValidationContext(produk, serviceProvider: null, items: null);
+            var validationResults = new List<ValidationResult>();
+
+            if (!Validator.TryValidateObject(produk, validationContext, validationResults, true))
+            {
+                throw new ValidationException(string.Join("; ", validationResults.Select(v => v.ErrorMessage)));
+            }
             using (var conn = DataWrapper.openConnection())
             using (var transaction = conn.BeginTransaction())
             {
                 try
                 {
+                    string checkQuery = "SELECT COUNT(*) FROM Produk WHERE Nama_produk = @nama_produk  AND Status = @Status";
+                    using (var checkCmd = new NpgsqlCommand(checkQuery, conn))
+                    {
+                        checkCmd.Parameters.AddWithValue("Nama_produk", produk.Nama_Produk);
+                        checkCmd.Parameters.AddWithValue("Status", true);
+
+
+                        int count = Convert.ToInt32(checkCmd.ExecuteScalar());
+                        if (count > 0)
+                        {
+                            throw new Exception("Produk sudah ada.");
+                        }
+                    }
+
                     string queryProduk = @"
                 UPDATE Produk 
                 SET Nama_Produk = @Nama_Produk, 

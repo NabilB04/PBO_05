@@ -62,7 +62,6 @@ namespace TaniAttire.App.Controllers
         }
         public void AddUkuran(Ukuran ukuran1)
         {
-
             var validationContext = new ValidationContext(ukuran1, serviceProvider: null, items: null);
             var validationResults = new List<ValidationResult>();
 

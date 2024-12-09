@@ -18,15 +18,8 @@ namespace TaniAttire.Views.Auditor
         {
             InitializeComponent();
             _controller = new TransaksiSewaControllers();
-            SetupDataGridView();
             LoadTransaksiSewa();
         }
-        private void SetupDataGridView()
-        {
-            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridView1.ColumnHeadersDefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-        }
-
         private void LoadTransaksiSewa()
         {
             try

@@ -16,36 +16,58 @@ namespace TaniAttire.App.Controllers
     public class usersControllers
     {
         public List<Users> GetAllusers()
+{
+    List<Users> usersList = new List<Users>();
+    using (var conn = DataWrapper.openConnection())
+    {
+        string query = "SELECT * FROM users WHERE Status = TRUE";
+
+        using (var cmd = new NpgsqlCommand(query, conn))
+        using (var reader = cmd.ExecuteReader())
         {
-            List<Users> usersList = new List<Users>();
-            using (var conn = DataWrapper.openConnection())
+            while (reader.Read())
             {
-                string query = "SELECT * FROM users";
-                using (var cmd = new NpgsqlCommand(query, conn))
-                using (var reader = cmd.ExecuteReader())
+                usersList.Add(new Users
                 {
-                    while (reader.Read())
-                    {
-                        usersList.Add(new Users
-                        {
-                            Id_Users = reader.GetInt32(0),
-                            Username = reader.GetString(1),
-                            Password = reader.GetString(2),
-                            Role = reader.GetString(3),
-                            Nama = reader.GetString(4),
-                            No_Telpon = reader.GetString(5)
-                        });
-                    }
-                }
+                    Id_Users = reader.GetInt32(0),
+                    Username = reader.GetString(1),
+                    Password = reader.GetString(2),
+                    Role = reader.GetString(3),
+                    Nama = reader.GetString(4),
+                    No_Telpon = reader.IsDBNull(5) ? null : reader.GetString(5),
+                    Status = reader.GetBoolean(6) // Membaca status
+                });
             }
-            return usersList;
         }
+    }
+    return usersList;
+}
         public void AddUsers(Users users1)
         {
             var validationContext = new ValidationContext(users1, serviceProvider: null, items: null);
             var validationResults = new List<ValidationResult>();
+
+            if (!Validator.TryValidateObject(users1, validationContext, validationResults, true))
+            {
+                throw new ValidationException(string.Join("; ", validationResults.Select(v => v.ErrorMessage)));
+            }
             using (var conn = DataWrapper.openConnection())
             {
+                string checkQuery = "SELECT COUNT(*) FROM Users WHERE Username = @username AND Password = @password AND Status = @Status";
+                using (var checkCmd = new NpgsqlCommand(checkQuery, conn))
+                {
+                    checkCmd.Parameters.AddWithValue("username", users1.Username);
+                    checkCmd.Parameters.AddWithValue("password", users1.Password);
+                    checkCmd.Parameters.AddWithValue("Status", true);
+
+
+                    int count = Convert.ToInt32(checkCmd.ExecuteScalar());
+                    if (count > 0)
+                    {
+                        throw new Exception("Pengguna sudah ada.");
+                    }
+                }
+
                 string query = "INSERT INTO users (username,password,role,nama,no_telpon) VALUES(@username, @password, 2,@nama, @no_telpon)";
                 using (var cmd = new NpgsqlCommand(query, conn))
                 {
@@ -93,13 +115,33 @@ namespace TaniAttire.App.Controllers
                 Nama = nama,
                 No_Telpon = no_telpon
             };
-            
+
 
             var validationContext = new ValidationContext(Users1, serviceProvider: null, items: null);
             var validationResults = new List<ValidationResult>();
 
+            if (!Validator.TryValidateObject(Users1, validationContext, validationResults, true))
+            {
+                throw new ValidationException(string.Join("; ", validationResults.Select(v => v.ErrorMessage)));
+            }
+
             using (var conn = DataWrapper.openConnection())
             {
+                string checkQuery = "SELECT COUNT(*) FROM Users WHERE Username = @username AND Password = @password AND Status = @Status";
+                using (var checkCmd = new NpgsqlCommand(checkQuery, conn))
+                {
+                    checkCmd.Parameters.AddWithValue("username", Users1.Username);
+                    checkCmd.Parameters.AddWithValue("password", Users1.Password);
+                    checkCmd.Parameters.AddWithValue("Status", true);
+
+
+                    int count = Convert.ToInt32(checkCmd.ExecuteScalar());
+                    if (count > 0)
+                    {
+                        throw new Exception("Pengguna sudah ada.");
+                    }
+                }
+
                 string query = "UPDATE users SET username = @username, password = @password, nama = @nama, no_telpon = @no_telpon WHERE Id_Users = @Id_Users";
                 using (var cmd = new NpgsqlCommand(query, conn))
                 {
@@ -115,7 +157,7 @@ namespace TaniAttire.App.Controllers
         }
         public static void DeleteKaryawan(int id_users)
         {
-            string query = "DELETE FROM users WHERE id_users = @id_users";
+            string query = "UPDATE users SET Status = FALSE WHERE id_users = @id_users";
 
             NpgsqlParameter[] parameters =
             {
@@ -130,7 +172,7 @@ namespace TaniAttire.App.Controllers
             int totalEmployees = 0;
             using (var conn = DataWrapper.openConnection())
             {
-                string query = "SELECT COUNT(*) FROM Users";
+                string query = "SELECT COUNT(*) FROM Users WHERE Status = TRUE";
                 using (var cmd = new NpgsqlCommand(query, conn))
                 {
                     using (var reader = cmd.ExecuteReader())

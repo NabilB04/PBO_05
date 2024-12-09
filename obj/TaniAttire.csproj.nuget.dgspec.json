@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admin\\Documents\\TUGAS KULIAH AIS\\SEMESTER 3\\PBO C#\\PROJECT UAS B5\\kode\\TaniAttire.csproj": {}
+    "E:\\pbo\\PBO_05\\PBO_05\\TaniAttire.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admin\\Documents\\TUGAS KULIAH AIS\\SEMESTER 3\\PBO C#\\PROJECT UAS B5\\kode\\TaniAttire.csproj": {
+    "E:\\pbo\\PBO_05\\PBO_05\\TaniAttire.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\Documents\\TUGAS KULIAH AIS\\SEMESTER 3\\PBO C#\\PROJECT UAS B5\\kode\\TaniAttire.csproj",
+        "projectUniqueName": "E:\\pbo\\PBO_05\\PBO_05\\TaniAttire.csproj",
         "projectName": "TaniAttire",
-        "projectPath": "C:\\Users\\admin\\Documents\\TUGAS KULIAH AIS\\SEMESTER 3\\PBO C#\\PROJECT UAS B5\\kode\\TaniAttire.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\Documents\\TUGAS KULIAH AIS\\SEMESTER 3\\PBO C#\\PROJECT UAS B5\\kode\\obj\\",
+        "projectPath": "E:\\pbo\\PBO_05\\PBO_05\\TaniAttire.csproj",
+        "packagesPath": "C:\\Users\\USER\\.nuget\\packages\\",
+        "outputPath": "E:\\pbo\\PBO_05\\PBO_05\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -77,7 +82,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

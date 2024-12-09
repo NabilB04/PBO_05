@@ -140,10 +140,10 @@
             // 
             dataGridView1.BackgroundColor = Color.DarkSeaGreen;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(486, 159);
+            dataGridView1.Location = new Point(503, 225);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
-            dataGridView1.Size = new Size(735, 343);
+            dataGridView1.Size = new Size(930, 432);
             dataGridView1.TabIndex = 10;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 

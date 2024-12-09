@@ -79,9 +79,7 @@ E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Mnj_Produ
 E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Penjualan.resources
 E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Persewaan.resources
 E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Tambah_Ukuran.resources
-E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.KasirDashboard.resources
 E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.PersewaanProduk.resources
-E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.ShiftKasir.resources
 E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Login.resources
 E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.csproj.GenerateResource.cache
 E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.AuditorDashboard.resources
@@ -252,3 +250,6 @@ C:\Users\admin\Documents\TUGAS KULIAH AIS\SEMESTER 3\PBO C#\PROJECT UAS B5\kode\
 C:\Users\admin\Documents\TUGAS KULIAH AIS\SEMESTER 3\PBO C#\PROJECT UAS B5\kode\obj\Debug\net8.0-windows\TaniAttire.PenjualanProduk.resources
 C:\Users\admin\Documents\TUGAS KULIAH AIS\SEMESTER 3\PBO C#\PROJECT UAS B5\kode\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.TrackPersewaan.resources
 C:\Users\admin\Documents\TUGAS KULIAH AIS\SEMESTER 3\PBO C#\PROJECT UAS B5\kode\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.FormTbhPelanggan.resources
+E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.FormTbhPelanggan.resources
+E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.PenjualanProduk.resources
+E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.TrackPersewaan.resources

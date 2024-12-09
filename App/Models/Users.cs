@@ -21,5 +21,7 @@ namespace TaniAttire.App.Models
         public string Nama { get; set; }
         [StringLength(15, ErrorMessage = "No Telepon tidak boleh lebih dari 15 karakter.")]
         public string No_Telpon { get; set; }
+        [Required]
+        public bool Status { get; set; } = true;
     }
 }

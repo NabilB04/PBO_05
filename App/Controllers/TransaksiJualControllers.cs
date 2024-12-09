@@ -54,7 +54,7 @@ namespace TaniAttire.App.Controllers
                     {
                         transaksiList.Add(new TransaksiJualDetail
                         {
-
+                            Id_Detail_Transaksi = reader.GetInt32(0),
                             Nama_Pelanggan = reader.GetString(1),
                             Nama_Produk = reader.GetString(2),
                             Nama = reader.GetString(3),
@@ -62,7 +62,7 @@ namespace TaniAttire.App.Controllers
                             Nilai_Ukuran = reader.GetString(5),
                             Jumlah = reader.GetInt32(6),
                             Harga_Jual = reader.GetDecimal(7),
-                            Total_Harga = reader.GetInt32(6) * reader.GetDecimal(7)
+                            Total_Harga = reader.GetInt32(8) 
                         });
                     }
                 }
