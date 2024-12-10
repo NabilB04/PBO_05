@@ -64,24 +64,21 @@ namespace TaniAttire.Views.Auditor
                     return;
                 }
 
-                // Tentukan folder Resources untuk menyimpan gambar
-                string targetDir = Path.Combine(Application.StartupPath, "Resources");
+                string targetDir = Path.Combine(Application.StartupPath, "Images");
                 if (!Directory.Exists(targetDir))
                 {
-                    Directory.CreateDirectory(targetDir); // Buat folder jika belum ada
+                    Directory.CreateDirectory(targetDir);
                 }
 
-                // Ambil nama file gambar dan tentukan path tujuan di folder Resources
                 string fileName = Path.GetFileName(pictureBoxGambar.ImageLocation);
                 string targetPath = Path.Combine(targetDir, fileName);
 
-                // Salin gambar ke folder Resources jika belum ada
                 if (!File.Exists(targetPath))
                 {
                     File.Copy(pictureBoxGambar.ImageLocation, targetPath);
                 }
 
-                // Ambil Id_Ukuran berdasarkan nilai ukuran
+
                 int idUkuran = _ukuranController.GetAllukuran()
                     .FirstOrDefault(u => u.Nilai_Ukuran == selectedUkuran)?.Id_Ukuran ?? 0;
 
@@ -91,15 +88,15 @@ namespace TaniAttire.Views.Auditor
                     return;
                 }
 
-                // Buat objek Produk
+
                 Produk produk = new Produk
                 {
                     Nama_Produk = textBoxNamaProduk.Text,
-                    Foto_Produk = targetPath, // Simpan path gambar di database
+                    Foto_Produk = targetPath,
                     Denda_Perhari = dendaPerHari
                 };
 
-                // Buat objek Detail_Stok
+
                 Detail_Stok detailStok = new Detail_Stok
                 {
                     Stok_Sewa = stokSewa,
@@ -108,12 +105,10 @@ namespace TaniAttire.Views.Auditor
                     Harga_Jual = hargaJual
                 };
 
-                // Simpan data produk ke database
-                _controller.AddProduk(produk, targetPath, idUkuran, detailStok);
+                _controller.AddProduk(produk, pictureBoxGambar.ImageLocation, idUkuran, detailStok);
 
                 MessageBox.Show("Produk berhasil disimpan.", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-                // Reset form setelah penyimpanan berhasil
                 pictureBoxGambar.Image = null;
                 textBoxNamaProduk.Clear();
                 textBox1.Clear();
@@ -123,7 +118,6 @@ namespace TaniAttire.Views.Auditor
                 textBox5.Clear();
                 comboBox1.SelectedIndex = -1;
 
-                // Kembali ke form Manajemen Produk
                 Mnj_Produk manajemenproduk = new Mnj_Produk();
                 manajemenproduk.Show();
                 this.Hide();
@@ -132,6 +126,7 @@ namespace TaniAttire.Views.Auditor
             {
                 MessageBox.Show($"Terjadi kesalahan: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
         }
 
         private void button8_Click(object sender, EventArgs e)

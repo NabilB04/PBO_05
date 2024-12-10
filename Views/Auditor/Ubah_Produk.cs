@@ -76,7 +76,6 @@ namespace TaniAttire.Views.Auditor
         {
             try
             {
-                // Validasi input
                 if (string.IsNullOrWhiteSpace(textBoxNamaProduk.Text) ||
                     comboBoxUkuran.SelectedItem == null ||
                     !int.TryParse(textBoxStokJual.Text, out int stokJual) ||
@@ -89,33 +88,28 @@ namespace TaniAttire.Views.Auditor
                     return;
                 }
 
-                // Membuat objek Produk baru untuk memperbarui data
                 Produk produkToUpdate = new Produk
                 {
-                    Id_Produk = _produk.Id_Produk,  // Menggunakan ID yang sama dari GetProduk
+                    Id_Produk = _produk.Id_Produk,
                     Nama_Produk = textBoxNamaProduk.Text,
                     Denda_Perhari = dendaPerHari,
                     Foto_Produk = _produk.Foto_Produk
                 };
 
-                // Update data detail stok
                 _detailStok.Stok_Jual = stokJual;
                 _detailStok.Stok_Sewa = stokSewa;
                 _detailStok.Harga_Jual = hargaJual;
                 _detailStok.Harga_Sewa = hargaSewa;
 
-                // Mendapatkan ukuran yang dipilih
                 string ukuranTerpilih = comboBoxUkuran.SelectedItem.ToString();
                 int idUkuran = _ukuranController.GetAllukuran()
                                         .FirstOrDefault(u => u.Nilai_Ukuran == ukuranTerpilih)?.Id_Ukuran ?? 0;
 
-                // Mengelola gambar
                 string fotoProduk = produkToUpdate.Foto_Produk;
 
                 if (!string.IsNullOrEmpty(_selectedImagePath))
                 {
-                    // Jika ada gambar baru, salin ke folder uploads
-                    string uploadsFolder = Path.Combine(Application.StartupPath, "Resources");
+                    string uploadsFolder = Path.Combine(Application.StartupPath, "uploads");
                     if (!Directory.Exists(uploadsFolder))
                     {
                         Directory.CreateDirectory(uploadsFolder);
@@ -125,14 +119,12 @@ namespace TaniAttire.Views.Auditor
                     string destinationPath = Path.Combine(uploadsFolder, fotoProduk);
                     File.Copy(_selectedImagePath, destinationPath, true);
 
-                    // Hapus gambar lama jika ada
                     if (!string.IsNullOrEmpty(_currentImagePath) && File.Exists(_currentImagePath))
                     {
                         File.Delete(_currentImagePath);
                     }
                 }
 
-                // Simpan perubahan ke database
                 _controller.UpdateProduk(produkToUpdate, fotoProduk, idUkuran, _detailStok);
 
                 MessageBox.Show("Produk berhasil diperbarui.", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -142,6 +134,7 @@ namespace TaniAttire.Views.Auditor
             {
                 MessageBox.Show($"Terjadi kesalahan: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
         }
 
         private void button9_Click(object sender, EventArgs e)
