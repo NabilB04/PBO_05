@@ -110,10 +110,19 @@ namespace TaniAttire.Views.Auditor
 
         private void button6_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Anda telah Logout");
-            Login login = new Login();
-            login.Show();
-            this.Hide();
+            var result = MessageBox.Show(
+                 "Apakah Anda yakin ingin logout?",
+                 "Konfirmasi Logout",
+                 MessageBoxButtons.YesNo,
+                 MessageBoxIcon.Question
+             );
+
+            if (result == DialogResult.Yes)
+            {
+                Login login = new Login();
+                login.Show();
+                this.Close();
+            }
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -165,6 +174,50 @@ namespace TaniAttire.Views.Auditor
         private void Mnj_Karyawan_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                string keyword = textBoxSearch.Text;
+                if (!string.IsNullOrWhiteSpace(keyword))
+                {
+                    var usersList = _controller.SearchKaryawan(keyword);
+                    dataGridView1.DataSource = usersList;
+
+                    if (usersList.Count == 0)
+                    {
+                        MessageBox.Show("Data tidak ditemukan.");
+                    }
+                }
+                else
+                {
+                    MessageBox.Show("Masukkan kata kunci untuk mencari.");
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Terjadi kesalahan saat pencarian: {ex.Message}");
+            }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                textBoxSearch.Text = string.Empty;
+                LoadDataKaryawan();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Terjadi kesalahan saat memuat ulang data: {ex.Message}");
+            }
         }
     }
 }

@@ -115,7 +115,7 @@ namespace TaniAttire.Views.Auditor
                 if (!string.IsNullOrEmpty(_selectedImagePath))
                 {
                     // Jika ada gambar baru, salin ke folder uploads
-                    string uploadsFolder = Path.Combine(Application.StartupPath, "uploads");
+                    string uploadsFolder = Path.Combine(Application.StartupPath, "Resources");
                     if (!Directory.Exists(uploadsFolder))
                     {
                         Directory.CreateDirectory(uploadsFolder);
@@ -168,6 +168,23 @@ namespace TaniAttire.Views.Auditor
         private void pictureBoxGambar_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show(
+                "Apakah Anda yakin ingin logout?",
+                "Konfirmasi Logout",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (result == DialogResult.Yes)
+            {
+                Login login = new Login();
+                login.Show();
+                this.Close();
+            }
         }
     }
 }

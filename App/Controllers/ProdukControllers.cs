@@ -14,12 +14,36 @@ using System.ComponentModel.DataAnnotations;
 
 namespace TaniAttire.App.Controllers
 {
-    public class ProdukControllers
+    public class ProdukControllers : DataWrapper
     {
+        public List<Produk> GetAllProduk()
+        {
+            List<Produk> produkList = new List<Produk>();
+
+            using (var conn = openConnection())
+            {
+                string query = "SELECT * FROM produk";
+                using (var cmd = new NpgsqlCommand(query, conn))
+                using (var reader = cmd.ExecuteReader())
+                {
+                    while (reader.Read())
+                    {
+                        produkList.Add(new Produk
+                        {
+                            Id_Produk = reader.GetInt32(0),
+                            Nama_Produk = reader.GetString(1),
+                            Status = reader.GetBoolean(2),
+                            Foto_Produk = reader.IsDBNull(3) ? null : reader.GetString(3)
+                        });
+                    }
+                }
+            }
+            return produkList;
+        }
         public List<GetProduk> GetTotalProduk()
         {
             List<GetProduk> produkList = new List<GetProduk>();
-            using (var conn = DataWrapper.openConnection())
+            using (var conn = openConnection())
             {
                 string query = @"
         SELECT 
@@ -72,7 +96,7 @@ namespace TaniAttire.App.Controllers
         public int GetJumlahProduk()
         {
             int totalProduk = 0;
-            using (var conn = DataWrapper.openConnection())
+            using (var conn = openConnection())
             {
                 string query = "SELECT COUNT(*) FROM Produk WHERE Status = TRUE";
                 using (var cmd = new NpgsqlCommand(query, conn))
@@ -114,7 +138,7 @@ namespace TaniAttire.App.Controllers
 
             File.Copy(filePath, destinationPath);
 
-            using (var conn = DataWrapper.openConnection())
+            using (var conn = openConnection())
             {
                 using (var transaction = conn.BeginTransaction())
                 {
@@ -191,7 +215,7 @@ namespace TaniAttire.App.Controllers
         public Produk GetProdukById(int idProduk)
         {
             Produk produk = null;
-            using (var conn = DataWrapper.openConnection())
+            using (var conn = openConnection())
             {
                 string query = @"
             SELECT 
@@ -227,7 +251,7 @@ namespace TaniAttire.App.Controllers
         public Detail_Stok GetDetailStokByProdukId(int idProduk)
         {
             Detail_Stok detailStok = null;
-            using (var conn = DataWrapper.openConnection())
+            using (var conn = openConnection())
             {
                 string query = @"
             SELECT 
@@ -270,7 +294,7 @@ namespace TaniAttire.App.Controllers
             {
                 throw new ValidationException(string.Join("; ", validationResults.Select(v => v.ErrorMessage)));
             }
-            using (var conn = DataWrapper.openConnection())
+            using (var conn = openConnection())
             using (var transaction = conn.BeginTransaction())
             {
                 try
@@ -341,9 +365,8 @@ namespace TaniAttire.App.Controllers
 
         public void SoftDeleteProduk(int idProduk)
         {
-            using (var conn = DataWrapper.openConnection())
+            using (var conn = openConnection())
             {
-                // Update status menjadi false (soft delete)
                 string query = @"
             UPDATE Produk
             SET Status = FALSE

@@ -13,12 +13,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TaniAttire.App.Controllers
 {
-    public class usersControllers
+    public class usersControllers : DataWrapper
     {
         public List<Users> GetAllusers()
 {
     List<Users> usersList = new List<Users>();
-    using (var conn = DataWrapper.openConnection())
+    using (var conn = openConnection())
     {
         string query = "SELECT * FROM users WHERE Status = TRUE";
 
@@ -84,7 +84,7 @@ namespace TaniAttire.App.Controllers
             Users users1 = null;
             using (var conn = DataWrapper.openConnection())
             {
-                string query = "SELECT username, password, role FROM users WHERE username = @username AND password = @password";
+                string query = "SELECT username, password, role FROM users WHERE username = @username AND password = @password AND Status = TRUE";
                 using (var cmd = new NpgsqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("username", username);

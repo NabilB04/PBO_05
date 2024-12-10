@@ -10,12 +10,12 @@ using Npgsql;
 
 namespace TaniAttire.App.Controllers
 {
-    public class TransaksiSewaControllers
+    public class TransaksiSewaControllers : DataWrapper
     {
         public List<TransaksiSewaDetail> GetAllTransaksiSewa()
         {
             List<TransaksiSewaDetail> transaksiSewaList = new List<TransaksiSewaDetail>();
-            using (var conn = DataWrapper.openConnection())
+            using (var conn = openConnection())
             {
                 string query = @"
                     SELECT 
@@ -80,7 +80,7 @@ namespace TaniAttire.App.Controllers
                             Tanggal_Pengembalian = reader.IsDBNull(8) ? (DateTime?)null : reader.GetDateTime(8),
                             Status_Pengembalian = reader.GetBoolean(9),
                             Denda_Perhari = reader.GetDecimal(10),
-                            Denda_Total = reader.GetDecimal(11), // Mapping Denda_Total
+                            Denda_Total = reader.GetDecimal(11),
                             Total_Harga = reader.GetDecimal(12)
                         });
 

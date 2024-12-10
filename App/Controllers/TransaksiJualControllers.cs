@@ -9,12 +9,12 @@ using Npgsql;
 
 namespace TaniAttire.App.Controllers
 {
-    public class TransaksiJualControllers
+    public class TransaksiJualControllers : DataWrapper
     {
         public List<TransaksiJualDetail> GetAllTransaksiJual()
         {
             List<TransaksiJualDetail> transaksiList = new List<TransaksiJualDetail>();
-            using (var conn = DataWrapper.openConnection())
+            using (var conn = openConnection())
             {
                 string query = @"
                     SELECT 

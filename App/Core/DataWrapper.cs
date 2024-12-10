@@ -10,7 +10,7 @@ using System.Data;
 
 namespace TaniAttire.App.Core
 {
-    public static class DataWrapper
+    public class DataWrapper
     {
         private static readonly string DB_HOST = "localhost";
         private static readonly string DB_DATABASE = "TaniAttire";

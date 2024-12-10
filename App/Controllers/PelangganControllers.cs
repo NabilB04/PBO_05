@@ -11,12 +11,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TaniAttire.App.Controllers
 {
-    internal class PelangganControllers
+    internal class PelangganControllers : DataWrapper
     {
         public List<Pelanggan> GetAllpelanggan ()
         {
             List<Pelanggan> pelangganList = new List<Pelanggan>();
-            using (var conn = DataWrapper.openConnection())
+            using (var conn = openConnection())
             {
                 string query = "SELECT * FROM Pelanggan";
                 using (var cmd = new NpgsqlCommand(query, conn))
@@ -48,7 +48,7 @@ namespace TaniAttire.App.Controllers
                 throw new ValidationException(string.Join("; ", validationResults.Select(v => v.ErrorMessage)));
             }
 
-            using (var conn = DataWrapper.openConnection())
+            using (var conn = openConnection())
             {
 
                 string checkQuery = "SELECT COUNT(*) FROM Pelanggan WHERE Nama_Pelanggan = @Nama_Pelanggan AND No_Telpon = @No_Telpon AND Alamat  = @Alamat ";

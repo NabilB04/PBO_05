@@ -9,13 +9,13 @@ using TaniAttire.App.Models;
 
 namespace TaniAttire.App.Controllers
 {
-    internal class produk1Controllers
+    internal class produk1Controllers :DataWrapper
     {
         public List<Produk> GetAllProduk()
         {
             List<Produk> produkList = new List<Produk>();
 
-            using (var conn = DataWrapper.openConnection())
+            using (var conn = openConnection())
             {
                 string query = "SELECT * FROM produk";
                 using (var cmd = new NpgsqlCommand(query, conn))
@@ -37,7 +37,7 @@ namespace TaniAttire.App.Controllers
         }
         public void AddProduk(Produk produk)
         {
-            using (var conn = DataWrapper.openConnection())
+            using (var conn = openConnection())
             {
                 string query = "INSERT INTO produk (nama_produk, status, foto_produk) VALUES (@nama_produk, @status, @foto_produk)";
                 using (var cmd = new NpgsqlCommand(query, conn))
@@ -52,7 +52,7 @@ namespace TaniAttire.App.Controllers
         }
         public void UpdateProduk(int idProduk, string namaProduk, bool status, string fotoProduk)
         {
-            using (var conn = DataWrapper.openConnection())
+            using (var conn = openConnection())
             {
                 string query = "UPDATE produk SET nama_produk = @namaProduk, status = @status, foto_produk = @fotoProduk WHERE id_produk = @idProduk";
                 using (var cmd = new NpgsqlCommand(query, conn))
@@ -67,7 +67,7 @@ namespace TaniAttire.App.Controllers
         }
         public void DeleteProduk(int idProduk)
         {
-            using (var conn = DataWrapper.openConnection())
+            using (var conn = openConnection())
             {
                 string query = "DELETE FROM produk WHERE id_produk = @idProduk";
                 using (var cmd = new NpgsqlCommand(query, conn))

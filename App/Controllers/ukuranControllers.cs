@@ -11,12 +11,12 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace TaniAttire.App.Controllers
 {
-    public class ukuranControllers
+    public class ukuranControllers : DataWrapper
     {
         public List<Ukuran> GetAllukuran()
         {
             List<Ukuran> ukuranList = new List<Ukuran>();
-            using (var conn = DataWrapper.openConnection())
+            using (var conn = openConnection())
             {
                 string query = "SELECT * FROM Ukuran WHERE Status = @Status";
                 using (var cmd = new NpgsqlCommand(query, conn))
@@ -62,6 +62,26 @@ namespace TaniAttire.App.Controllers
         }
         public void AddUkuran(Ukuran ukuran1)
         {
+            if (ukuran1.Kategori.Equals("Pakaian", StringComparison.OrdinalIgnoreCase))
+            {
+                var validSizes = new List<string> { "S", "M", "L", "XL", "XXL", "XXXL", "XXXXL" };
+                if (!validSizes.Contains(ukuran1.Nilai_Ukuran))
+                {
+                    throw new ValidationException("Nilai ukuran untuk kategori 'Pakaian' hanya dapat berupa S, M, L, XL, XXL, XXXL, atau XXXXL.");
+                }
+            }
+            else if (ukuran1.Kategori.Equals("Sepatu", StringComparison.OrdinalIgnoreCase))
+            {
+                if (!int.TryParse(ukuran1.Nilai_Ukuran, out int size) || size < 35 || size > 50)
+                {
+                    throw new ValidationException("Nilai ukuran untuk kategori 'Sepatu' hanya dapat berupa angka antara 35 dan 50.");
+                }
+            }
+            else
+            {
+                throw new ValidationException("Kategori tidak valid. Harus berupa 'Pakaian' atau 'Sepatu'.");
+            }
+
             var validationContext = new ValidationContext(ukuran1, serviceProvider: null, items: null);
             var validationResults = new List<ValidationResult>();
 
@@ -72,7 +92,6 @@ namespace TaniAttire.App.Controllers
 
             using (var conn = DataWrapper.openConnection())
             {
-
                 string checkQuery = "SELECT COUNT(*) FROM Ukuran WHERE Kategori = @Kategori AND Nilai_Ukuran = @Nilai_Ukuran AND Status = @Status";
                 using (var checkCmd = new NpgsqlCommand(checkQuery, conn))
                 {
@@ -80,14 +99,12 @@ namespace TaniAttire.App.Controllers
                     checkCmd.Parameters.AddWithValue("Nilai_Ukuran", ukuran1.Nilai_Ukuran);
                     checkCmd.Parameters.AddWithValue("Status", true);
 
-
                     int count = Convert.ToInt32(checkCmd.ExecuteScalar());
                     if (count > 0)
                     {
                         throw new Exception("Ukuran sudah ada.");
                     }
                 }
-
 
                 string query = "INSERT INTO Ukuran (Kategori, Nilai_Ukuran, Status) VALUES(@Kategori, @Nilai_Ukuran, @Status)";
                 using (var cmd = new NpgsqlCommand(query, conn))
