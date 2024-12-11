@@ -21,6 +21,11 @@ namespace TaniAttire
             _controller = new usersControllers();
         }
 
+        public static class SessionData
+        {
+            public static int LoggedInUserId { get; set; }
+        }
+
         private void buttonLogin_Click(object sender, EventArgs e)
         {
             string username = textBox1.Text.Trim();
@@ -28,30 +33,35 @@ namespace TaniAttire
 
             try
             {
-                // Membuat instance controller
+                
                 usersControllers userController = new usersControllers();
 
-                // Memanggil metode login
+                
                 Users loggedInUser = userController.GetusersByusernameAndpassword(username, password);
 
                 if (loggedInUser != null)
                 {
-                    // Login berhasil: cek role
-                    if (loggedInUser.Role == "1")
+                    
+                    SessionData.LoggedInUserId = loggedInUser.Id_Users;
+                    if (loggedInUser != null)
                     {
-                        MessageBox.Show("Login berhasil! Anda masuk sebagai Auditor.", "Login Sukses");
-                        // Arahkan ke halaman auditor
-                        AuditorDashboard auditordashboard = new AuditorDashboard();
-                        auditordashboard.Show();
-                        this.Hide();
-                    }
-                    else if (loggedInUser.Role == "2")
-                    {
-                        MessageBox.Show("Login berhasil! Anda masuk sebagai Kasir.", "Login Sukses");
-                        // Arahkan ke halaman kasir
-                        PenjualanProduk kasirdashboard = new PenjualanProduk();
-                        kasirdashboard.Show();
-                        this.Hide();
+                       
+                        if (loggedInUser.Role == "1")
+                        {
+                            MessageBox.Show("Login berhasil! Anda masuk sebagai Auditor.", "Login Sukses");
+                            
+                            AuditorDashboard auditordashboard = new AuditorDashboard();
+                            auditordashboard.Show();
+                            this.Hide();
+                        }
+                        else if (loggedInUser.Role == "2")
+                        {
+                            MessageBox.Show("Login berhasil! Anda masuk sebagai Kasir.", "Login Sukses");
+                            
+                            PenjualanProduk kasirdashboard = new PenjualanProduk();
+                            kasirdashboard.Show();
+                            this.Hide();
+                        }
                     }
                     else
                     {

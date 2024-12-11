@@ -16,5 +16,7 @@ namespace TaniAttire.App.Models
         public int Id_Produk { get; set; }
         [ForeignKey("Ukuran")]
         public int Id_Ukuran { get; set; }
+
+        public string Nilai_Ukuran { get; set; }
     }
 }

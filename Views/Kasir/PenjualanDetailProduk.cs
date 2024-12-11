@@ -12,13 +12,12 @@ using TaniAttire.App.Models;
 using TaniAttire.Views.Auditor.Card;
 using TaniAttire.Views.Kasir;
 
-namespace TaniAttire
+namespace TaniAttire.Views.Kasir
 {
-    public partial class PenjualanProduk : Form
+    public partial class PenjualanDetailProduk : Form
     {
         private ProdukControllers _produkController;
-
-        public PenjualanProduk()
+        public PenjualanDetailProduk()
         {
             InitializeComponent();
             _produkController = new ProdukControllers();
@@ -54,15 +53,6 @@ namespace TaniAttire
                         }
                     }
 
-                    // Menambahkan event klik pada card produk
-                    cardProduk.Click += (sender, e) =>
-                    {
-                        // Ketika card produk diklik, buka PenjualanDetailProduk
-                        PenjualanDetailProduk detailProdukForm = new PenjualanDetailProduk(produk.Id_Produk);
-                        detailProdukForm.Show();
-                        this.Hide();  // Menyembunyikan form saat membuka form baru
-                    };
-
                     // Tambahkan card ke dalam FlowLayoutPanel
                     flowLayoutPanel2.Controls.Add(cardProduk);
                 }
@@ -72,62 +62,6 @@ namespace TaniAttire
                 MessageBox.Show($"Gagal memuat produk: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-    private void button6_Click(object sender, EventArgs e)
-        {
-            Login login = new Login();
-            login.Show();
-            Hide();
-        }
-
-        private void buttonTransaksi_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        //private void buttonShiftKasir_Click(object sender, EventArgs e)
-        //{
-        //    ShiftKasir shiftKasir = new ShiftKasir();
-        //    shiftKasir.Show();
-        //    Hide();
-        //}
-
-        private void buttonPersewaan_Click(object sender, EventArgs e)
-        {
-            PersewaanProduk persewaanproduk = new PersewaanProduk();
-            persewaanproduk.Show();
-            Close();
-        }
-
-        private void buttonTambah_Click(object sender, EventArgs e)
-        {
-            FormJual formJual = new FormJual();
-            formJual.Show();
-            Close();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            PersewaanProduk persewaanProduk = new PersewaanProduk();
-            persewaanProduk.Show();
-            Close();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            TrackPersewaan trackPersewaan = new TrackPersewaan();
-            trackPersewaan.Show();
-            Close();
-        }
-
-        private void button6_Click_1(object sender, EventArgs e)
-        {
-            MessageBox.Show("Anda telah Logout");
-            Login login = new Login();
-            login.Show();
-            Close();
-        }
-
         private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
         {
 

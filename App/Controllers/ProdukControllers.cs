@@ -380,6 +380,87 @@ namespace TaniAttire.App.Controllers
             }
         }
 
+        public List<Detail_Produk> GetDetailProdukByProdukId(int id_produk)
+        {
+            var detailProdukList = new List<Detail_Produk>();
+
+            using (var conn = openConnection()) // Pastikan openConnection mengembalikan koneksi yang benar
+            {
+                string query = @"
+            SELECT 
+                dp.Id_Detail_Produk,
+                dp.Id_Produk,
+                u.Nilai_Ukuran
+            FROM 
+                DetailProduk dp
+            JOIN 
+                Ukuran u ON dp.Id_Ukuran = u.Id_Ukuran
+            WHERE 
+                dp.Id_Produk = @Id_Produk AND dp.Status = TRUE;";
+
+                using (var cmd = new NpgsqlCommand(query, conn)) // Ganti dengan NpgsqlCommand jika menggunakan PostgreSQL
+                {
+                    cmd.Parameters.AddWithValue("@Id_Produk", id_produk);
+
+                    conn.Open(); // Pastikan koneksi dibuka
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            var detailProduk = new Detail_Produk
+                            {
+                                Id_Detail_Produk = reader.GetInt32(0),
+                                Id_Produk = reader.GetInt32(1),
+                                Nilai_Ukuran = reader.GetString(3)
+                            };
+                            detailProdukList.Add(detailProduk);
+                        }
+                    }
+                }
+            }
+            return detailProdukList;
+        }
+
+        public List<Detail_Stok> GetDetailProdukStokByProdukId(int id_detail_produk)
+        {
+            var detailStokList = new List<Detail_Stok>();
+
+            using (var conn = openConnection()) // Pastikan openConnection mengembalikan koneksi yang benar
+            {
+                string query = @"
+            SELECT 
+                ds.Id_Detail_Stok, 
+                ds.Id_Detail_Produk,
+                ds.Stok_Jual, 
+                ds.Harga_Jual
+            FROM 
+                DetailStok ds
+            WHERE 
+                ds.Id_Detail_Produk = @Id_Detail_Produk AND ds.Status = TRUE;";
+
+                using (var cmd = new NpgsqlCommand(query, conn)) // Gunakan NpgsqlCommand untuk PostgreSQL
+                {
+                    cmd.Parameters.AddWithValue("@Id_Detail_Produk", id_detail_produk);
+
+                    conn.Open(); // Pastikan koneksi dibuka
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            var detailStok = new Detail_Stok
+                            {
+                                Id_Detail_Stok = reader.GetInt32(0),
+                                Id_Detail_Produk  = reader.GetInt32(1),
+                                Stok_Jual = reader.GetInt32(3),
+                                Harga_Jual = reader.GetDecimal(5)
+                            };
+                            detailStokList.Add(detailStok);
+                        }
+                    }
+                }
+            }
+            return detailStokList;
+        }
 
     }
 }

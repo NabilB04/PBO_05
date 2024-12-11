@@ -6,6 +6,7 @@ using TaniAttire.App.Core;
 using System.Text;
 using System.Threading.Tasks;
 using Npgsql;
+using static TaniAttire.Login;
 
 namespace TaniAttire.App.Controllers
 {
@@ -87,6 +88,71 @@ namespace TaniAttire.App.Controllers
                 }
             }
             return totalJual;
+        }
+
+        public void AddTransaksiJual(TransaksiJualDetail transaksiJualDetail)
+        {
+            using (var conn = openConnection())
+            using (var transaction = conn.BeginTransaction())
+            {
+                try
+                {
+                   
+                    string queryInsertTransaksiJual = @"
+                    INSERT INTO TransaksiJual ( Tanggal_Transaksi, Id_Users)
+                    VALUES (@Id_Pelanggan, @Tanggal_Transaksi, @Id_Users)
+                    RETURNING Id_TransaksiJual;";
+
+                    int idTransaksiJual;
+
+                    using (var cmd = new NpgsqlCommand(queryInsertTransaksiJual, conn))
+                    {
+                        cmd.Parameters.AddWithValue("Tanggal_Transaksi", transaksiJualDetail.Tanggal_Transaksi);
+                        cmd.Parameters.AddWithValue("Id_Users", SessionData.LoggedInUserId); 
+                        idTransaksiJual = Convert.ToInt32(cmd.ExecuteScalar());
+                    }
+
+                    // Query untuk insert data ke tabel Detail_Transaksi
+                    string queryInsertDetailTransaksi = @"
+                INSERT INTO Detail_Transaksi (Id_TransaksiJual, Id_Detail_Stok, Jumlah)
+                VALUES (@Id_TransaksiJual, @Id_Detail_Stok, @Jumlah);";
+
+                    using (var cmd = new NpgsqlCommand(queryInsertDetailTransaksi, conn))
+                    {
+                        cmd.Parameters.AddWithValue("Id_TransaksiJual", idTransaksiJual);
+                        cmd.Parameters.AddWithValue("Id_Detail_Stok", transaksiJualDetail.Id_Detail_Transaksi); // Asumsi ID stok sesuai panel
+                        cmd.Parameters.AddWithValue("Jumlah", transaksiJualDetail.Jumlah);
+                        cmd.ExecuteNonQuery();
+                    }
+
+                    // Query untuk mengurangi stok_jual di Detail_Stok
+                    string queryUpdateStok = @"
+                UPDATE Detail_Stok
+                SET Stok_Jual = Stok_Jual - @Jumlah
+                WHERE Id_Detail_Stok = @Id_Detail_Stok
+                  AND Stok_Jual >= @Jumlah;";
+
+                    using (var cmd = new NpgsqlCommand(queryUpdateStok, conn))
+                    {
+                        cmd.Parameters.AddWithValue("Jumlah", transaksiJualDetail.Jumlah);
+                        cmd.Parameters.AddWithValue("Id_Detail_Stok", transaksiJualDetail.Id_Detail_Transaksi);
+
+                        int rowsAffected = cmd.ExecuteNonQuery();
+
+                        if (rowsAffected == 0)
+                        {
+                            throw new Exception("Stok tidak mencukupi untuk transaksi ini.");
+                        }
+                    }
+
+                    transaction.Commit();
+                }
+                catch (Exception ex)
+                {
+                    transaction.Rollback();
+                    throw new Exception($"Error: {ex.Message}");
+                }
+            }
         }
     }
 }

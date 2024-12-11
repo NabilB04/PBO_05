@@ -34,21 +34,21 @@ namespace TaniAttire.Views.Auditor
         {
             try
             {
-                // Validasi input nama produk
+                
                 if (string.IsNullOrWhiteSpace(textBoxNamaProduk.Text))
                 {
                     MessageBox.Show("Nama produk harus diisi.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
-                // Validasi gambar
+                
                 if (pictureBoxGambar.ImageLocation == null)
                 {
                     MessageBox.Show("Pilih gambar terlebih dahulu.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
-                // Validasi ukuran
+                
                 string selectedUkuran = comboBox1.SelectedItem?.ToString();
                 if (string.IsNullOrEmpty(selectedUkuran))
                 {
@@ -192,12 +192,12 @@ namespace TaniAttire.Views.Auditor
         {
             try
             {
-                // Ambil data Nilai_Ukuran dari database menggunakan ukuranControllers
+                
                 List<string> nilaiUkuranList = _ukuranController.GetNilaiUkuran();
 
-                // Isi ComboBox dengan data ukuran
+               
                 comboBox1.DataSource = nilaiUkuranList;
-                comboBox1.DropDownStyle = ComboBoxStyle.DropDownList; // Hanya bisa memilih dari daftar
+                comboBox1.DropDownStyle = ComboBoxStyle.DropDownList; 
             }
             catch (Exception ex)
             {

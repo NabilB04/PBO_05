@@ -1,7 +1,11 @@
-﻿namespace TaniAttire.Views.Auditor.Card
+﻿using System.Windows.Forms;
+
+namespace TaniAttire.Views.Kasir.Card
 {
-    partial class CardProduk
+    partial class CardDetailProduk
     {
+
+      
         /// <summary> 
         /// Required designer variable.
         /// </summary>
@@ -28,32 +32,21 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panelWrapper = new Panel();
             label1 = new Label();
             label2 = new Label();
             pictureBox1 = new PictureBox();
+            comboBoxUkuran = new ComboBox();
+            textBoxJumlah = new TextBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
-            // 
-            // panelWrapper
-            // 
-            panelWrapper.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            panelWrapper.BackColor = Color.LightGray;  
-            panelWrapper.Controls.Add(pictureBox1);
-            panelWrapper.Controls.Add(label2);
-            panelWrapper.Controls.Add(label1);
-            panelWrapper.Location = new Point(0, 0);
-            panelWrapper.Name = "panelWrapper";
-            panelWrapper.Size = new Size(181, 249);
-            panelWrapper.TabIndex = 0;
             // 
             // label1
             // 
             label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label1.AutoSize = true;
-            label1.Location = new Point(71, 181);
+            label1.Location = new Point(81, 241);
             label1.Name = "label1";
-            label1.Size = new Size(41, 15);
+            label1.Size = new Size(53, 20);
             label1.TabIndex = 1;
             label1.Text = "Label1";
             label1.TextAlign = ContentAlignment.MiddleCenter;
@@ -63,9 +56,9 @@
             // 
             label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label2.AutoSize = true;
-            label2.Location = new Point(71, 211);
+            label2.Location = new Point(81, 281);
             label2.Name = "label2";
-            label2.Size = new Size(41, 15);
+            label2.Size = new Size(53, 20);
             label2.TabIndex = 2;
             label2.Text = "Label2";
             label2.TextAlign = ContentAlignment.MiddleCenter;
@@ -75,30 +68,57 @@
             // 
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             pictureBox1.Location = new Point(0, 0);
+            pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(181, 161);
+            pictureBox1.Size = new Size(207, 215);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click_1;
             // 
-            // CardProduk
+            // comboBoxUkuran
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            comboBoxUkuran.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            comboBoxUkuran.DropDownStyle = ComboBoxStyle.DropDownList;
+            comboBoxUkuran.Location = new Point(11, 307);
+            comboBoxUkuran.Margin = new Padding(3, 4, 3, 4);
+            comboBoxUkuran.Name = "comboBoxUkuran";
+            comboBoxUkuran.Size = new Size(182, 28);
+            comboBoxUkuran.TabIndex = 4;
+            comboBoxUkuran.SelectedIndexChanged += comboBoxUkuran_SelectedIndexChanged;
+            // 
+            // textBoxJumlah
+            // 
+            textBoxJumlah.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
+            textBoxJumlah.Location = new Point(11, 347);
+            textBoxJumlah.Margin = new Padding(3, 4, 3, 4);
+            textBoxJumlah.Name = "textBoxJumlah";
+            textBoxJumlah.Size = new Size(182, 27);
+            textBoxJumlah.TabIndex = 5;
+            textBoxJumlah.TextChanged += textBoxJumlah_TextChanged;
+            // 
+            // CardDetailProduk
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(panelWrapper);  
-            Name = "CardProduk";
-            Size = new Size(181, 249);
-            Load += CardProduk_Load;
+            Controls.Add(pictureBox1);
+            Controls.Add(label2);
+            Controls.Add(label1);
+            Controls.Add(comboBoxUkuran);
+            Controls.Add(textBoxJumlah);
+            Margin = new Padding(3, 4, 3, 4);
+            Name = "CardDetailProduk";
+            Size = new Size(207, 400);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
-
         public Label label1;
         public Label label2;
         public PictureBox pictureBox1;
+        public ComboBox comboBoxUkuran;
+        public TextBox textBoxJumlah;
         private Panel panelWrapper;
     }
 }

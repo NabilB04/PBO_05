@@ -32,6 +32,9 @@
     <Compile Update="Views\Auditor\Ubah_Produk.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Views\Kasir\Card\CardDetailProduk.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Update="Views\Kasir\Card\CardProduk.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -42,6 +45,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\Kasir\FormTbhPelanggan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Kasir\PenjualanDetailProduk.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\Kasir\PenjualanProduk.cs">
