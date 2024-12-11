@@ -34,21 +34,18 @@ namespace TaniAttire.Views.Auditor
         {
             try
             {
-                
                 if (string.IsNullOrWhiteSpace(textBoxNamaProduk.Text))
                 {
                     MessageBox.Show("Nama produk harus diisi.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
-                
                 if (pictureBoxGambar.ImageLocation == null)
                 {
                     MessageBox.Show("Pilih gambar terlebih dahulu.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
-                
                 string selectedUkuran = comboBox1.SelectedItem?.ToString();
                 if (string.IsNullOrEmpty(selectedUkuran))
                 {
@@ -64,21 +61,26 @@ namespace TaniAttire.Views.Auditor
                     return;
                 }
 
-                string targetDir = Path.Combine(Application.StartupPath, "Images");
+                // Tentukan folder Resources dengan path absolut
+                string targetDir = @"E:\pbo\PBO_05\PBO_05\Resources";
+
+                // Periksa apakah folder Resources ada, jika belum buat folder
                 if (!Directory.Exists(targetDir))
                 {
                     Directory.CreateDirectory(targetDir);
                 }
 
+                // Ambil nama file gambar
                 string fileName = Path.GetFileName(pictureBoxGambar.ImageLocation);
                 string targetPath = Path.Combine(targetDir, fileName);
 
+                // Salin gambar ke folder Resources jika belum ada
                 if (!File.Exists(targetPath))
                 {
                     File.Copy(pictureBoxGambar.ImageLocation, targetPath);
                 }
 
-
+                // Ambil ID ukuran dari database
                 int idUkuran = _ukuranController.GetAllukuran()
                     .FirstOrDefault(u => u.Nilai_Ukuran == selectedUkuran)?.Id_Ukuran ?? 0;
 
@@ -88,14 +90,13 @@ namespace TaniAttire.Views.Auditor
                     return;
                 }
 
-
+                // Buat objek produk dan detail stok
                 Produk produk = new Produk
                 {
                     Nama_Produk = textBoxNamaProduk.Text,
-                    Foto_Produk = targetPath,
+                    Foto_Produk = targetPath, // Path gambar di Resources
                     Denda_Perhari = dendaPerHari
                 };
-
 
                 Detail_Stok detailStok = new Detail_Stok
                 {
@@ -105,10 +106,12 @@ namespace TaniAttire.Views.Auditor
                     Harga_Jual = hargaJual
                 };
 
+                // Simpan produk dan detail stok
                 _controller.AddProduk(produk, pictureBoxGambar.ImageLocation, idUkuran, detailStok);
 
                 MessageBox.Show("Produk berhasil disimpan.", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
+                // Clear form setelah berhasil
                 pictureBoxGambar.Image = null;
                 textBoxNamaProduk.Clear();
                 textBox1.Clear();
@@ -118,6 +121,7 @@ namespace TaniAttire.Views.Auditor
                 textBox5.Clear();
                 comboBox1.SelectedIndex = -1;
 
+                // Tampilkan form manajemen produk
                 Mnj_Produk manajemenproduk = new Mnj_Produk();
                 manajemenproduk.Show();
                 this.Hide();

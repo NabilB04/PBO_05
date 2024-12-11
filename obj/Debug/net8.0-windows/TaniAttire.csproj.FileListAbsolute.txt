@@ -253,3 +253,5 @@ C:\Users\admin\Documents\TUGAS KULIAH AIS\SEMESTER 3\PBO C#\PROJECT UAS B5\kode\
 E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.FormTbhPelanggan.resources
 E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.PenjualanProduk.resources
 E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.TrackPersewaan.resources
+E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.Card.CardDetailProduk.resources
+E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.PenjualanDetailProduk.resources

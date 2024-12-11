@@ -40,6 +40,50 @@ namespace TaniAttire.App.Controllers
             }
             return produkList;
         }
+
+        public List<Detail_Produk> GetDetailProdukByProdukId(int id_produk)
+        {
+            var detailProdukList = new List<Detail_Produk>();
+
+            using (var conn = openConnection()) // Pastikan openConnection mengembalikan koneksi yang benar
+            {
+                string query = @"
+                    SELECT 
+            dp.Id_Detail_Produk,
+            p.Id_Produk,
+            p.Nama_Produk,
+            u.Nilai_Ukuran
+        FROM 
+            Detail_Produk dp
+        JOIN 
+            Produk p ON dp.id_produk = p.id_produk
+        JOIN
+            Ukuran u ON dp.Id_Ukuran = u.Id_Ukuran
+        WHERE 
+            dp.Id_Produk =@Id_Produk AND p.Status = TRUE";
+
+                using (var cmd = new NpgsqlCommand(query, conn)) // Ganti dengan NpgsqlCommand jika menggunakan PostgreSQL
+                {
+                    cmd.Parameters.AddWithValue("@Id_Produk", id_produk);
+
+                    //conn.Open(); // Pastikan koneksi dibuka
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            var detailProduk = new Detail_Produk
+                            {
+                                Id_Detail_Produk = reader.GetInt32(0),
+                                Id_Produk = reader.GetInt32(1),
+                                Nilai_Ukuran = reader.GetString(2)
+                            };
+                            detailProdukList.Add(detailProduk);
+                        }
+                    }
+                }
+            }
+            return detailProdukList;
+        }
         public List<GetProduk> GetTotalProduk()
         {
             List<GetProduk> produkList = new List<GetProduk>();
@@ -378,47 +422,6 @@ namespace TaniAttire.App.Controllers
                     cmd.ExecuteNonQuery();
                 }
             }
-        }
-
-        public List<Detail_Produk> GetDetailProdukByProdukId(int id_produk)
-        {
-            var detailProdukList = new List<Detail_Produk>();
-
-            using (var conn = openConnection()) // Pastikan openConnection mengembalikan koneksi yang benar
-            {
-                string query = @"
-            SELECT 
-                dp.Id_Detail_Produk,
-                dp.Id_Produk,
-                u.Nilai_Ukuran
-            FROM 
-                DetailProduk dp
-            JOIN 
-                Ukuran u ON dp.Id_Ukuran = u.Id_Ukuran
-            WHERE 
-                dp.Id_Produk = @Id_Produk AND dp.Status = TRUE;";
-
-                using (var cmd = new NpgsqlCommand(query, conn)) // Ganti dengan NpgsqlCommand jika menggunakan PostgreSQL
-                {
-                    cmd.Parameters.AddWithValue("@Id_Produk", id_produk);
-
-                    conn.Open(); // Pastikan koneksi dibuka
-                    using (var reader = cmd.ExecuteReader())
-                    {
-                        while (reader.Read())
-                        {
-                            var detailProduk = new Detail_Produk
-                            {
-                                Id_Detail_Produk = reader.GetInt32(0),
-                                Id_Produk = reader.GetInt32(1),
-                                Nilai_Ukuran = reader.GetString(3)
-                            };
-                            detailProdukList.Add(detailProduk);
-                        }
-                    }
-                }
-            }
-            return detailProdukList;
         }
 
         public List<Detail_Stok> GetDetailProdukStokByProdukId(int id_detail_produk)

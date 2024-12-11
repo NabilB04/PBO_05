@@ -55,7 +55,7 @@ namespace TaniAttire
                     }
 
                     // Menambahkan event klik pada card produk
-                    cardProduk.Click += (sender, e) =>
+                    cardProduk.pictureBox1.Click += (sender, e) =>
                     {
                         // Ketika card produk diklik, buka PenjualanDetailProduk
                         PenjualanDetailProduk detailProdukForm = new PenjualanDetailProduk(produk.Id_Produk);
@@ -69,7 +69,7 @@ namespace TaniAttire
             }
             catch (Exception ex)
             {
-                MessageBox.Show($"Gagal memuat produk: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show($"Gagal tes produk: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

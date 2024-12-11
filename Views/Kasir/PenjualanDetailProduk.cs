@@ -11,15 +11,18 @@ using TaniAttire.App.Controllers;
 using TaniAttire.App.Models;
 using TaniAttire.Views.Auditor.Card;
 using TaniAttire.Views.Kasir;
+using TaniAttire.Views.Kasir.Card;
 
 namespace TaniAttire.Views.Kasir
 {
     public partial class PenjualanDetailProduk : Form
     {
+        private int idProduk;
         private ProdukControllers _produkController;
-        public PenjualanDetailProduk()
+        public PenjualanDetailProduk(int Id_Produk)
         {
             InitializeComponent();
+            this.idProduk = Id_Produk;
             _produkController = new ProdukControllers();
         }
 
@@ -27,34 +30,33 @@ namespace TaniAttire.Views.Kasir
         {
             try
             {
-                // Ambil data produk dari database
-                List<GetProduk> produkList = _produkController.GetTotalProduk();
+                List<Detail_Produk> produkList = _produkController.GetDetailProdukByProdukId(idProduk);
 
                 // Iterasi setiap produk untuk ditampilkan
                 foreach (var produk in produkList)
                 {
                     // Buat instance dari CardProduk
-                    CardProduk cardProduk = new CardProduk
+                    CardDetailProduk CardDetailProduk = new CardDetailProduk
                     {
                         Margin = new Padding(3),
                     };
 
                     // Set data produk ke dalam card
-                    cardProduk.label1.Text = produk.Nama_Produk;
-                    cardProduk.label2.Text = $"Rp {produk.Harga_Jual:N0}";
+                    CardDetailProduk.label1.Text = produk.Nama_Produk;
+                    CardDetailProduk.label2.Text = $"Rp {produk.Nilai_Ukuran:N0}";
 
                     // Set gambar produk jika ada
-                    if (!string.IsNullOrEmpty(produk.Foto_Produk))
-                    {
-                        string imagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "uploads", produk.Foto_Produk);
-                        if (File.Exists(imagePath))
-                        {
-                            cardProduk.pictureBox1.Image = Image.FromFile(imagePath);
-                        }
-                    }
+                    //if (!string.IsNullOrEmpty(produk.Foto_Produk))
+                    //{
+                    //    string imagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "uploads", produk.Foto_Produk);
+                    //    if (File.Exists(imagePath))
+                    //    {
+                    //        CardDetailProduk.pictureBox1.Image = Image.FromFile(imagePath);
+                    //    }
+                    //}
 
                     // Tambahkan card ke dalam FlowLayoutPanel
-                    flowLayoutPanel2.Controls.Add(cardProduk);
+                    flowLayoutPanel2.Controls.Add(CardDetailProduk);
                 }
             }
             catch (Exception ex)

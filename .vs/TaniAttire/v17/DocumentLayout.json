@@ -11,36 +11,36 @@
       "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\kasir\\card\\carddetailproduk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|e:\\pbo\\pbo_05\\pbo_05\\views\\kasir\\card\\carddetailproduk.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\kasir\\card\\carddetailproduk.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|E:\\pbo\\PBO_05\\PBO_05\\views\\kasir\\penjualandetailproduk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\kasir\\penjualandetailproduk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|e:\\pbo\\pbo_05\\pbo_05\\views\\kasir\\card\\cardproduk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\kasir\\card\\cardproduk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|E:\\pbo\\PBO_05\\PBO_05\\app\\models\\detail_produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\models\\detail_produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|e:\\pbo\\pbo_05\\pbo_05\\views\\kasir\\card\\carddetailproduk.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\kasir\\card\\carddetailproduk.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|E:\\pbo\\PBO_05\\PBO_05\\views\\kasir\\card\\cardproduk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\kasir\\card\\cardproduk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|e:\\pbo\\pbo_05\\pbo_05\\views\\kasir\\card\\cardproduk.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\kasir\\card\\cardproduk.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|e:\\pbo\\pbo_05\\pbo_05\\views\\kasir\\card\\cardproduk.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\kasir\\card\\cardproduk.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|E:\\pbo\\PBO_05\\PBO_05\\app\\models\\getproduk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\models\\getproduk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|E:\\pbo\\PBO_05\\PBO_05\\app\\controllers\\produkcontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\controllers\\produkcontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|e:\\pbo\\pbo_05\\pbo_05\\app\\models\\getproduk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\models\\getproduk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|E:\\pbo\\PBO_05\\PBO_05\\views\\auditor\\tambah_produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\auditor\\tambah_produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|E:\\pbo\\PBO_05\\PBO_05\\views\\auditor\\tambah_produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\auditor\\tambah_produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|E:\\pbo\\PBO_05\\PBO_05\\views\\kasir\\penjualandetailproduk.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\kasir\\penjualandetailproduk.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|E:\\pbo\\PBO_05\\PBO_05\\views\\kasir\\penjualanproduk.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\kasir\\penjualanproduk.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|E:\\pbo\\PBO_05\\PBO_05\\views\\kasir\\penjualanproduk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -51,51 +51,55 @@
       "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\kasir\\penjualanproduk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|e:\\pbo\\pbo_05\\pbo_05\\views\\kasir\\penjualandetailproduk.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
-      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\kasir\\penjualandetailproduk.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|E:\\pbo\\PBO_05\\PBO_05\\app\\core\\datawrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\core\\datawrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|e:\\pbo\\pbo_05\\pbo_05\\views\\kasir\\penjualandetailproduk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\kasir\\penjualandetailproduk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|E:\\pbo\\PBO_05\\PBO_05\\app\\controllers\\ukurancontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\controllers\\ukurancontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|E:\\pbo\\PBO_05\\PBO_05\\app\\controllers\\userscontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\controllers\\userscontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|e:\\pbo\\pbo_05\\pbo_05\\views\\kasir\\card\\carddetailproduk.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\kasir\\card\\carddetailproduk.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|e:\\pbo\\pbo_05\\pbo_05\\views\\kasir\\card\\cardproduk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\kasir\\card\\cardproduk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|e:\\pbo\\pbo_05\\pbo_05\\views\\kasir\\penjualandetailproduk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\kasir\\penjualandetailproduk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|e:\\pbo\\pbo_05\\pbo_05\\views\\kasir\\formtbhpelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|E:\\pbo\\PBO_05\\PBO_05\\views\\kasir\\card\\cardproduk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\kasir\\card\\cardproduk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|E:\\pbo\\PBO_05\\PBO_05\\views\\kasir\\penjualandetailproduk.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}",
+      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\kasir\\penjualandetailproduk.resx||{FF4D6ACA-9352-4A5F-821E-F4D6EBDCAB11}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|E:\\pbo\\PBO_05\\PBO_05\\views\\kasir\\formtbhpelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\kasir\\formtbhpelanggan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|e:\\pbo\\pbo_05\\pbo_05\\views\\kasir\\penjualandetailproduk.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\kasir\\penjualandetailproduk.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|e:\\pbo\\pbo_05\\pbo_05\\views\\kasir\\penjualanproduk.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\kasir\\penjualanproduk.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|e:\\pbo\\pbo_05\\pbo_05\\app\\models\\detail_stok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|E:\\pbo\\PBO_05\\PBO_05\\app\\models\\detail_stok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\models\\detail_stok.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|e:\\pbo\\pbo_05\\pbo_05\\app\\models\\detail_produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\models\\detail_produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|E:\\pbo\\PBO_05\\PBO_05\\views\\auditor\\tambah_produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\auditor\\tambah_produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|e:\\pbo\\pbo_05\\pbo_05\\views\\kasir\\persewaanproduk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|E:\\pbo\\PBO_05\\PBO_05\\views\\kasir\\persewaanproduk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\kasir\\persewaanproduk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|e:\\pbo\\pbo_05\\pbo_05\\views\\kasir\\formsewa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|E:\\pbo\\PBO_05\\PBO_05\\views\\kasir\\formsewa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\kasir\\formsewa.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|e:\\pbo\\pbo_05\\pbo_05\\views\\kasir\\formjual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|E:\\pbo\\PBO_05\\PBO_05\\views\\kasir\\formjual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\kasir\\formjual.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -107,24 +111,16 @@
       "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|E:\\pbo\\PBO_05\\PBO_05\\app\\controllers\\userscontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\controllers\\userscontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|E:\\pbo\\PBO_05\\PBO_05\\app\\models\\transaksijualdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\models\\transaksijualdetail.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|e:\\pbo\\pbo_05\\pbo_05\\views\\auditor\\ubah_produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|E:\\pbo\\PBO_05\\PBO_05\\views\\auditor\\ubah_produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\auditor\\ubah_produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|E:\\pbo\\PBO_05\\PBO_05\\views\\auditor\\ubah_karyawan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\auditor\\ubah_karyawan.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|E:\\pbo\\PBO_05\\PBO_05\\views\\auditor\\tambah_produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:views\\auditor\\tambah_produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|E:\\pbo\\PBO_05\\PBO_05\\views\\auditor\\ubah_produk.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -155,10 +151,6 @@
       "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\controllers\\produk1controllers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|E:\\pbo\\PBO_05\\PBO_05\\app\\controllers\\ukurancontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\controllers\\ukurancontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|E:\\pbo\\PBO_05\\PBO_05\\app\\controllers\\pelanggancontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\controllers\\pelanggancontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -173,10 +165,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|E:\\pbo\\PBO_05\\PBO_05\\app\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\models\\users.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|E:\\pbo\\PBO_05\\PBO_05\\app\\core\\datawrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|solutionrelative:app\\core\\datawrapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{58932062-C789-467E-9802-93EA22D7E9E2}|TaniAttire.csproj|E:\\pbo\\PBO_05\\PBO_05\\app\\controllers\\transaksisewacontrollers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -258,8 +246,22 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PenjualanDetailProduk.cs",
+              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\PenjualanDetailProduk.cs",
+              "RelativeDocumentMoniker": "Views\\Kasir\\PenjualanDetailProduk.cs",
+              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\PenjualanDetailProduk.cs",
+              "RelativeToolTip": "Views\\Kasir\\PenjualanDetailProduk.cs",
+              "ViewState": "AQIAACMAAAAAAAAAAAAewCkAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T13:15:27.68Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 10,
@@ -268,62 +270,11 @@
               "RelativeDocumentMoniker": "Views\\Kasir\\PenjualanProduk.cs",
               "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\PenjualanProduk.cs",
               "RelativeToolTip": "Views\\Kasir\\PenjualanProduk.cs",
-              "ViewState": "AQIAADAAAAAAAAAAAAAYwBcAAAA4AAAA",
+              "ViewState": "AQIAACEAAAAAAAAAAAAYwDcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-09T04:54:48.095Z",
               "IsPinned": true,
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "PenjualanDetailProduk.cs",
-              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\PenjualanDetailProduk.cs",
-              "RelativeDocumentMoniker": "Views\\Kasir\\PenjualanDetailProduk.cs",
-              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\PenjualanDetailProduk.cs",
-              "RelativeToolTip": "Views\\Kasir\\PenjualanDetailProduk.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAkwD8AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T13:15:27.68Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CardDetailProduk.Designer.cs",
-              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\Card\\CardDetailProduk.Designer.cs",
-              "RelativeDocumentMoniker": "Views\\Kasir\\Card\\CardDetailProduk.Designer.cs",
-              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\Card\\CardDetailProduk.Designer.cs",
-              "RelativeToolTip": "Views\\Kasir\\Card\\CardDetailProduk.Designer.cs",
-              "ViewState": "AQIAABgAAAAAAAAAAAAuwCIAAAAhAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T12:41:23.759Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CardDetailProduk.cs [Design]",
-              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\Card\\CardDetailProduk.cs",
-              "RelativeDocumentMoniker": "Views\\Kasir\\Card\\CardDetailProduk.cs",
-              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\Card\\CardDetailProduk.cs [Design]",
-              "RelativeToolTip": "Views\\Kasir\\Card\\CardDetailProduk.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T12:40:48.715Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CardProduk.cs [Design]",
-              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\Card\\CardProduk.cs",
-              "RelativeDocumentMoniker": "Views\\Kasir\\Card\\CardProduk.cs",
-              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\Card\\CardProduk.cs [Design]",
-              "RelativeToolTip": "Views\\Kasir\\Card\\CardProduk.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T14:12:52.829Z",
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
@@ -333,248 +284,39 @@
               "RelativeDocumentMoniker": "Views\\Kasir\\Card\\CardDetailProduk.cs",
               "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\Card\\CardDetailProduk.cs",
               "RelativeToolTip": "Views\\Kasir\\Card\\CardDetailProduk.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAADwvxwAAAAAAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAowBUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-10T12:49:15.245Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CardDetailProduk.resx",
-              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\Card\\CardDetailProduk.resx",
-              "RelativeDocumentMoniker": "Views\\Kasir\\Card\\CardDetailProduk.resx",
-              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\Card\\CardDetailProduk.resx",
-              "RelativeToolTip": "Views\\Kasir\\Card\\CardDetailProduk.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-12-10T14:14:53.407Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CardProduk.cs",
-              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\Card\\CardProduk.cs",
-              "RelativeDocumentMoniker": "Views\\Kasir\\Card\\CardProduk.cs",
-              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\Card\\CardProduk.cs",
-              "RelativeToolTip": "Views\\Kasir\\Card\\CardProduk.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T04:54:38.587Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CardProduk.resx",
-              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\Card\\CardProduk.resx",
-              "RelativeDocumentMoniker": "Views\\Kasir\\Card\\CardProduk.resx",
-              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\Card\\CardProduk.resx",
-              "RelativeToolTip": "Views\\Kasir\\Card\\CardProduk.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-12-10T12:41:11.097Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CardProduk.Designer.cs",
-              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\Card\\CardProduk.Designer.cs",
-              "RelativeDocumentMoniker": "Views\\Kasir\\Card\\CardProduk.Designer.cs",
-              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\Card\\CardProduk.Designer.cs",
-              "RelativeToolTip": "Views\\Kasir\\Card\\CardProduk.Designer.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAQwGIAAAAcAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T12:16:34.43Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "ProdukControllers.cs",
-              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\App\\Controllers\\ProdukControllers.cs",
-              "RelativeDocumentMoniker": "App\\Controllers\\ProdukControllers.cs",
-              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\App\\Controllers\\ProdukControllers.cs",
-              "RelativeToolTip": "App\\Controllers\\ProdukControllers.cs",
-              "ViewState": "AQIAALIBAAAAAAAAAAAkwNIBAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T03:53:20.687Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "GetProduk.cs",
-              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\App\\Models\\GetProduk.cs",
-              "RelativeDocumentMoniker": "App\\Models\\GetProduk.cs",
-              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\App\\Models\\GetProduk.cs",
-              "RelativeToolTip": "App\\Models\\GetProduk.cs",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAAwAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T14:08:36.772Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "PenjualanProduk.cs [Design]",
-              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\PenjualanProduk.cs",
-              "RelativeDocumentMoniker": "Views\\Kasir\\PenjualanProduk.cs",
-              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\PenjualanProduk.cs [Design]",
-              "RelativeToolTip": "Views\\Kasir\\PenjualanProduk.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T12:15:24.182Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "PenjualanDetailProduk.resx",
-              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\PenjualanDetailProduk.resx",
-              "RelativeDocumentMoniker": "Views\\Kasir\\PenjualanDetailProduk.resx",
-              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\PenjualanDetailProduk.resx",
-              "RelativeToolTip": "Views\\Kasir\\PenjualanDetailProduk.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2024-12-10T14:07:44.71Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "PenjualanDetailProduk.cs [Design]",
-              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\PenjualanDetailProduk.cs",
-              "RelativeDocumentMoniker": "Views\\Kasir\\PenjualanDetailProduk.cs",
-              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\PenjualanDetailProduk.cs [Design]",
-              "RelativeToolTip": "Views\\Kasir\\PenjualanDetailProduk.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T13:05:23.551Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "FormTbhPelanggan.cs [Design]",
-              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\FormTbhPelanggan.cs",
-              "RelativeDocumentMoniker": "Views\\Kasir\\FormTbhPelanggan.cs",
-              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\FormTbhPelanggan.cs [Design]",
-              "RelativeToolTip": "Views\\Kasir\\FormTbhPelanggan.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T13:05:33.364Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
               "Title": "PenjualanDetailProduk.Designer.cs",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\PenjualanDetailProduk.Designer.cs",
               "RelativeDocumentMoniker": "Views\\Kasir\\PenjualanDetailProduk.Designer.cs",
               "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\PenjualanDetailProduk.Designer.cs",
               "RelativeToolTip": "Views\\Kasir\\PenjualanDetailProduk.Designer.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAYwI0AAAABAAAA",
+              "ViewState": "AQIAAG8AAAAAAAAAAAAYwIEAAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-10T13:41:33.825Z",
+              "IsPinned": true,
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 9,
               "Title": "PenjualanProduk.Designer.cs",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\PenjualanProduk.Designer.cs",
               "RelativeDocumentMoniker": "Views\\Kasir\\PenjualanProduk.Designer.cs",
               "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\PenjualanProduk.Designer.cs",
               "RelativeToolTip": "Views\\Kasir\\PenjualanProduk.Designer.cs",
-              "ViewState": "AQIAAHcAAAAAAAAAAAArwIoAAAAfAAAA",
+              "ViewState": "AQIAAJIAAAAAAAAAAAAswKMAAAAlAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-10T12:15:09.936Z",
+              "IsPinned": true,
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Detail_Stok.cs",
-              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\App\\Models\\Detail_Stok.cs",
-              "RelativeDocumentMoniker": "App\\Models\\Detail_Stok.cs",
-              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\App\\Models\\Detail_Stok.cs",
-              "RelativeToolTip": "App\\Models\\Detail_Stok.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T13:36:24.546Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Detail_Produk.cs",
-              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\App\\Models\\Detail_Produk.cs",
-              "RelativeDocumentMoniker": "App\\Models\\Detail_Produk.cs",
-              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\App\\Models\\Detail_Produk.cs",
-              "RelativeToolTip": "App\\Models\\Detail_Produk.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAABAAAAAeAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T13:30:41.337Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Tambah_Produk.cs",
-              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Auditor\\Tambah_Produk.cs",
-              "RelativeDocumentMoniker": "Views\\Auditor\\Tambah_Produk.cs",
-              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Auditor\\Tambah_Produk.cs",
-              "RelativeToolTip": "Views\\Auditor\\Tambah_Produk.cs",
-              "ViewState": "AQIAADIAAAAAAAAAAAAgwMcAAABGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T02:57:42.372Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Ubah_Produk.cs",
-              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Auditor\\Ubah_Produk.cs",
-              "RelativeDocumentMoniker": "Views\\Auditor\\Ubah_Produk.cs",
-              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Auditor\\Ubah_Produk.cs",
-              "RelativeToolTip": "Views\\Auditor\\Ubah_Produk.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAkwCwAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T02:58:15.266Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "PersewaanProduk.cs [Design]",
-              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\PersewaanProduk.cs",
-              "RelativeDocumentMoniker": "Views\\Kasir\\PersewaanProduk.cs",
-              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\PersewaanProduk.cs [Design]",
-              "RelativeToolTip": "Views\\Kasir\\PersewaanProduk.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T13:06:06.107Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "FormSewa.cs [Design]",
-              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\FormSewa.cs",
-              "RelativeDocumentMoniker": "Views\\Kasir\\FormSewa.cs",
-              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\FormSewa.cs [Design]",
-              "RelativeToolTip": "Views\\Kasir\\FormSewa.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T13:05:37.848Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "FormJual.cs [Design]",
-              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\FormJual.cs",
-              "RelativeDocumentMoniker": "Views\\Kasir\\FormJual.cs",
-              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\FormJual.cs [Design]",
-              "RelativeToolTip": "Views\\Kasir\\FormJual.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T13:10:49.499Z",
-              "EditorCaption": " [Design]"
             },
             {
               "$type": "Bookmark",
@@ -598,7 +340,264 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CardDetailProduk.cs [Design]",
+              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\Card\\CardDetailProduk.cs",
+              "RelativeDocumentMoniker": "Views\\Kasir\\Card\\CardDetailProduk.cs",
+              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\Card\\CardDetailProduk.cs [Design]",
+              "RelativeToolTip": "Views\\Kasir\\Card\\CardDetailProduk.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T10:22:36.966Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Detail_Produk.cs",
+              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\App\\Models\\Detail_Produk.cs",
+              "RelativeDocumentMoniker": "App\\Models\\Detail_Produk.cs",
+              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\App\\Models\\Detail_Produk.cs",
+              "RelativeToolTip": "App\\Models\\Detail_Produk.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAABMAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T13:30:41.337Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GetProduk.cs",
+              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\App\\Models\\GetProduk.cs",
+              "RelativeDocumentMoniker": "App\\Models\\GetProduk.cs",
+              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\App\\Models\\GetProduk.cs",
+              "RelativeToolTip": "App\\Models\\GetProduk.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAkwCUAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T14:08:36.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ProdukControllers.cs",
+              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\App\\Controllers\\ProdukControllers.cs",
+              "RelativeDocumentMoniker": "App\\Controllers\\ProdukControllers.cs",
+              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\App\\Controllers\\ProdukControllers.cs",
+              "RelativeToolTip": "App\\Controllers\\ProdukControllers.cs",
+              "ViewState": "AQIAAEEAAAAAAAAAAADwvz8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T03:53:20.687Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Tambah_Produk.cs",
+              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Auditor\\Tambah_Produk.cs",
+              "RelativeDocumentMoniker": "Views\\Auditor\\Tambah_Produk.cs",
+              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Auditor\\Tambah_Produk.cs",
+              "RelativeToolTip": "Views\\Auditor\\Tambah_Produk.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAAwEQAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T02:57:42.372Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Tambah_Produk.cs [Design]",
+              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Auditor\\Tambah_Produk.cs",
+              "RelativeDocumentMoniker": "Views\\Auditor\\Tambah_Produk.cs",
+              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Auditor\\Tambah_Produk.cs [Design]",
+              "RelativeToolTip": "Views\\Auditor\\Tambah_Produk.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T02:57:37.531Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "PenjualanProduk.cs [Design]",
+              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\PenjualanProduk.cs",
+              "RelativeDocumentMoniker": "Views\\Kasir\\PenjualanProduk.cs",
+              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\PenjualanProduk.cs [Design]",
+              "RelativeToolTip": "Views\\Kasir\\PenjualanProduk.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T10:23:26.768Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "DataWrapper.cs",
+              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\App\\Core\\DataWrapper.cs",
+              "RelativeDocumentMoniker": "App\\Core\\DataWrapper.cs",
+              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\App\\Core\\DataWrapper.cs",
+              "RelativeToolTip": "App\\Core\\DataWrapper.cs",
+              "ViewState": "AQIAABgAAAAAAAAAAAA4wCAAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T23:56:26.128Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ukuranControllers.cs",
+              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\App\\Controllers\\ukuranControllers.cs",
+              "RelativeDocumentMoniker": "App\\Controllers\\ukuranControllers.cs",
+              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\App\\Controllers\\ukuranControllers.cs",
+              "RelativeToolTip": "App\\Controllers\\ukuranControllers.cs",
+              "ViewState": "AQIAAEcAAAAAAAAAAAAgwCEAAAA+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T04:07:24.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "usersControllers.cs",
+              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\App\\Controllers\\usersControllers.cs",
+              "RelativeDocumentMoniker": "App\\Controllers\\usersControllers.cs",
+              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\App\\Controllers\\usersControllers.cs",
+              "RelativeToolTip": "App\\Controllers\\usersControllers.cs",
+              "ViewState": "AQIAAKkAAAAAAAAAAAAcwOwAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T03:52:33.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CardDetailProduk.Designer.cs",
+              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\Card\\CardDetailProduk.Designer.cs",
+              "RelativeDocumentMoniker": "Views\\Kasir\\Card\\CardDetailProduk.Designer.cs",
+              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\Card\\CardDetailProduk.Designer.cs",
+              "RelativeToolTip": "Views\\Kasir\\Card\\CardDetailProduk.Designer.cs",
+              "ViewState": "AQIAACcAAAAAAAAAAAAYwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T11:14:39.651Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "CardProduk.cs [Design]",
+              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\Card\\CardProduk.cs",
+              "RelativeDocumentMoniker": "Views\\Kasir\\Card\\CardProduk.cs",
+              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\Card\\CardProduk.cs [Design]",
+              "RelativeToolTip": "Views\\Kasir\\Card\\CardProduk.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T10:27:19.997Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "CardProduk.cs",
+              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\Card\\CardProduk.cs",
+              "RelativeDocumentMoniker": "Views\\Kasir\\Card\\CardProduk.cs",
+              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\Card\\CardProduk.cs",
+              "RelativeToolTip": "Views\\Kasir\\Card\\CardProduk.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAowA4AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T04:54:38.587Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PenjualanDetailProduk.cs [Design]",
+              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\PenjualanDetailProduk.cs",
+              "RelativeDocumentMoniker": "Views\\Kasir\\PenjualanDetailProduk.cs",
+              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\PenjualanDetailProduk.cs [Design]",
+              "RelativeToolTip": "Views\\Kasir\\PenjualanDetailProduk.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-11T10:19:26.275Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "PenjualanDetailProduk.resx",
+              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\PenjualanDetailProduk.resx",
+              "RelativeDocumentMoniker": "Views\\Kasir\\PenjualanDetailProduk.resx",
+              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\PenjualanDetailProduk.resx",
+              "RelativeToolTip": "Views\\Kasir\\PenjualanDetailProduk.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2024-12-10T14:07:44.71Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "FormTbhPelanggan.cs [Design]",
+              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\FormTbhPelanggan.cs",
+              "RelativeDocumentMoniker": "Views\\Kasir\\FormTbhPelanggan.cs",
+              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\FormTbhPelanggan.cs [Design]",
+              "RelativeToolTip": "Views\\Kasir\\FormTbhPelanggan.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T13:05:33.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Detail_Stok.cs",
+              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\App\\Models\\Detail_Stok.cs",
+              "RelativeDocumentMoniker": "App\\Models\\Detail_Stok.cs",
+              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\App\\Models\\Detail_Stok.cs",
+              "RelativeToolTip": "App\\Models\\Detail_Stok.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T13:36:24.546Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Ubah_Produk.cs",
+              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Auditor\\Ubah_Produk.cs",
+              "RelativeDocumentMoniker": "Views\\Auditor\\Ubah_Produk.cs",
+              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Auditor\\Ubah_Produk.cs",
+              "RelativeToolTip": "Views\\Auditor\\Ubah_Produk.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAkwCwAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T02:58:15.266Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "PersewaanProduk.cs [Design]",
+              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\PersewaanProduk.cs",
+              "RelativeDocumentMoniker": "Views\\Kasir\\PersewaanProduk.cs",
+              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\PersewaanProduk.cs [Design]",
+              "RelativeToolTip": "Views\\Kasir\\PersewaanProduk.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T13:06:06.107Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "FormSewa.cs [Design]",
+              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\FormSewa.cs",
+              "RelativeDocumentMoniker": "Views\\Kasir\\FormSewa.cs",
+              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\FormSewa.cs [Design]",
+              "RelativeToolTip": "Views\\Kasir\\FormSewa.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T13:05:37.848Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 24,
+              "Title": "FormJual.cs [Design]",
+              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\FormJual.cs",
+              "RelativeDocumentMoniker": "Views\\Kasir\\FormJual.cs",
+              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\FormJual.cs [Design]",
+              "RelativeToolTip": "Views\\Kasir\\FormJual.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-10T13:10:49.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
               "Title": "TransaksiJualControllers.cs",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\App\\Controllers\\TransaksiJualControllers.cs",
               "RelativeDocumentMoniker": "App\\Controllers\\TransaksiJualControllers.cs",
@@ -606,12 +605,11 @@
               "RelativeToolTip": "App\\Controllers\\TransaksiJualControllers.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAGoAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T02:01:46.716Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T02:01:46.716Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "Login.cs",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Login.cs",
               "RelativeDocumentMoniker": "Views\\Login.cs",
@@ -619,8 +617,7 @@
               "RelativeToolTip": "Views\\Login.cs",
               "ViewState": "AQIAABwAAAAAAAAAAAA5wDsAAAAcAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T02:08:08.398Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-10T02:08:08.398Z"
             },
             {
               "$type": "Document",
@@ -632,37 +629,22 @@
               "RelativeToolTip": "App\\Models\\TransaksiJualDetail.cs",
               "ViewState": "AQIAABgAAAAAAAAAAAAowCcAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T02:28:49.548Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T02:28:49.548Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "usersControllers.cs",
-              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\App\\Controllers\\usersControllers.cs",
-              "RelativeDocumentMoniker": "App\\Controllers\\usersControllers.cs",
-              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\App\\Controllers\\usersControllers.cs",
-              "RelativeToolTip": "App\\Controllers\\usersControllers.cs",
-              "ViewState": "AQIAAOQAAAAAAAAAAAAIwP8AAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T03:52:33.042Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 30,
               "Title": "Ubah_Produk.cs [Design]",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Auditor\\Ubah_Produk.cs",
               "RelativeDocumentMoniker": "Views\\Auditor\\Ubah_Produk.cs",
               "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Auditor\\Ubah_Produk.cs [Design]",
               "RelativeToolTip": "Views\\Auditor\\Ubah_Produk.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T02:58:11.302Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-12-10T02:58:11.302Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 31,
               "Title": "Tambah_Karyawan.cs [Design]",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Auditor\\Tambah_Karyawan.cs",
               "RelativeDocumentMoniker": "Views\\Auditor\\Tambah_Karyawan.cs",
@@ -684,19 +666,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Tambah_Produk.cs [Design]",
-              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Auditor\\Tambah_Produk.cs",
-              "RelativeDocumentMoniker": "Views\\Auditor\\Tambah_Produk.cs",
-              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Auditor\\Tambah_Produk.cs [Design]",
-              "RelativeToolTip": "Views\\Auditor\\Tambah_Produk.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T02:57:37.531Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 32,
               "Title": "Tambah_Ukuran.cs [Design]",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Auditor\\Tambah_Ukuran.cs",
               "RelativeDocumentMoniker": "Views\\Auditor\\Tambah_Ukuran.cs",
@@ -707,7 +677,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 33,
               "Title": "Mnj_Produk.cs",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Auditor\\Mnj_Produk.cs",
               "RelativeDocumentMoniker": "Views\\Auditor\\Mnj_Produk.cs",
@@ -719,7 +689,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 34,
               "Title": "Mnj_Produk.cs [Design]",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Auditor\\Mnj_Produk.cs",
               "RelativeDocumentMoniker": "Views\\Auditor\\Mnj_Produk.cs",
@@ -730,7 +700,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 35,
               "Title": "Produk.cs",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\App\\Models\\Produk.cs",
               "RelativeDocumentMoniker": "App\\Models\\Produk.cs",
@@ -742,7 +712,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 36,
               "Title": "produk1Controllers.cs",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\App\\Controllers\\produk1Controllers.cs",
               "RelativeDocumentMoniker": "App\\Controllers\\produk1Controllers.cs",
@@ -754,19 +724,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "ukuranControllers.cs",
-              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\App\\Controllers\\ukuranControllers.cs",
-              "RelativeDocumentMoniker": "App\\Controllers\\ukuranControllers.cs",
-              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\App\\Controllers\\ukuranControllers.cs",
-              "RelativeToolTip": "App\\Controllers\\ukuranControllers.cs",
-              "ViewState": "AQIAAEcAAAAAAAAAAAAgwCEAAAA+AAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T04:07:24.102Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 37,
               "Title": "PelangganControllers.cs",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\App\\Controllers\\PelangganControllers.cs",
               "RelativeDocumentMoniker": "App\\Controllers\\PelangganControllers.cs",
@@ -778,7 +736,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 38,
               "Title": "Mnj_Karyawan.cs",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Auditor\\Mnj_Karyawan.cs",
               "RelativeDocumentMoniker": "Views\\Auditor\\Mnj_Karyawan.cs",
@@ -790,7 +748,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 39,
               "Title": "Mnj_Karyawan.cs [Design]",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Auditor\\Mnj_Karyawan.cs",
               "RelativeDocumentMoniker": "Views\\Auditor\\Mnj_Karyawan.cs",
@@ -801,7 +759,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 40,
               "Title": "Users.cs",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\App\\Models\\Users.cs",
               "RelativeDocumentMoniker": "App\\Models\\Users.cs",
@@ -813,19 +771,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "DataWrapper.cs",
-              "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\App\\Core\\DataWrapper.cs",
-              "RelativeDocumentMoniker": "App\\Core\\DataWrapper.cs",
-              "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\App\\Core\\DataWrapper.cs",
-              "RelativeToolTip": "App\\Core\\DataWrapper.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAALAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T23:56:26.128Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 41,
               "Title": "TransaksiSewaControllers.cs",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\App\\Controllers\\TransaksiSewaControllers.cs",
               "RelativeDocumentMoniker": "App\\Controllers\\TransaksiSewaControllers.cs",
@@ -837,7 +783,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 42,
               "Title": "Ubah_Karyawan.cs",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Auditor\\Ubah_Karyawan.cs",
               "RelativeDocumentMoniker": "Views\\Auditor\\Ubah_Karyawan.cs",
@@ -849,7 +795,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 43,
               "Title": "Tambah_Ukuran.cs",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Auditor\\Tambah_Ukuran.cs",
               "RelativeDocumentMoniker": "Views\\Auditor\\Tambah_Ukuran.cs",
@@ -861,7 +807,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 44,
               "Title": "Tambah_Karyawan.cs",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Auditor\\Tambah_Karyawan.cs",
               "RelativeDocumentMoniker": "Views\\Auditor\\Tambah_Karyawan.cs",
@@ -873,7 +819,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 47,
               "Title": "Penjualan.cs",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Auditor\\Penjualan.cs",
               "RelativeDocumentMoniker": "Views\\Auditor\\Penjualan.cs",
@@ -885,7 +831,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 48,
               "Title": "Penjualan.cs [Design]",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Auditor\\Penjualan.cs",
               "RelativeDocumentMoniker": "Views\\Auditor\\Penjualan.cs",
@@ -896,7 +842,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 46,
               "Title": "Persewaan.cs [Design]",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Auditor\\Persewaan.cs",
               "RelativeDocumentMoniker": "Views\\Auditor\\Persewaan.cs",
@@ -907,7 +853,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 45,
               "Title": "Persewaan.cs",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Auditor\\Persewaan.cs",
               "RelativeDocumentMoniker": "Views\\Auditor\\Persewaan.cs",
@@ -919,7 +865,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 49,
               "Title": "Form_Ukuran.cs",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Auditor\\Form_Ukuran.cs",
               "RelativeDocumentMoniker": "Views\\Auditor\\Form_Ukuran.cs",
@@ -931,7 +877,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 50,
               "Title": "Form_Ukuran.cs [Design]",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Auditor\\Form_Ukuran.cs",
               "RelativeDocumentMoniker": "Views\\Auditor\\Form_Ukuran.cs",
@@ -942,7 +888,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 52,
               "Title": "AuditorDashboard.cs [Design]",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Auditor\\AuditorDashboard.cs",
               "RelativeDocumentMoniker": "Views\\Auditor\\AuditorDashboard.cs",
@@ -953,7 +899,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 51,
               "Title": "AuditorDashboard.cs",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Auditor\\AuditorDashboard.cs",
               "RelativeDocumentMoniker": "Views\\Auditor\\AuditorDashboard.cs",
@@ -965,19 +911,18 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 54,
               "Title": "Login.cs [Design]",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Login.cs",
               "RelativeDocumentMoniker": "Views\\Login.cs",
               "ToolTip": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Login.cs [Design]",
               "RelativeToolTip": "Views\\Login.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-10T02:07:56.254Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-12-10T02:07:56.254Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 55,
               "Title": "TransaksiSewa.cs",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\App\\Models\\TransaksiSewa.cs",
               "RelativeDocumentMoniker": "App\\Models\\TransaksiSewa.cs",
@@ -989,7 +934,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 53,
               "Title": "Ukuran.cs",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\App\\Models\\Ukuran.cs",
               "RelativeDocumentMoniker": "App\\Models\\Ukuran.cs",
@@ -1001,7 +946,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 58,
               "Title": "TransaksiJual.cs",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\App\\Models\\TransaksiJual.cs",
               "RelativeDocumentMoniker": "App\\Models\\TransaksiJual.cs",
@@ -1013,7 +958,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 56,
               "Title": "TransaksiSewaDetail.cs",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\App\\Models\\TransaksiSewaDetail.cs",
               "RelativeDocumentMoniker": "App\\Models\\TransaksiSewaDetail.cs",
@@ -1025,7 +970,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 57,
               "Title": "PersewaanProduk.cs",
               "DocumentMoniker": "E:\\pbo\\PBO_05\\PBO_05\\Views\\Kasir\\PersewaanProduk.cs",
               "RelativeDocumentMoniker": "Views\\Kasir\\PersewaanProduk.cs",
@@ -1033,8 +978,7 @@
               "RelativeToolTip": "Views\\Kasir\\PersewaanProduk.cs",
               "ViewState": "AQIAABUAAAAAAAAAAAAYwD8AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T02:54:34.12Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T02:54:34.12Z"
             }
           ]
         }

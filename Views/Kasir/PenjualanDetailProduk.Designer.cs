@@ -126,6 +126,7 @@
             Controls.Add(button1);
             Controls.Add(button6);
             Cursor = Cursors.IBeam;
+            Load += Dashboard_Load_1;
             Name = "PenjualanDetailProduk";
             Text = "PenjualanDetailProduk";
             ResumeLayout(false);
