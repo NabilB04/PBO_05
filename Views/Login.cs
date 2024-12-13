@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -33,23 +33,23 @@ namespace TaniAttire
 
             try
             {
-                
+
                 usersControllers userController = new usersControllers();
 
-                
+
                 Users loggedInUser = userController.GetusersByusernameAndpassword(username, password);
 
                 if (loggedInUser != null)
                 {
-                    
+
                     SessionData.LoggedInUserId = loggedInUser.Id_Users;
                     if (loggedInUser != null)
                     {
-                       
+
                         if (loggedInUser.Role == "1")
                         {
                             MessageBox.Show("Login berhasil! Anda masuk sebagai Auditor.", "Login Sukses");
-                            
+
                             AuditorDashboard auditordashboard = new AuditorDashboard();
                             auditordashboard.Show();
                             this.Hide();
@@ -57,7 +57,7 @@ namespace TaniAttire
                         else if (loggedInUser.Role == "2")
                         {
                             MessageBox.Show("Login berhasil! Anda masuk sebagai Kasir.", "Login Sukses");
-                            
+
                             PenjualanProduk kasirdashboard = new PenjualanProduk();
                             kasirdashboard.Show();
                             this.Hide();
@@ -81,6 +81,7 @@ namespace TaniAttire
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            textBox2.PasswordChar = '●';
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -118,6 +119,20 @@ namespace TaniAttire
         private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void checkBox1_CheckedChanged_1(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked)
+            {
+                // Tampilkan password
+                textBox2.PasswordChar = '\0'; 
+            }
+            else
+            {
+                // Sembunyikan password dengan bulatan (●)
+                textBox2.PasswordChar = '●'; 
+            }
         }
     }
 }
