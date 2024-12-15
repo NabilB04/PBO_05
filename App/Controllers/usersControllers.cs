@@ -84,7 +84,7 @@ namespace TaniAttire.App.Controllers
             Users users1 = null;
             using (var conn = DataWrapper.openConnection())
             {
-                string query = "SELECT username, password, role FROM users WHERE username = @username AND password = @password AND Status = TRUE";
+                string query = "SELECT Id_Users ,username, password, role FROM users WHERE Id_Users = @Id_Users AND username = @username AND password = @password AND Status = TRUE";
                 using (var cmd = new NpgsqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("username", username);
@@ -95,9 +95,10 @@ namespace TaniAttire.App.Controllers
                         {
                             users1 = new Users
                             {
-                                Username = reader.GetString(0),
-                                Password = reader.GetString(1), 
-                                Role = reader.GetString(2)      
+                                Id_Users = reader.GetInt32(0),
+                                Username = reader.GetString(1),
+                                Password = reader.GetString(2), 
+                                Role = reader.GetString(3)      
                             };
                         }
                     }

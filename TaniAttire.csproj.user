@@ -20,6 +20,9 @@
     <Compile Update="Views\Auditor\Persewaan.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Views\Auditor\Tambahukuran_Produk .cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\Auditor\Tambah_Karyawan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -36,6 +39,12 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Views\Kasir\Card\CardProduk.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Views\Kasir\Card\CardSewa.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Update="Views\Kasir\Card\CardSewadetail.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Update="Views\Kasir\FormJual.cs">

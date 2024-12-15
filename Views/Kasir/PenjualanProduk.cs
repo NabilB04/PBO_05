@@ -41,8 +41,8 @@ namespace TaniAttire
                     };
 
                     // Set data produk ke dalam card
-                    cardProduk.label1.Text = produk.Nama_Produk;
-                    cardProduk.label2.Text = $"Rp {produk.Harga_Jual:N0}";
+                    cardProduk.label1.Text = $"Nama produk : Rp {produk.Nama_Produk:N0}";
+                    cardProduk.label2.Text = $"Harga produk : Rp {produk.Harga_Jual:N0}";
 
                     // Set gambar produk jika ada
                     if (!string.IsNullOrEmpty(produk.Foto_Produk))
@@ -122,10 +122,19 @@ namespace TaniAttire
 
         private void button6_Click_1(object sender, EventArgs e)
         {
-            MessageBox.Show("Anda telah Logout");
-            Login login = new Login();
-            login.Show();
-            Close();
+            var result = MessageBox.Show(
+                 "Apakah Anda yakin ingin logout?",
+                 "Konfirmasi Logout",
+                 MessageBoxButtons.YesNo,
+                 MessageBoxIcon.Question
+             );
+
+            if (result == DialogResult.Yes)
+            {
+                Login login = new Login();
+                login.Show();
+                this.Close();
+            }
         }
 
         private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)

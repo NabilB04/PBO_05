@@ -75,6 +75,7 @@
             button6.Size = new Size(235, 80);
             button6.TabIndex = 19;
             button6.UseVisualStyleBackColor = false;
+            button6.Click += button6_Click;
             // 
             // buttonPersewaan
             // 

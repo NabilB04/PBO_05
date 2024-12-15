@@ -23,6 +23,17 @@
     <Compile Update="Views\Auditor\Tambah_Ukuran.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Views\Auditor\Tambahukuran_Produk .cs" />
+    <Compile Update="Views\Kasir\Card\CardSewadetail.cs" />
+    <Compile Update="Views\Kasir\DataPelanggan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Kasir\PersewaanDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Kasir\PopupPelanggan.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 
   <ItemGroup>

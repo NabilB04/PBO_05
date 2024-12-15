@@ -2,7 +2,7 @@
 
 namespace TaniAttire.Views.Kasir.Card
 {
-    partial class CardDetailProduk
+    partial class CardSewadetail
     {
 
       
@@ -33,13 +33,13 @@ namespace TaniAttire.Views.Kasir.Card
         private void InitializeComponent()
         {
             comboBoxUkuran = new ComboBox();
-            textBoxJumlah = new TextBox();
             label3 = new Label();
             label4 = new Label();
             label5 = new Label();
             label1 = new Label();
             button1 = new Button();
             button2 = new Button();
+            dateTimePicker1 = new DateTimePicker();
             SuspendLayout();
             // 
             // comboBoxUkuran
@@ -52,16 +52,6 @@ namespace TaniAttire.Views.Kasir.Card
             comboBoxUkuran.Size = new Size(279, 28);
             comboBoxUkuran.TabIndex = 4;
             comboBoxUkuran.SelectedIndexChanged += comboBoxUkuran_SelectedIndexChanged;
-            // 
-            // textBoxJumlah
-            // 
-            textBoxJumlah.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
-            textBoxJumlah.Location = new Point(11, 218);
-            textBoxJumlah.Margin = new Padding(3, 4, 3, 4);
-            textBoxJumlah.Name = "textBoxJumlah";
-            textBoxJumlah.Size = new Size(279, 27);
-            textBoxJumlah.TabIndex = 5;
-            textBoxJumlah.TextChanged += textBoxJumlah_TextChanged;
             // 
             // label3
             // 
@@ -78,7 +68,7 @@ namespace TaniAttire.Views.Kasir.Card
             // 
             label4.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label4.AutoSize = true;
-            label4.Location = new Point(62, 143);
+            label4.Location = new Point(91, 143);
             label4.Name = "label4";
             label4.Size = new Size(53, 20);
             label4.TabIndex = 7;
@@ -91,9 +81,9 @@ namespace TaniAttire.Views.Kasir.Card
             label5.AutoSize = true;
             label5.Location = new Point(11, 183);
             label5.Name = "label5";
-            label5.Size = new Size(55, 20);
+            label5.Size = new Size(120, 20);
             label5.TabIndex = 8;
-            label5.Text = "Jumlah";
+            label5.Text = "Tanggal Kembali";
             label5.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // label1
@@ -102,9 +92,9 @@ namespace TaniAttire.Views.Kasir.Card
             label1.AutoSize = true;
             label1.Location = new Point(11, 143);
             label1.Name = "label1";
-            label1.Size = new Size(45, 20);
+            label1.Size = new Size(74, 20);
             label1.TabIndex = 9;
-            label1.Text = "Stok :";
+            label1.Text = "Stok Jual :";
             label1.TextAlign = ContentAlignment.MiddleCenter;
             label1.Click += label1_Click_1;
             // 
@@ -117,7 +107,7 @@ namespace TaniAttire.Views.Kasir.Card
             button1.Name = "button1";
             button1.Size = new Size(94, 29);
             button1.TabIndex = 10;
-            button1.Text = "Beli";
+            button1.Text = "Sewa";
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
@@ -134,10 +124,18 @@ namespace TaniAttire.Views.Kasir.Card
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
-            // CardDetailProduk
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location = new Point(11, 224);
+            dateTimePicker1.Name = "dateTimePicker1";
+            dateTimePicker1.Size = new Size(250, 27);
+            dateTimePicker1.TabIndex = 12;
+            // 
+            // CardSewadetail
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(dateTimePicker1);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label1);
@@ -145,9 +143,8 @@ namespace TaniAttire.Views.Kasir.Card
             Controls.Add(label4);
             Controls.Add(label3);
             Controls.Add(comboBoxUkuran);
-            Controls.Add(textBoxJumlah);
             Margin = new Padding(3, 4, 3, 4);
-            Name = "CardDetailProduk";
+            Name = "CardSewadetail";
             Size = new Size(304, 446);
             ResumeLayout(false);
             PerformLayout();
@@ -155,7 +152,6 @@ namespace TaniAttire.Views.Kasir.Card
 
         #endregion
         public ComboBox comboBoxUkuran;
-        public TextBox textBoxJumlah;
         private Panel panelWrapper;
         public Label label3;
         public Label label4;
@@ -163,5 +159,6 @@ namespace TaniAttire.Views.Kasir.Card
         public Label label1;
         private Button button1;
         private Button button2;
+        public DateTimePicker dateTimePicker1;
     }
 }

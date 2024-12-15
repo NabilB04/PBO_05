@@ -62,5 +62,27 @@ namespace TaniAttire.Views.Kasir
         {
 
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show(
+                "Apakah Anda yakin ingin logout?",
+                "Konfirmasi Logout",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (result == DialogResult.Yes)
+            {
+                Login login = new Login();
+                login.Show();
+                this.Close();
+            }
+        }
+
+        private void buttonTransaksi_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -45,6 +45,18 @@ namespace TaniAttire.Views.Auditor
                 };
                 dataGridView1.Columns.Add(deleteButtonColumn);
             }
+
+            if (!dataGridView1.Columns.Contains("Tambah Ukuran"))
+            {
+                var tambahukuranButtonColumn = new DataGridViewButtonColumn
+                {
+                    HeaderText = "Aksi",
+                    Text = "Tambah Ukuran",
+                    UseColumnTextForButtonValue = true,
+                    Name = "Tambah Ukuran"
+                };
+                dataGridView1.Columns.Add(tambahukuranButtonColumn);
+            }
         }
         private void LoadDataProduk()
         {
@@ -63,6 +75,11 @@ namespace TaniAttire.Views.Auditor
                 if (dataGridView1.Columns.Contains("Delete"))
                 {
                     dataGridView1.Columns["Delete"].DisplayIndex = dataGridView1.Columns.Count - 1;
+                }
+
+                if (dataGridView1.Columns.Contains("Tambah Ukuran"))
+                {
+                    dataGridView1.Columns["Tambah Ukuran"].DisplayIndex = dataGridView1.Columns.Count - 1;
                 }
             }
             catch (Exception ex)
@@ -180,6 +197,31 @@ namespace TaniAttire.Views.Auditor
                             _controller.SoftDeleteProduk(selectedProduk.Id_Produk);
                             MessageBox.Show("Produk berhasil dihapus.");
                             LoadDataProduk();
+                        }
+                    }
+                }
+
+                else if (columnName == "Tambah Ukuran")
+                {
+                    // Ambil data produk dari baris yang dipilih
+                    var selectedProduk = dataGridView1.Rows[e.RowIndex].DataBoundItem as GetProduk;
+                    if (selectedProduk != null)
+                    {
+                        // Ambil detail stok berdasarkan ID produk
+                        Detail_Stok detailStok = _controller.GetDetailStokByProdukId(selectedProduk.Id_Produk);
+
+                        if (detailStok != null)
+                        {
+                            // Panggil form Tambahukuran_Produk menggunakan constructor yang sesuai
+                            Tambahukuran_Produk tambahukuranProduk = new Tambahukuran_Produk(selectedProduk, detailStok);
+                            tambahukuranProduk.ShowDialog();
+
+                            // Refresh data setelah form ditutup
+                            LoadDataProduk();
+                        }
+                        else
+                        {
+                            MessageBox.Show("Detail stok tidak ditemukan.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                         }
                     }
                 }

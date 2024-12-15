@@ -1,6 +1,6 @@
 ﻿namespace TaniAttire.Views.Kasir
 {
-    partial class FormTbhPelanggan
+    partial class DataPelanggan
     {
         /// <summary>
         /// Required designer variable.
@@ -28,76 +28,17 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormTbhPelanggan));
-            button1 = new Button();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DataPelanggan));
             button3 = new Button();
             button2 = new Button();
             button6 = new Button();
             button4 = new Button();
-            button8 = new Button();
+            dataGridView1 = new DataGridView();
+            button9 = new Button();
             button7 = new Button();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
+            textBoxSearch = new TextBox();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
-            // 
-            // button1
-            // 
-            button1.BackColor = Color.LightGreen;
-            button1.Location = new Point(701, 260);
-            button1.Margin = new Padding(3, 4, 3, 4);
-            button1.Name = "button1";
-            button1.Size = new Size(493, 451);
-            button1.TabIndex = 0;
-            button1.UseVisualStyleBackColor = false;
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.LightGreen;
-            label1.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(829, 311);
-            label1.Name = "label1";
-            label1.Size = new Size(296, 32);
-            label1.TabIndex = 1;
-            label1.Text = "Form Tambah Pelanggan";
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.LightGreen;
-            label2.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label2.Location = new Point(793, 400);
-            label2.Name = "label2";
-            label2.Size = new Size(68, 28);
-            label2.TabIndex = 2;
-            label2.Text = "Nama";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.LightGreen;
-            label3.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label3.Location = new Point(793, 469);
-            label3.Name = "label3";
-            label3.Size = new Size(120, 28);
-            label3.TabIndex = 3;
-            label3.Text = "No Telepon";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.LightGreen;
-            label4.Font = new Font("Segoe UI", 12F, FontStyle.Bold);
-            label4.Location = new Point(793, 535);
-            label4.Name = "label4";
-            label4.Size = new Size(80, 28);
-            label4.TabIndex = 4;
-            label4.Text = "Alamat";
             // 
             // button3
             // 
@@ -171,58 +112,49 @@
             button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
             // 
-            // button8
+            // dataGridView1
             // 
-            button8.BackColor = Color.Firebrick;
-            button8.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
-            button8.ForeColor = SystemColors.ControlLight;
-            button8.Location = new Point(793, 627);
-            button8.Name = "button8";
-            button8.Size = new Size(142, 53);
-            button8.TabIndex = 41;
-            button8.Text = "Batal";
-            button8.UseVisualStyleBackColor = false;
-            button8.Click += button8_Click;
+            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location = new Point(502, 231);
+            dataGridView1.Name = "dataGridView1";
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(956, 574);
+            dataGridView1.TabIndex = 40;
+            // 
+            // button9
+            // 
+            button9.BackgroundImage = (Image)resources.GetObject("button9.BackgroundImage");
+            button9.BackgroundImageLayout = ImageLayout.Zoom;
+            button9.ImageAlign = ContentAlignment.TopLeft;
+            button9.Location = new Point(511, 178);
+            button9.Name = "button9";
+            button9.Size = new Size(50, 29);
+            button9.TabIndex = 43;
+            button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
             // 
             // button7
             // 
-            button7.BackColor = Color.ForestGreen;
-            button7.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold);
+            button7.BackColor = Color.SeaGreen;
+            button7.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
             button7.ForeColor = Color.White;
-            button7.Location = new Point(942, 627);
+            button7.Location = new Point(1015, 173);
             button7.Name = "button7";
-            button7.Size = new Size(142, 53);
-            button7.TabIndex = 40;
-            button7.Text = "Tambah";
+            button7.Size = new Size(94, 38);
+            button7.TabIndex = 42;
+            button7.Text = "Cari";
             button7.UseVisualStyleBackColor = false;
             button7.Click += button7_Click;
             // 
-            // textBox1
+            // textBoxSearch
             // 
-            textBox1.Location = new Point(918, 403);
-            textBox1.Margin = new Padding(3, 4, 3, 4);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(175, 27);
-            textBox1.TabIndex = 42;
-            textBox1.TextChanged += textBox1_TextChanged;
+            textBoxSearch.Location = new Point(567, 173);
+            textBoxSearch.Multiline = true;
+            textBoxSearch.Name = "textBoxSearch";
+            textBoxSearch.Size = new Size(542, 38);
+            textBoxSearch.TabIndex = 41;
             // 
-            // textBox2
-            // 
-            textBox2.Location = new Point(918, 467);
-            textBox2.Margin = new Padding(3, 4, 3, 4);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(175, 27);
-            textBox2.TabIndex = 43;
-            // 
-            // textBox3
-            // 
-            textBox3.Location = new Point(918, 532);
-            textBox3.Margin = new Padding(3, 4, 3, 4);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(175, 27);
-            textBox3.TabIndex = 44;
-            // 
-            // FormTbhPelanggan
+            // DataPelanggan
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -230,44 +162,32 @@
             BackColor = SystemColors.ControlLight;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1445, 908);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(button8);
+            ClientSize = new Size(1470, 908);
+            Controls.Add(button9);
             Controls.Add(button7);
+            Controls.Add(textBoxSearch);
+            Controls.Add(dataGridView1);
             Controls.Add(button4);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button6);
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(button1);
             DoubleBuffered = true;
             Margin = new Padding(3, 4, 3, 4);
-            Name = "FormTbhPelanggan";
-            Text = "FormTambahPelanggan";
+            Name = "DataPelanggan";
+            Text = "DataPelanggan";
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
-
-        private Button button1;
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
         private Button button3;
         private Button button2;
         private Button button6;
         private Button button4;
-        private Button button8;
+        private DataGridView dataGridView1;
+        private Button button9;
         private Button button7;
-        private TextBox textBox1;
-        private TextBox textBox2;
-        private TextBox textBox3;
+        private TextBox textBoxSearch;
     }
 }

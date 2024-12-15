@@ -10,8 +10,8 @@ using System.Windows.Forms;
 using TaniAttire.App.Controllers;
 using TaniAttire.App.Models;
 using TaniAttire.Views.Auditor.Card;
-using TaniAttire.Views.Kasir;
 using TaniAttire.Views.Kasir.Card;
+
 
 namespace TaniAttire.Views.Kasir
 {
@@ -32,31 +32,57 @@ namespace TaniAttire.Views.Kasir
             {
                 List<Detail_Produk> produkList = _produkController.GetDetailProdukByProdukId(idProduk);
 
-                // Iterasi setiap produk untuk ditampilkan
-                foreach (var produk in produkList)
+                // Grupkan produk berdasarkan Id_Produk
+                var groupedProducts = produkList
+                    .GroupBy(p => p.Id_Produk)
+                    .Select(group => new
+                    {
+                        Produk = group.First(), // Ambil satu produk sebagai representasi
+                        UkuranList = group.Select(p => p.Nilai_Ukuran).ToList()
+                    });
+
+                foreach (var groupedProduct in groupedProducts)
                 {
-                    // Buat instance dari CardProduk
-                    CardDetailProduk CardDetailProduk = new CardDetailProduk
+                    CardDetailProduk cardDetailProduk = new CardDetailProduk
                     {
                         Margin = new Padding(3),
+                        ProdukList = produkList // Simpan semua daftar detail produk untuk pencarian stok
                     };
 
-                    // Set data produk ke dalam card
-                    CardDetailProduk.label1.Text = produk.Nama_Produk;
-                    CardDetailProduk.label2.Text = $"Rp {produk.Nilai_Ukuran:N0}";
+                    // Tambahkan semua ukuran terkait ke comboBox
+                    foreach (var ukuran in groupedProduct.UkuranList)
+                    {
+                        cardDetailProduk.comboBoxUkuran.Items.Add(ukuran);
+                    }
 
-                    // Set gambar produk jika ada
-                    //if (!string.IsNullOrEmpty(produk.Foto_Produk))
-                    //{
-                    //    string imagePath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "uploads", produk.Foto_Produk);
-                    //    if (File.Exists(imagePath))
-                    //    {
-                    //        CardDetailProduk.pictureBox1.Image = Image.FromFile(imagePath);
-                    //    }
-                    //}
+                    // Atur ukuran default jika ada
+                    if (cardDetailProduk.comboBoxUkuran.Items.Count > 0)
+                    {
+                        cardDetailProduk.comboBoxUkuran.SelectedIndex = 0;
 
-                    // Tambahkan card ke dalam FlowLayoutPanel
-                    flowLayoutPanel2.Controls.Add(CardDetailProduk);
+                        string defaultUkuran = cardDetailProduk.comboBoxUkuran.SelectedItem.ToString();
+                        var stokDefault = produkList
+                            .Where(p => p.Nilai_Ukuran == defaultUkuran)
+                            .Select(p => p.Stok_Jual)
+                            .FirstOrDefault();
+
+                        cardDetailProduk.label4.Text = $"Stok: {stokDefault}";
+                    }
+
+                    // Tambahkan event handler untuk perubahan ukuran
+                    cardDetailProduk.comboBoxUkuran.SelectedIndexChanged += (s, ev) =>
+                    {
+                        string selectedUkuran = cardDetailProduk.comboBoxUkuran.SelectedItem.ToString();
+                        var stok = produkList
+                            .Where(p => p.Nilai_Ukuran == selectedUkuran)
+                            .Select(p => p.Stok_Jual)
+                            .FirstOrDefault();
+
+                        cardDetailProduk.label4.Text = $"Stok: {stok}";
+                    };
+
+                    // Tambahkan kartu ke flowLayoutPanel
+                    flowLayoutPanel2.Controls.Add(cardDetailProduk);
                 }
             }
             catch (Exception ex)
@@ -64,7 +90,30 @@ namespace TaniAttire.Views.Kasir
                 MessageBox.Show($"Gagal memuat produk: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
         private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            var result = MessageBox.Show(
+                "Apakah Anda yakin ingin logout?",
+                "Konfirmasi Logout",
+                MessageBoxButtons.YesNo,
+                MessageBoxIcon.Question
+            );
+
+            if (result == DialogResult.Yes)
+            {
+                Login login = new Login();
+                login.Show();
+                this.Close();
+            }
+        }
+
+        private void button3_Click(object sender, EventArgs e)
         {
 
         }

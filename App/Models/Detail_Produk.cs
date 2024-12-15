@@ -11,16 +11,15 @@ namespace TaniAttire.App.Models
     public class Detail_Produk
     {
         [Key]
+        public int Id_Detail_Stok { get; set; }
+        [ForeignKey("Detail_Produk")]
         public int Id_Detail_Produk { get; set; }
         [ForeignKey("Produk")]
         public int Id_Produk { get; set; }
-        [ForeignKey("Ukuran")]
-        public int Id_Ukuran { get; set; }
-
-        public string Nama_Produk { get; set; }
-
-        public decimal Harga_Jual { get; set; }
 
         public string Nilai_Ukuran { get; set; }
+
+        public int Stok_Jual { get; set; }
+        public int Stok_Sewa { get; set; }
     }
 }

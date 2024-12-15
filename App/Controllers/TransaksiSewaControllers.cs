@@ -36,11 +36,15 @@ namespace TaniAttire.App.Controllers
             ELSE 
                 0
         END AS Denda_Total,
+   
+        (CAST(ts.Tanggal_Kembali AS DATE) - CAST(ts.Tanggal_Transaksi AS DATE)) * ds.Harga_Sewa AS Jumlah_HargaSewa,
+   
         CASE 
             WHEN ts.Tanggal_Pengembalian > ts.Tanggal_Kembali THEN 
-                (CAST(ts.Tanggal_Pengembalian AS DATE) - CAST(ts.Tanggal_Kembali AS DATE)) * pr.Denda_Perhari + ds.Harga_Sewa
+                ((CAST(ts.Tanggal_Kembali AS DATE) - CAST(ts.Tanggal_Transaksi AS DATE)) * ds.Harga_Sewa) + 
+                ((CAST(ts.Tanggal_Pengembalian AS DATE) - CAST(ts.Tanggal_Kembali AS DATE)) * pr.Denda_Perhari)
             ELSE 
-                ds.Harga_Sewa
+                (CAST(ts.Tanggal_Kembali AS DATE) - CAST(ts.Tanggal_Transaksi AS DATE)) * ds.Harga_Sewa
         END AS Total_Harga
     FROM 
         Detail_Transaksi dt
@@ -81,7 +85,8 @@ namespace TaniAttire.App.Controllers
                             Status_Pengembalian = reader.GetBoolean(9),
                             Denda_Perhari = reader.GetDecimal(10),
                             Denda_Total = reader.GetDecimal(11),
-                            Total_Harga = reader.GetDecimal(12)
+                            Jumlah_Hargasewa = reader.GetDecimal(12),           
+                            Total_Harga = reader.GetDecimal(13)
                         });
 
                     }

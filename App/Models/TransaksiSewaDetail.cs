@@ -42,5 +42,9 @@ namespace TaniAttire.App.Models
         public decimal Denda_Perhari { get; set; } = 0; //10
         public decimal Denda_Total { get; set; } = 0; //11
         public decimal Total_Harga { get; set; } //11
+
+        public decimal Jumlah_Hargasewa { get; set; }
+        [ForeignKey("Users")]
+        public int Id_Users { get; set; } //0
     }
 }

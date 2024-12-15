@@ -1,6 +1,6 @@
 ﻿namespace TaniAttire.Views.Auditor
 {
-    partial class Ubah_Produk
+    partial class Tambahukuran_Produk
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ubah_Produk));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tambahukuran_Produk));
             button6 = new Button();
             button3 = new Button();
             button4 = new Button();
@@ -37,28 +37,21 @@
             button1 = new Button();
             buttonBeranda = new Button();
             panel1 = new Panel();
-            label8 = new Label();
-            textBoxDendaPerHari = new TextBox();
+            button10 = new Button();
+            button8 = new Button();
             label7 = new Label();
+            label8 = new Label();
             comboBoxUkuran = new ComboBox();
-            textBoxHargaSewa = new TextBox();
-            label5 = new Label();
-            textBoxHargaJual = new TextBox();
-            label6 = new Label();
             textBoxStokSewa = new TextBox();
             label3 = new Label();
             textBoxStokJual = new TextBox();
             label4 = new Label();
             label2 = new Label();
             button9 = new Button();
-            textBoxNamaProduk = new TextBox();
-            pictureBoxGambar = new PictureBox();
             label1 = new Label();
-            button8 = new Button();
             button7 = new Button();
             openFileDialog1 = new OpenFileDialog();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxGambar).BeginInit();
             SuspendLayout();
             // 
             // button6
@@ -75,7 +68,6 @@
             button6.Size = new Size(382, 80);
             button6.TabIndex = 30;
             button6.UseVisualStyleBackColor = false;
-            button6.Click += button6_Click;
             // 
             // button3
             // 
@@ -170,24 +162,18 @@
             // panel1
             // 
             panel1.BackColor = Color.DarkSeaGreen;
-            panel1.Controls.Add(label8);
-            panel1.Controls.Add(textBoxDendaPerHari);
+            panel1.Controls.Add(button10);
+            panel1.Controls.Add(button8);
             panel1.Controls.Add(label7);
+            panel1.Controls.Add(label8);
             panel1.Controls.Add(comboBoxUkuran);
-            panel1.Controls.Add(textBoxHargaSewa);
-            panel1.Controls.Add(label5);
-            panel1.Controls.Add(textBoxHargaJual);
-            panel1.Controls.Add(label6);
             panel1.Controls.Add(textBoxStokSewa);
             panel1.Controls.Add(label3);
             panel1.Controls.Add(textBoxStokJual);
             panel1.Controls.Add(label4);
             panel1.Controls.Add(label2);
             panel1.Controls.Add(button9);
-            panel1.Controls.Add(textBoxNamaProduk);
-            panel1.Controls.Add(pictureBoxGambar);
             panel1.Controls.Add(label1);
-            panel1.Controls.Add(button8);
             panel1.Controls.Add(button7);
             panel1.Location = new Point(487, 141);
             panel1.Name = "panel1";
@@ -195,90 +181,70 @@
             panel1.TabIndex = 31;
             panel1.Paint += panel1_Paint;
             // 
+            // button10
+            // 
+            button10.Location = new Point(452, 518);
+            button10.Name = "button10";
+            button10.Size = new Size(94, 29);
+            button10.TabIndex = 40;
+            button10.Text = "Kembali";
+            button10.UseVisualStyleBackColor = true;
+            // 
+            // button8
+            // 
+            button8.Location = new Point(583, 518);
+            button8.Name = "button8";
+            button8.Size = new Size(94, 29);
+            button8.TabIndex = 39;
+            button8.Text = "Tambah";
+            button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(433, 277);
+            label7.Name = "label7";
+            label7.Size = new Size(50, 20);
+            label7.TabIndex = 38;
+            label7.Text = "label7";
+            label7.Click += label7_Click;
+            // 
             // label8
             // 
             label8.AutoSize = true;
             label8.BackColor = Color.DarkSeaGreen;
             label8.Font = new Font("Segoe UI", 20.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label8.Location = new Point(331, 49);
+            label8.Location = new Point(205, 135);
             label8.Name = "label8";
-            label8.Size = new Size(313, 46);
+            label8.Size = new Size(540, 46);
             label8.TabIndex = 37;
-            label8.Text = "Ubah Data Produk";
+            label8.Text = "Tambah ukuran dan stok produk";
             label8.Click += label8_Click;
-            // 
-            // textBoxDendaPerHari
-            // 
-            textBoxDendaPerHari.Location = new Point(433, 636);
-            textBoxDendaPerHari.Name = "textBoxDendaPerHari";
-            textBoxDendaPerHari.Size = new Size(267, 27);
-            textBoxDendaPerHari.TabIndex = 19;
-            // 
-            // label7
-            // 
-            label7.AutoSize = true;
-            label7.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
-            label7.Location = new Point(278, 640);
-            label7.Name = "label7";
-            label7.Size = new Size(140, 28);
-            label7.TabIndex = 18;
-            label7.Text = "Denda Perhari";
             // 
             // comboBoxUkuran
             // 
             comboBoxUkuran.FormattingEnabled = true;
-            comboBoxUkuran.Location = new Point(433, 455);
+            comboBoxUkuran.Location = new Point(433, 323);
             comboBoxUkuran.Margin = new Padding(3, 4, 3, 4);
             comboBoxUkuran.Name = "comboBoxUkuran";
             comboBoxUkuran.Size = new Size(155, 28);
             comboBoxUkuran.TabIndex = 17;
-            // 
-            // textBoxHargaSewa
-            // 
-            textBoxHargaSewa.Location = new Point(433, 600);
-            textBoxHargaSewa.Name = "textBoxHargaSewa";
-            textBoxHargaSewa.Size = new Size(267, 27);
-            textBoxHargaSewa.TabIndex = 16;
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
-            label5.Location = new Point(278, 604);
-            label5.Name = "label5";
-            label5.Size = new Size(119, 28);
-            label5.TabIndex = 15;
-            label5.Text = "Harga Sewa";
-            // 
-            // textBoxHargaJual
-            // 
-            textBoxHargaJual.Location = new Point(433, 564);
-            textBoxHargaJual.Name = "textBoxHargaJual";
-            textBoxHargaJual.Size = new Size(267, 27);
-            textBoxHargaJual.TabIndex = 14;
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
-            label6.Location = new Point(278, 568);
-            label6.Name = "label6";
-            label6.Size = new Size(107, 28);
-            label6.TabIndex = 13;
-            label6.Text = "Harga Jual";
+            comboBoxUkuran.SelectedIndexChanged += comboBoxUkuran_SelectedIndexChanged;
             // 
             // textBoxStokSewa
             // 
-            textBoxStokSewa.Location = new Point(433, 528);
+            textBoxStokSewa.Location = new Point(433, 431);
             textBoxStokSewa.Name = "textBoxStokSewa";
             textBoxStokSewa.Size = new Size(267, 27);
             textBoxStokSewa.TabIndex = 12;
+            textBoxStokSewa.TextChanged += textBoxStokSewa_TextChanged;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
-            label3.Location = new Point(278, 532);
+            label3.Location = new Point(255, 430);
             label3.Name = "label3";
             label3.Size = new Size(105, 28);
             label3.TabIndex = 11;
@@ -286,16 +252,17 @@
             // 
             // textBoxStokJual
             // 
-            textBoxStokJual.Location = new Point(433, 492);
+            textBoxStokJual.Location = new Point(433, 380);
             textBoxStokJual.Name = "textBoxStokJual";
             textBoxStokJual.Size = new Size(267, 27);
             textBoxStokJual.TabIndex = 10;
+            textBoxStokJual.TextChanged += textBoxStokJual_TextChanged;
             // 
             // label4
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
-            label4.Location = new Point(278, 496);
+            label4.Location = new Point(267, 376);
             label4.Name = "label4";
             label4.Size = new Size(93, 28);
             label4.TabIndex = 9;
@@ -305,7 +272,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
-            label2.Location = new Point(278, 460);
+            label2.Location = new Point(282, 319);
             label2.Name = "label2";
             label2.Size = new Size(78, 28);
             label2.TabIndex = 7;
@@ -324,45 +291,15 @@
             button9.UseVisualStyleBackColor = false;
             button9.Click += button9_Click;
             // 
-            // textBoxNamaProduk
-            // 
-            textBoxNamaProduk.Location = new Point(433, 420);
-            textBoxNamaProduk.Name = "textBoxNamaProduk";
-            textBoxNamaProduk.Size = new Size(267, 27);
-            textBoxNamaProduk.TabIndex = 5;
-            // 
-            // pictureBoxGambar
-            // 
-            pictureBoxGambar.BackgroundImageLayout = ImageLayout.Center;
-            pictureBoxGambar.BorderStyle = BorderStyle.FixedSingle;
-            pictureBoxGambar.Location = new Point(355, 136);
-            pictureBoxGambar.Name = "pictureBoxGambar";
-            pictureBoxGambar.Size = new Size(267, 217);
-            pictureBoxGambar.TabIndex = 4;
-            pictureBoxGambar.TabStop = false;
-            pictureBoxGambar.Click += pictureBoxGambar_Click;
-            // 
             // label1
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
-            label1.Location = new Point(278, 424);
+            label1.Location = new Point(223, 270);
             label1.Name = "label1";
             label1.Size = new Size(137, 28);
             label1.TabIndex = 2;
             label1.Text = "Nama Produk";
-            // 
-            // button8
-            // 
-            button8.BackColor = Color.YellowGreen;
-            button8.Font = new Font("Segoe UI Semibold", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button8.Location = new Point(433, 361);
-            button8.Name = "button8";
-            button8.Size = new Size(118, 36);
-            button8.TabIndex = 1;
-            button8.Text = "Pilih Gambar";
-            button8.UseVisualStyleBackColor = false;
-            button8.Click += button8_Click;
             // 
             // button7
             // 
@@ -375,13 +312,12 @@
             button7.TabIndex = 0;
             button7.Text = "Simpan";
             button7.UseVisualStyleBackColor = false;
-            button7.Click += button7_Click;
             // 
             // openFileDialog1
             // 
             openFileDialog1.FileName = "openFileDialog1";
             // 
-            // Ubah_Produk
+            // Tambahukuran_Produk
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -396,12 +332,11 @@
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(buttonBeranda);
-            Name = "Ubah_Produk";
-            Text = "Ubah_Produk";
-            Load += Ubah_Produk_Load;
+            Name = "Tambahukuran_Produk";
+            Text = "Tambahukuran_Produk";
+            Load += Tambahukuran_Produk_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBoxGambar).EndInit();
             ResumeLayout(false);
         }
 
@@ -415,25 +350,19 @@
         private Button button1;
         private Button buttonBeranda;
         private Panel panel1;
-        private TextBox textBoxDendaPerHari;
-        private Label label7;
         private ComboBox comboBoxUkuran;
-        private TextBox textBoxHargaSewa;
-        private Label label5;
-        private TextBox textBoxHargaJual;
-        private Label label6;
         private TextBox textBoxStokSewa;
         private Label label3;
         private TextBox textBoxStokJual;
         private Label label4;
         private Label label2;
         private Button button9;
-        private TextBox textBoxNamaProduk;
-        private PictureBox pictureBoxGambar;
         private Label label1;
-        private Button button8;
         private Button button7;
         private Label label8;
         private OpenFileDialog openFileDialog1;
+        private Label label7;
+        private Button button10;
+        private Button button8;
     }
 }

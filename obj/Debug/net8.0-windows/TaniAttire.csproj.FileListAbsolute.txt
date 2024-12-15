@@ -255,3 +255,9 @@ E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.PenjualanProduk.resourc
 E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.TrackPersewaan.resources
 E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.Card.CardDetailProduk.resources
 E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.PenjualanDetailProduk.resources
+E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.Card.CardSewa.resources
+E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.PopupPelanggan.resources
+E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.DataPelanggan.resources
+E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.Card.CardSewadetail.resources
+E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.PersewaanDetail.resources
+E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Tambahukuran_Produk.resources

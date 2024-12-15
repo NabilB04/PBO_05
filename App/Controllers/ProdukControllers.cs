@@ -45,37 +45,42 @@ namespace TaniAttire.App.Controllers
         {
             var detailProdukList = new List<Detail_Produk>();
 
-            using (var conn = openConnection()) // Pastikan openConnection mengembalikan koneksi yang benar
+            using (var conn = openConnection()) 
             {
                 string query = @"
-                    SELECT 
-            dp.Id_Detail_Produk,
-            p.Id_Produk,
-            p.Nama_Produk,
-            u.Nilai_Ukuran
-        FROM 
-            Detail_Produk dp
-        JOIN 
-            Produk p ON dp.id_produk = p.id_produk
-        JOIN
-            Ukuran u ON dp.Id_Ukuran = u.Id_Ukuran
-        WHERE 
-            dp.Id_Produk =@Id_Produk AND p.Status = TRUE";
+                        SELECT 
+                ds.Id_Detail_Stok,
+                dp.Id_Detail_Produk,
+                dp.Id_Produk,
+                u.Nilai_Ukuran,
+                ds.Stok_Jual,
+                ds.Stok_Sewa
+            FROM 
+                Detail_Stok ds
+            JOIN 
+                Detail_Produk dp ON ds.Id_Detail_Produk = dp.Id_Detail_Produk
+            JOIN
+                Produk p ON dp.Id_Produk = p.Id_Produk
+            JOIN
+                Ukuran u ON dp.Id_Ukuran = u.Id_Ukuran
+            WHERE 
+                dp.Id_Produk =@Id_Produk AND p.Status = TRUE";
 
-                using (var cmd = new NpgsqlCommand(query, conn)) // Ganti dengan NpgsqlCommand jika menggunakan PostgreSQL
+                using (var cmd = new NpgsqlCommand(query, conn)) 
                 {
                     cmd.Parameters.AddWithValue("@Id_Produk", id_produk);
-
-                    //conn.Open(); // Pastikan koneksi dibuka
                     using (var reader = cmd.ExecuteReader())
                     {
                         while (reader.Read())
                         {
                             var detailProduk = new Detail_Produk
                             {
-                                Id_Detail_Produk = reader.GetInt32(0),
-                                Id_Produk = reader.GetInt32(1),
-                                Nilai_Ukuran = reader.GetString(2)
+                                Id_Detail_Stok = reader.GetInt32(0),
+                                Id_Detail_Produk = reader.GetInt32(1),
+                                Id_Produk = reader.GetInt32(2),
+                                Nilai_Ukuran = reader.GetString(3),
+                                Stok_Jual = reader.GetInt32(4),
+                                Stok_Sewa = reader.GetInt32(5),
                             };
                             detailProdukList.Add(detailProduk);
                         }
@@ -331,39 +336,17 @@ namespace TaniAttire.App.Controllers
 
         public void UpdateProduk(Produk produk, string fotoProduk, int idUkuran, Detail_Stok detailStok)
         {
-            var validationContext = new ValidationContext(produk, serviceProvider: null, items: null);
-            var validationResults = new List<ValidationResult>();
-
-            if (!Validator.TryValidateObject(produk, validationContext, validationResults, true))
-            {
-                throw new ValidationException(string.Join("; ", validationResults.Select(v => v.ErrorMessage)));
-            }
             using (var conn = openConnection())
             using (var transaction = conn.BeginTransaction())
             {
                 try
                 {
-                    string checkQuery = "SELECT COUNT(*) FROM Produk WHERE Nama_produk = @nama_produk  AND Status = @Status";
-                    using (var checkCmd = new NpgsqlCommand(checkQuery, conn))
-                    {
-                        checkCmd.Parameters.AddWithValue("Nama_produk", produk.Nama_Produk);
-                        checkCmd.Parameters.AddWithValue("Status", true);
-
-
-                        int count = Convert.ToInt32(checkCmd.ExecuteScalar());
-                        if (count > 0)
-                        {
-                            throw new Exception("Produk sudah ada.");
-                        }
-                    }
-
                     string queryProduk = @"
                 UPDATE Produk 
                 SET Nama_Produk = @Nama_Produk, 
                     Foto_Produk = @Foto_Produk, 
                     Denda_Perhari = @Denda_Perhari 
                 WHERE Id_Produk = @Id_Produk";
-
                     using (var cmd = new NpgsqlCommand(queryProduk, conn))
                     {
                         cmd.Parameters.AddWithValue("@Nama_Produk", produk.Nama_Produk);
@@ -385,7 +368,6 @@ namespace TaniAttire.App.Controllers
                     FROM Detail_Produk 
                     WHERE Id_Produk = @Id_Produk AND Id_Ukuran = @Id_Ukuran
                 )";
-
                     using (var cmd = new NpgsqlCommand(queryDetailStok, conn))
                     {
                         cmd.Parameters.AddWithValue("@Stok_Sewa", detailStok.Stok_Sewa);
@@ -397,6 +379,7 @@ namespace TaniAttire.App.Controllers
                         cmd.ExecuteNonQuery();
                     }
 
+                    // Commit transaksi
                     transaction.Commit();
                 }
                 catch (Exception ex)
@@ -406,6 +389,7 @@ namespace TaniAttire.App.Controllers
                 }
             }
         }
+
 
         public void SoftDeleteProduk(int idProduk)
         {

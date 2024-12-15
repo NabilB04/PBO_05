@@ -12,11 +12,14 @@ namespace TaniAttire.App.Models
     {
         [ForeignKey("Detail_Transaksi")]
         public int Id_Detail_Transaksi { get; set; }
+
+        [ForeignKey("Users")]
+        [Required(ErrorMessage = "Id Users harus diisi.")]
+        public int Id_Users { get; set; }
+
         [Required(ErrorMessage = "Nama pelanggan harus diisi.")]
         [StringLength(100, ErrorMessage = "Nama pelanggan tidak boleh lebih dari 100 karakter.")]
-        public string Nama_Pelanggan { get; set; }
-        [Required(ErrorMessage = "Nama harus diisi.")]
-        public string Nama { get; set; }
+        public string Nama_Karyawan { get; set; }
         [Required(ErrorMessage = "Nama produk harus diisi.")]
         [StringLength(100, ErrorMessage = "Nama produk tidak boleh lebih dari 100 karakter.")]
         public string Nama_Produk { get; set; }
@@ -35,5 +38,7 @@ namespace TaniAttire.App.Models
         [Range(0, double.MaxValue, ErrorMessage = "Harga Jual harus diisi")]
         public decimal Harga_Jual { get; set; }
         public decimal Total_Harga { get; set; }
+
+       
     }
 }

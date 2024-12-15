@@ -179,5 +179,15 @@ namespace TaniAttire.Views.Auditor
                 this.Close();
             }
         }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Ubah_Produk_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

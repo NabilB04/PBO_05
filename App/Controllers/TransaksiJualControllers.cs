@@ -20,20 +20,18 @@ namespace TaniAttire.App.Controllers
                 string query = @"
                     SELECT 
                         dt.Id_Detail_Transaksi,
-                        p.Nama_Pelanggan,
                         usr.Nama AS Nama_Karyawan,
                         pr.Nama_Produk,
                         tj.Tanggal_Transaksi,
                         u.Nilai_Ukuran,
                         dt.Jumlah,
                         ds.Harga_jual AS Harga_Satuan,
-                        (dt.Jumlah * ds.Harga_Jual) AS Total_Harga
+                        (dt.Jumlah * ds.Harga_Jual) AS Total_Harga,
+                        tj.Id_Users
                     FROM 
                         Detail_Transaksi dt
                     INNER JOIN 
                         TransaksiJual tj ON dt.Id_TransaksiJual = tj.Id_TransaksiJual
-                    INNER JOIN 
-                        Pelanggan p ON tj.Id_Pelanggan = p.Id_Pelanggan
                     INNER JOIN 
                         Detail_Stok ds ON dt.Id_Detail_Stok = ds.Id_Detail_Stok
                     INNER JOIN 
@@ -56,14 +54,15 @@ namespace TaniAttire.App.Controllers
                         transaksiList.Add(new TransaksiJualDetail
                         {
                             Id_Detail_Transaksi = reader.GetInt32(0),
-                            Nama_Pelanggan = reader.GetString(1),
+                            Nama_Karyawan = reader.GetString(1),
                             Nama_Produk = reader.GetString(2),
-                            Nama = reader.GetString(3),
-                            Tanggal_Transaksi =reader.GetDateTime(4),
-                            Nilai_Ukuran = reader.GetString(5),
-                            Jumlah = reader.GetInt32(6),
-                            Harga_Jual = reader.GetDecimal(7),
-                            Total_Harga = reader.GetInt32(8) 
+                            Tanggal_Transaksi =reader.GetDateTime(3),
+                            Nilai_Ukuran = reader.GetString(4),
+                            Jumlah = reader.GetInt32(5),
+                            Harga_Jual = reader.GetDecimal(6),
+                            Total_Harga = reader.GetInt32(7),
+                            Id_Users = reader.GetInt32(8),
+
                         });
                     }
                 }
@@ -100,7 +99,7 @@ namespace TaniAttire.App.Controllers
                    
                     string queryInsertTransaksiJual = @"
                     INSERT INTO TransaksiJual ( Tanggal_Transaksi, Id_Users)
-                    VALUES (@Id_Pelanggan, @Tanggal_Transaksi, @Id_Users)
+                    VALUES (@Tanggal_Transaksi, @Id_Users)
                     RETURNING Id_TransaksiJual;";
 
                     int idTransaksiJual;
@@ -112,20 +111,18 @@ namespace TaniAttire.App.Controllers
                         idTransaksiJual = Convert.ToInt32(cmd.ExecuteScalar());
                     }
 
-                    // Query untuk insert data ke tabel Detail_Transaksi
                     string queryInsertDetailTransaksi = @"
-                INSERT INTO Detail_Transaksi (Id_TransaksiJual, Id_Detail_Stok, Jumlah)
-                VALUES (@Id_TransaksiJual, @Id_Detail_Stok, @Jumlah);";
+                INSERT INTO Detail_Transaksi (Id_TransaksiJual, Id_Detail_Stok, Jumlah , Id_Transaksi_Sewa)
+                VALUES (@Id_TransaksiJual, @Id_Detail_Stok, @Jumlah , NULL);";
 
                     using (var cmd = new NpgsqlCommand(queryInsertDetailTransaksi, conn))
                     {
                         cmd.Parameters.AddWithValue("Id_TransaksiJual", idTransaksiJual);
-                        cmd.Parameters.AddWithValue("Id_Detail_Stok", transaksiJualDetail.Id_Detail_Transaksi); // Asumsi ID stok sesuai panel
+                        cmd.Parameters.AddWithValue("Id_Detail_Stok", transaksiJualDetail.Id_Detail_Transaksi); 
                         cmd.Parameters.AddWithValue("Jumlah", transaksiJualDetail.Jumlah);
                         cmd.ExecuteNonQuery();
                     }
 
-                    // Query untuk mengurangi stok_jual di Detail_Stok
                     string queryUpdateStok = @"
                 UPDATE Detail_Stok
                 SET Stok_Jual = Stok_Jual - @Jumlah

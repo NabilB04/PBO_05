@@ -37,6 +37,67 @@ namespace TaniAttire.App.Controllers
             return pelangganList;
         }
 
+        public Pelanggan Getpelangganbyid(int Id_Pelanggan)
+        {
+            Pelanggan pelanggan1 = null;
+            using (var conn = DataWrapper.openConnection())
+            {
+                string query = "SELECT Id_Pelanggan  FROM Pelanggan WHERE Id_Pelanggan = @Id_Pelanggan";
+                using (var cmd = new NpgsqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@Id_Pelanggan", Id_Pelanggan);
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            pelanggan1 = new Pelanggan
+                            {
+                                Id_Pelanggan = reader.GetInt32(0),
+                              
+                            };
+                        }
+                    }
+                }
+            }
+            return pelanggan1;
+        }
+
+        public List<Pelanggan> SearchPelanggan(string keyword)
+        {
+            List<Pelanggan> pelangganList = new List<Pelanggan>();
+
+            using (var conn = DataWrapper.openConnection())
+            {
+                string query = @"
+            SELECT * 
+            FROM pelanggan 
+            WHERE LOWER(nama_pelanggan) LIKE @keyword 
+               OR LOWER(no_telpon) LIKE @keyword 
+               OR LOWER(alamat) LIKE @keyword";
+
+                using (var cmd = new NpgsqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("keyword", $"%{keyword.ToLower()}%");
+
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            pelangganList.Add(new Pelanggan
+                            {
+                                Id_Pelanggan = reader.GetInt32(0),
+                                Nama_Pelanggan = reader.GetString(1),
+                                No_Telpon = reader.GetString(2),
+                                Alamat = reader.GetString(3),
+                            });
+                        }
+                    }
+                }
+            }
+
+            return pelangganList;
+        }
+
         public void Addpelanggan(Pelanggan pelanggan1)
         {
 

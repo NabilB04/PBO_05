@@ -14,14 +14,14 @@ using static TaniAttire.Login;
 
 namespace TaniAttire.Views.Kasir.Card
 {
-    public partial class CardDetailProduk : UserControl
+    public partial class CardSewadetail : UserControl
     {
-        private TransaksiJualControllers transaksiController;
+        private TransaksiSewaControllers transaksiController;
         public List<Detail_Produk> ProdukList { get; set; } = new List<Detail_Produk>();
-        public CardDetailProduk()
+        public CardSewadetail()
         {
             InitializeComponent();
-            transaksiController = new TransaksiJualControllers();
+            transaksiController = new TransaksiSewaControllers();
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -66,13 +66,13 @@ namespace TaniAttire.Views.Kasir.Card
             try
             {
                 // Validasi input dari pengguna
-                if (string.IsNullOrWhiteSpace(textBoxJumlah.Text) || comboBoxUkuran.SelectedItem == null)
+                if (comboBoxUkuran.SelectedItem == null)
                 {
-                    MessageBox.Show("Harap lengkapi jumlah dan ukuran produk.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    MessageBox.Show("Harap lengkapi tanggal kembali dan ukuran produk.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     return;
                 }
 
-                int jumlah = int.Parse(textBoxJumlah.Text);
+                DateTime tanggal_kembali = dateTimePicker1.Value;
                 string ukuran = comboBoxUkuran.SelectedItem.ToString();
 
                 // Ambil ID Detail Stok dari produk list
@@ -91,16 +91,16 @@ namespace TaniAttire.Views.Kasir.Card
                 }
 
                 // Buat objek TransaksiJualDetail
-                var transaksiJualDetail = new TransaksiJualDetail
+                var transaksiSewaDetail = new TransaksiSewaDetail
                 {
                     Id_Detail_Transaksi = idDetailStok,
-                    Jumlah = jumlah,
+                    Tanggal_Kembali = tanggal_kembali,
                     Tanggal_Transaksi = DateTime.Now,
-                    Id_Users = idUsers // Sertakan ID pengguna
+                    Id_Users = idUsers
                 };
 
                 // Panggil fungsi AddTransaksiJual dari controller
-                transaksiController.AddTransaksiJual(transaksiJualDetail);
+                //transaksiController.AddTransaksiJual(transaksiJualDetail);
 
                 MessageBox.Show("Transaksi berhasil disimpan.", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 ResetForm();
@@ -130,7 +130,7 @@ namespace TaniAttire.Views.Kasir.Card
 
         private void ResetForm()
         {
-            textBoxJumlah.Clear();
+
             comboBoxUkuran.SelectedIndex = -1;
         }
     }
