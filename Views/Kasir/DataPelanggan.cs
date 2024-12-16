@@ -118,10 +118,9 @@ namespace TaniAttire.Views.Kasir
                         PelangganSession.SelectedPelangganId = idPelanggan;
 
                         MessageBox.Show($"Pelanggan dengan ID {idPelanggan} berhasil dipilih.", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        if (SessionData.SelectedProdukId.HasValue)
+                        if (PelangganSession.SelectedPelangganId != null)
                         {
                             // Arahkan ke PersewaanDetail
-                            MessageBox.Show("Event Click Terpicu");
                             PersewaanDetail persewaanDetail = new PersewaanDetail(SessionData.SelectedProdukId.Value);
                             persewaanDetail.Show();
                             this.Close(); // Tutup form PopupPelanggan
@@ -141,8 +140,11 @@ namespace TaniAttire.Views.Kasir
                     MessageBox.Show($"Terjadi kesalahan: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+            MessageBox.Show("tes");
 
         }
+
+
 
 
         private void button9_Click(object sender, EventArgs e)
@@ -159,7 +161,7 @@ namespace TaniAttire.Views.Kasir
         }
         public static class PelangganSession
         {
-            public static int SelectedPelangganId { get; set; }
+            public static int? SelectedPelangganId { get; set; }
         }
         private void button7_Click(object sender, EventArgs e)
         {
@@ -185,7 +187,43 @@ namespace TaniAttire.Views.Kasir
             {
                 MessageBox.Show($"Terjadi kesalahan saat pencarian: {ex.Message}");
             }
-            
+
+        }
+
+        private void dataGridView1_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == dataGridView1.Columns["Pilih"].Index)
+            {
+                try
+                {
+                    if (dataGridView1.Rows[e.RowIndex].Cells["Id_Pelanggan"].Value != null)
+                    {
+                        int idPelanggan = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["Id_Pelanggan"].Value);
+
+                        PelangganSession.SelectedPelangganId = idPelanggan;
+
+                        if (PelangganSession.SelectedPelangganId != null)
+                        {
+                            PersewaanDetail persewaanDetail = new PersewaanDetail(SessionData.SelectedProdukId.Value);
+                            persewaanDetail.Show();
+                            this.Close(); 
+                        }
+                        else
+                        {
+                            MessageBox.Show("Produk belum dipilih. Silakan pilih produk terlebih dahulu.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        }
+                    }
+                    else
+                    {
+                        MessageBox.Show("Data pelanggan tidak valid.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Terjadi kesalahan: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+           
         }
     }
 

@@ -30,7 +30,10 @@ namespace TaniAttire.App.Controllers
         ts.Tanggal_Kembali,
         ts.Tanggal_Pengembalian,
         ts.Status_Pengembalian,
+        p.Id_Pelanggan,
+        usr.Id_Users,
         pr.Denda_Perhari,
+        
         CASE 
             WHEN ts.Tanggal_Pengembalian > ts.Tanggal_Kembali THEN 
                 (CAST(ts.Tanggal_Pengembalian AS DATE) - CAST(ts.Tanggal_Kembali AS DATE)) * pr.Denda_Perhari
@@ -84,10 +87,12 @@ namespace TaniAttire.App.Controllers
                             Tanggal_Kembali = reader.GetDateTime(7),
                             Tanggal_Pengembalian = reader.IsDBNull(8) ? (DateTime?)null : reader.GetDateTime(8),
                             Status_Pengembalian = reader.GetBoolean(9),
-                            Denda_Perhari = reader.GetDecimal(10),
-                            Denda_Total = reader.GetDecimal(11),
-                            Jumlah_Hargasewa = reader.GetDecimal(12),           
-                            Total_Harga = reader.GetDecimal(13)
+                            Id_Pelanggan = reader.GetInt32(10),
+                            Id_Users = reader.GetInt32(11),
+                            Denda_Perhari = reader.GetDecimal(12),
+                            Denda_Total = reader.GetDecimal(13),
+                            Jumlah_Hargasewa = reader.GetDecimal(14),           
+                            Total_Harga = reader.GetDecimal(15)
                         });
 
                     }
@@ -195,7 +200,7 @@ namespace TaniAttire.App.Controllers
 
                     // Insert into DetailTransaksi table
                     string queryInsertDetailTransaksi = @"
-            INSERT INTO DetailTransaksi (Id_Transaksi_Sewa, Id_Detail_Stok, Jumlah, Id_TransaksiJual)
+            INSERT INTO Detail_Transaksi (Id_Transaksi_Sewa, Id_Detail_Stok, Jumlah, Id_TransaksiJual)
             VALUES (@Id_Transaksi_Sewa, @Id_Detail_Stok, 1, NULL);";
 
                     using (var cmd = new NpgsqlCommand(queryInsertDetailTransaksi, conn))
@@ -208,7 +213,7 @@ namespace TaniAttire.App.Controllers
 
                     // Update DetailStok table to decrement stock
                     string queryUpdateStok = @"
-            UPDATE DetailStok
+            UPDATE Detail_Stok
             SET Stok_Sewa = Stok_Sewa - 1
             WHERE Id_Detail_Stok = @Id_Detail_Stok
               AND Stok_Sewa >= 1;";
@@ -256,5 +261,118 @@ namespace TaniAttire.App.Controllers
             }
             return totalSewa;
         }
+        public TransaksiSewaDetail GetTransaksiById(int idTransaksi)
+        {
+            TransaksiSewaDetail transaksi = null;
+
+            using (var conn = DataWrapper.openConnection())
+            {
+                string query = @"
+            SELECT 
+                dt.Id_Detail_Transaksi,
+                p.Nama_Pelanggan,
+                usr.Nama AS Nama_Karyawan,
+                pr.Nama_Produk,
+                u.Nilai_Ukuran,
+                ds.Harga_Sewa,
+                ts.Tanggal_Transaksi,
+                ts.Tanggal_Kembali,
+                ts.Tanggal_Pengembalian,
+                ts.Status_Pengembalian,
+                p.Id_Pelanggan,
+                usr.Id_Users,
+                pr.Denda_Perhari,
+                CASE 
+                    WHEN ts.Tanggal_Pengembalian > ts.Tanggal_Kembali THEN 
+                        (CAST(ts.Tanggal_Pengembalian AS DATE) - CAST(ts.Tanggal_Kembali AS DATE)) * pr.Denda_Perhari
+                    ELSE 
+                        0
+                END AS Denda_Total,
+                (CAST(ts.Tanggal_Kembali AS DATE) - CAST(ts.Tanggal_Transaksi AS DATE)) * ds.Harga_Sewa AS Jumlah_HargaSewa,
+                CASE 
+                    WHEN ts.Tanggal_Pengembalian > ts.Tanggal_Kembali THEN 
+                        ((CAST(ts.Tanggal_Kembali AS DATE) - CAST(ts.Tanggal_Transaksi AS DATE)) * ds.Harga_Sewa) + 
+                        ((CAST(ts.Tanggal_Pengembalian AS DATE) - CAST(ts.Tanggal_Kembali AS DATE)) * pr.Denda_Perhari)
+                    ELSE 
+                        (CAST(ts.Tanggal_Kembali AS DATE) - CAST(ts.Tanggal_Transaksi AS DATE)) * ds.Harga_Sewa
+                END AS Total_Harga
+            FROM 
+                Detail_Transaksi dt
+            INNER JOIN 
+                TransaksiSewa ts ON dt.Id_Transaksi_Sewa = ts.Id_TransaksiSewa
+            INNER JOIN 
+                Pelanggan p ON ts.Id_Pelanggan = p.Id_Pelanggan
+            INNER JOIN 
+                Detail_Stok ds ON dt.Id_Detail_Stok = ds.Id_Detail_Stok
+            INNER JOIN 
+                Detail_Produk dp ON ds.Id_Detail_Produk = dp.Id_Detail_Produk
+            INNER JOIN 
+                Produk pr ON dp.Id_Produk = pr.Id_Produk
+            INNER JOIN 
+                Ukuran u ON dp.Id_Ukuran = u.Id_Ukuran
+            LEFT JOIN 
+                Users usr ON ts.Id_Users = usr.Id_Users
+            WHERE 
+                ts.Id_TransaksiSewa = @Id_TransaksiSewa";
+
+                using (var cmd = new NpgsqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@Id_TransaksiSewa", idTransaksi);
+
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        if (reader.Read())
+                        {
+                            transaksi = new TransaksiSewaDetail
+                            {
+                                Id_Detail_Transaksi = reader.GetInt32(0),
+                                Nama_Pelanggan = reader.GetString(1),
+                                Nama = reader.IsDBNull(2) ? null : reader.GetString(2),
+                                Nama_Produk = reader.GetString(3),
+                                Nilai_Ukuran = reader.GetString(4),
+                                Harga_Sewa = reader.GetDecimal(5),
+                                Tanggal_Transaksi = reader.GetDateTime(6),
+                                Tanggal_Kembali = reader.GetDateTime(7),
+                                Tanggal_Pengembalian = reader.IsDBNull(8) ? (DateTime?)null : reader.GetDateTime(8),
+                                Status_Pengembalian = reader.GetBoolean(9),
+                                Id_Pelanggan = reader.GetInt32(10),
+                                Id_Users = reader.GetInt32(11),
+                                Denda_Perhari = reader.GetDecimal(12),
+                                Denda_Total = reader.GetDecimal(13),
+                                Jumlah_Hargasewa = reader.GetDecimal(14),
+                                Total_Harga = reader.GetDecimal(15)
+                            };
+                        }
+                    }
+                }
+            }
+
+            return transaksi;
+        }
+        public void UpdateStatusPengembalian(int idTransaksi, DateTime tanggalPengembalian)
+        {
+            using (var conn = DataWrapper.openConnection())
+            {
+                string query = @"
+            UPDATE TransaksiSewa
+            SET Tanggal_Pengembalian = @TanggalPengembalian,
+                Status_Pengembalian = TRUE
+            WHERE Id_TransaksiSewa = @Id_TransaksiSewa";
+
+                using (var cmd = new NpgsqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@TanggalPengembalian", tanggalPengembalian);
+                    cmd.Parameters.AddWithValue("@Id_TransaksiSewa", idTransaksi);
+
+                    int rowsAffected = cmd.ExecuteNonQuery();
+
+                    if (rowsAffected == 0)
+                    {
+                        throw new Exception("Gagal memperbarui data. Pastikan ID transaksi valid.");
+                    }
+                }
+            }
+        }
+
     }
 }

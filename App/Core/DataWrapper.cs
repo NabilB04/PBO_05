@@ -15,7 +15,7 @@ namespace TaniAttire.App.Core
         private static readonly string DB_HOST = "localhost";
         private static readonly string DB_DATABASE = "TaniAttire";
         private static readonly string DB_USERNAME = "postgres";
-        private static readonly string DB_PASSWORD = "Triplef33";
+        private static readonly string DB_PASSWORD = "NabilBaihaqi04";
         private static readonly string DB_PORT = "5432";
 
         private static NpgsqlConnection connection;
@@ -24,14 +24,6 @@ namespace TaniAttire.App.Core
 
         public static NpgsqlConnection openConnection()
         {
-
-
-
-
-
-
-
-
             if (connection == null || connection.State == ConnectionState.Closed)
             {
                 connection = new NpgsqlConnection($"Host={DB_HOST};Username={DB_USERNAME};Password={DB_PASSWORD};Database={DB_DATABASE};Port={DB_PORT}");

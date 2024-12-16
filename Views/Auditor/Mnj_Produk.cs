@@ -213,8 +213,8 @@ namespace TaniAttire.Views.Auditor
                         if (detailStok != null)
                         {
                             // Panggil form Tambahukuran_Produk menggunakan constructor yang sesuai
-                            Tambahukuran_Produk tambahukuranProduk = new Tambahukuran_Produk(selectedProduk, detailStok);
-                            tambahukuranProduk.ShowDialog();
+                            //Tambahukuran_Produk tambahukuranProduk = new Tambahukuran_Produk(selectedProduk, detailStok);
+                            //tambahukuranProduk.ShowDialog();
 
                             // Refresh data setelah form ditutup
                             LoadDataProduk();

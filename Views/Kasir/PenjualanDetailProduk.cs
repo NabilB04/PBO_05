@@ -72,13 +72,24 @@ namespace TaniAttire.Views.Kasir
                     // Tambahkan event handler untuk perubahan ukuran
                     cardDetailProduk.comboBoxUkuran.SelectedIndexChanged += (s, ev) =>
                     {
-                        string selectedUkuran = cardDetailProduk.comboBoxUkuran.SelectedItem.ToString();
-                        var stok = produkList
-                            .Where(p => p.Nilai_Ukuran == selectedUkuran)
-                            .Select(p => p.Stok_Jual)
-                            .FirstOrDefault();
+                        if (cardDetailProduk.comboBoxUkuran.SelectedItem != null)
+                        {
+                            string selectedUkuran = cardDetailProduk.comboBoxUkuran.SelectedItem.ToString();
 
-                        cardDetailProduk.label4.Text = $"Stok: {stok}";
+                            // Cari stok berdasarkan ukuran yang dipilih
+                            var stok = produkList
+                                .Where(p => p.Nilai_Ukuran == selectedUkuran)
+                                .Select(p => p.Stok_Jual)
+                                .FirstOrDefault();
+
+                            // Update label
+                            cardDetailProduk.label4.Text = $"Stok Jual: {stok}";
+                        }
+                        else
+                        {
+                            // Handle kondisi jika tidak ada item yang dipilih
+                            cardDetailProduk.label4.Text = "Silakan pilih ukuran.";
+                        }
                     };
 
                     // Tambahkan kartu ke flowLayoutPanel

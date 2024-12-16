@@ -46,5 +46,7 @@ namespace TaniAttire.App.Models
         public decimal Jumlah_Hargasewa { get; set; }
         [ForeignKey("Users")]
         public int Id_Users { get; set; } //0
+
+        public int Id_Pelanggan { get; set; }
     }
 }

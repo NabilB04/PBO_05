@@ -20,9 +20,6 @@
     <Compile Update="Views\Auditor\Persewaan.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Views\Auditor\Tambahukuran_Produk .cs">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Update="Views\Auditor\Tambah_Karyawan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -66,6 +63,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\Kasir\TrackPersewaan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\Kasir\TrackPersewaanPengembalian.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\Login.cs">

@@ -46,9 +46,10 @@
             button3.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button3.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button3.FlatStyle = FlatStyle.Flat;
-            button3.Location = new Point(12, 409);
+            button3.Location = new Point(14, 545);
+            button3.Margin = new Padding(3, 4, 3, 4);
             button3.Name = "button3";
-            button3.Size = new Size(403, 113);
+            button3.Size = new Size(461, 151);
             button3.TabIndex = 38;
             button3.UseVisualStyleBackColor = false;
             // 
@@ -61,9 +62,10 @@
             button2.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button2.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button2.FlatStyle = FlatStyle.Flat;
-            button2.Location = new Point(12, 290);
+            button2.Location = new Point(14, 387);
+            button2.Margin = new Padding(3, 4, 3, 4);
             button2.Name = "button2";
-            button2.Size = new Size(403, 113);
+            button2.Size = new Size(461, 151);
             button2.TabIndex = 37;
             button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
@@ -78,9 +80,10 @@
             button1.FlatAppearance.MouseDownBackColor = Color.Transparent;
             button1.FlatAppearance.MouseOverBackColor = Color.Transparent;
             button1.FlatStyle = FlatStyle.Flat;
-            button1.Location = new Point(12, 171);
+            button1.Location = new Point(14, 228);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(403, 113);
+            button1.Size = new Size(461, 151);
             button1.TabIndex = 36;
             button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
@@ -96,10 +99,11 @@
             button6.FlatStyle = FlatStyle.Flat;
             button6.ForeColor = Color.White;
             button6.ImageAlign = ContentAlignment.MiddleLeft;
-            button6.Location = new Point(12, 613);
+            button6.Location = new Point(14, 817);
+            button6.Margin = new Padding(3, 4, 3, 4);
             button6.Name = "button6";
-            button6.Padding = new Padding(30, 0, 0, 0);
-            button6.Size = new Size(403, 56);
+            button6.Padding = new Padding(34, 0, 0, 0);
+            button6.Size = new Size(461, 75);
             button6.TabIndex = 35;
             button6.UseVisualStyleBackColor = false;
             button6.Click += button6_Click;
@@ -108,27 +112,32 @@
             // 
             dataGridView1.BackgroundColor = Color.LightGreen;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(436, 125);
+            dataGridView1.Location = new Point(498, 167);
+            dataGridView1.Margin = new Padding(3, 4, 3, 4);
             dataGridView1.Name = "dataGridView1";
-            dataGridView1.Size = new Size(816, 397);
+            dataGridView1.RowHeadersWidth = 51;
+            dataGridView1.Size = new Size(933, 529);
             dataGridView1.TabIndex = 39;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // TrackPersewaan
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1264, 681);
+            ClientSize = new Size(1445, 908);
             Controls.Add(dataGridView1);
             Controls.Add(button3);
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(button6);
             DoubleBuffered = true;
+            Margin = new Padding(3, 4, 3, 4);
             Name = "TrackPersewaan";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "TrackPersewaan";
+            Load += TrackPersewaan_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
         }

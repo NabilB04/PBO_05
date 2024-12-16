@@ -11,6 +11,7 @@ using TaniAttire.App.Controllers;
 using TaniAttire.App.Models;
 using TaniAttire.Views.Auditor;
 using static TaniAttire.Login;
+using static TaniAttire.Views.Kasir.DataPelanggan;
 
 namespace TaniAttire.Views.Kasir.Card
 {
@@ -77,12 +78,19 @@ namespace TaniAttire.Views.Kasir.Card
 
                 // Ambil ID Detail Stok dari produk list
                 int idDetailStok = GetSelectedDetailStok(ukuran);
+                MessageBox.Show(idDetailStok.ToString());
+
                 if (idDetailStok == 0)
                 {
                     MessageBox.Show("Detail stok tidak ditemukan untuk ukuran yang dipilih.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
                 }
-
+                int id_pelanggan = PelangganSession.SelectedPelangganId ?? 0;
+                if (id_pelanggan == 0)
+                {
+                    MessageBox.Show("Pengguna tidak valid. Silakan login kembali.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
                 int idUsers = SessionData.LoggedInUserId; // Pastikan SessionData diakses dengan benar
                 if (idUsers == 0)
                 {
@@ -96,18 +104,18 @@ namespace TaniAttire.Views.Kasir.Card
                     Id_Detail_Transaksi = idDetailStok,
                     Tanggal_Kembali = tanggal_kembali,
                     Tanggal_Transaksi = DateTime.Now,
-                    Id_Users = idUsers
+                    Id_Users = idUsers,
+                    Id_Pelanggan = id_pelanggan
                 };
 
                 // Panggil fungsi AddTransaksiJual dari controller
-                //transaksiController.AddTransaksiJual(transaksiJualDetail);
-
+                transaksiController.AddTransaksiSewa(transaksiSewaDetail);
                 MessageBox.Show("Transaksi berhasil disimpan.", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 ResetForm();
 
-                // Navigasi kembali ke form Jual
-                var penjualanproduk = new PenjualanProduk();
-                penjualanproduk.Show();
+                //Navigasi kembali ke form Jual
+               var persewaanproduk = new PersewaanProduk();
+                persewaanproduk.Show();
 
                 Form parentForm = this.FindForm();
                 if (parentForm != null)
