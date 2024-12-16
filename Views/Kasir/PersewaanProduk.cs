@@ -29,7 +29,11 @@ namespace TaniAttire.Views.Kasir
             login.Show();
             Hide();
         }
-
+        public static class SessionData
+        {
+            public static int? SelectedProdukId { get; set; }
+            public static int? SelectedPelangganId { get; set; }
+        }
         private void PersewaanProduk_Load(object sender, EventArgs e)
         {
             try
@@ -68,8 +72,15 @@ namespace TaniAttire.Views.Kasir
                         //PopupPelanggan popup = new PopupPelanggan();
                         //popup.Show();
                         //this.Hide();  // Menyembunyikan form saat membuka form baru
-                        PersewaanDetail sewadetail = new PersewaanDetail(produk.Id_Produk);
-                        sewadetail.Show();
+                        //PersewaanDetail sewadetail = new PersewaanDetail(produk.Id_Produk);
+                        //sewadetail.Show();
+                        //this.Hide();
+                        // Simpan Id_Produk ke sesi
+                        SessionData.SelectedProdukId = produk.Id_Produk;
+
+                        // Buka form PopupPelanggan
+                        PopupPelanggan popupPelanggan = new PopupPelanggan();
+                        popupPelanggan.Show();
                         this.Hide();
                     };
 

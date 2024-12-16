@@ -98,9 +98,9 @@ namespace TaniAttire.App.Controllers
             return pelangganList;
         }
 
-        public void Addpelanggan(Pelanggan pelanggan1)
+        public int Addpelanggan(Pelanggan pelanggan1)
         {
-
+            // Validasi data
             var validationContext = new ValidationContext(pelanggan1, serviceProvider: null, items: null);
             var validationResults = new List<ValidationResult>();
 
@@ -111,14 +111,13 @@ namespace TaniAttire.App.Controllers
 
             using (var conn = openConnection())
             {
-
-                string checkQuery = "SELECT COUNT(*) FROM Pelanggan WHERE Nama_Pelanggan = @Nama_Pelanggan AND No_Telpon = @No_Telpon AND Alamat  = @Alamat ";
+                // Periksa apakah pelanggan sudah ada
+                string checkQuery = "SELECT COUNT(*) FROM Pelanggan WHERE Nama_Pelanggan = @Nama_Pelanggan AND No_Telpon = @No_Telpon AND Alamat = @Alamat";
                 using (var checkCmd = new NpgsqlCommand(checkQuery, conn))
                 {
-                    checkCmd.Parameters.AddWithValue("Nama_Pelanggan",pelanggan1.Nama_Pelanggan );
+                    checkCmd.Parameters.AddWithValue("Nama_Pelanggan", pelanggan1.Nama_Pelanggan);
                     checkCmd.Parameters.AddWithValue("No_Telpon", pelanggan1.No_Telpon);
                     checkCmd.Parameters.AddWithValue("Alamat", pelanggan1.Alamat);
-
 
                     int count = Convert.ToInt32(checkCmd.ExecuteScalar());
                     if (count > 0)
@@ -127,16 +126,23 @@ namespace TaniAttire.App.Controllers
                     }
                 }
 
+                // Tambahkan pelanggan baru dan kembalikan ID
+                string query = @"
+            INSERT INTO Pelanggan (Nama_Pelanggan, No_Telpon, Alamat)
+            VALUES (@Nama_Pelanggan, @No_Telpon, @Alamat)
+            RETURNING Id_Pelanggan;";
 
-                string query = "INSERT INTO Pelanggan (Nama_Pelanggan, No_Telpon, Alamat) VALUES(@Nama_Pelanggan, @No_Telpon, @Alamat)";
                 using (var cmd = new NpgsqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("Nama_Pelanggan", pelanggan1.Nama_Pelanggan);
                     cmd.Parameters.AddWithValue("No_Telpon", pelanggan1.No_Telpon);
                     cmd.Parameters.AddWithValue("Alamat", pelanggan1.Alamat);
-                    cmd.ExecuteNonQuery();
+
+                    // Mengembalikan ID pelanggan yang baru saja ditambahkan
+                    return Convert.ToInt32(cmd.ExecuteScalar());
                 }
             }
         }
+
     }
 }

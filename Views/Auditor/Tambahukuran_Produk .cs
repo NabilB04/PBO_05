@@ -25,9 +25,9 @@ namespace TaniAttire.Views.Auditor
             InitializeComponent();
             _selectedProduk = produk; // Simpan data produk yang dipilih
             label7.Text = produk.Nama_Produk; // Menampilkan nama produk di label7
-            textBoxHargaJual.Text = produk.Harga_Jual.ToString(); // Menampilkan harga jual
-            textBoxHargaSewa.Text = produk.Harga_Sewa.ToString(); // Menampilkan harga sewa
-            textBoxDendaPerHari.Text = produk.Denda_Perhari.ToString(); // Menampilkan denda perhari
+            //textBoxHargaJual.Text = produk.Harga_Jual.ToString(); // Menampilkan harga jual
+            //textBoxHargaSewa.Text = produk.Harga_Sewa.ToString(); // Menampilkan harga sewa
+            //textBoxDendaPerHari.Text = produk.Denda_Perhari.ToString(); // Menampilkan denda perhari
             LoadUkuran();
         }
         private void LoadUkuran()
@@ -41,10 +41,10 @@ namespace TaniAttire.Views.Auditor
         private void LoadProdukToForm(GetProduk produk)
         {
             selectedProdukId = produk.Id_Produk;
-            labelNamaProduk.Text = produk.Nama_Produk;
-            textBoxHargaJual.Text = produk.Harga_Jual.ToString();
-            textBoxHargaSewa.Text = produk.Harga_Sewa.ToString();
-            textBoxDendaPerHari.Text = produk.Denda_Perhari.ToString();
+            //labelNamaProduk.Text = produk.Nama_Produk;
+            //textBoxHargaJual.Text = produk.Harga_Jual.ToString();
+            //textBoxHargaSewa.Text = produk.Harga_Sewa.ToString();
+            //textBoxDendaPerHari.Text = produk.Denda_Perhari.ToString();
         }
 
         private void label8_Click(object sender, EventArgs e)
@@ -102,11 +102,11 @@ namespace TaniAttire.Views.Auditor
                     Id_Detail_Produk = selectedProdukId,
                     Stok_Jual = int.Parse(textBoxStokJual.Text),
                     Stok_Sewa = int.Parse(textBoxStokSewa.Text),
-                    Harga_Jual = decimal.Parse(textBoxHargaJual.Text),
-                    Harga_Sewa = decimal.Parse(textBoxHargaSewa.Text),
+                    //Harga_Jual = decimal.Parse(textBoxHargaJual.Text),
+                    //Harga_Sewa = decimal.Parse(textBoxHargaSewa.Text),
                 };
 
-                _controller.AddDetailStok(newStok); 
+                //_controller.AddDetailStok(newStok); 
                 MessageBox.Show("Data berhasil disimpan.", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             catch (Exception ex)

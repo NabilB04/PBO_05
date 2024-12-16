@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TaniAttire.App.Controllers;
 using TaniAttire.Views.Auditor;
+using static TaniAttire.Views.Kasir.PersewaanProduk;
 
 namespace TaniAttire.Views.Kasir
 {
@@ -109,23 +110,25 @@ namespace TaniAttire.Views.Kasir
             {
                 try
                 {
-                    // Pastikan baris tidak kosong
                     if (dataGridView1.Rows[e.RowIndex].Cells["Id_Pelanggan"].Value != null)
                     {
-                        int Id_Pelanggan = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["Id_Pelanggan"].Value);
+                        int idPelanggan = Convert.ToInt32(dataGridView1.Rows[e.RowIndex].Cells["Id_Pelanggan"].Value);
 
-                        // Ambil data pelanggan berdasarkan ID
-                        var pelanggan = _controller.Getpelangganbyid(Id_Pelanggan);
-                        if (pelanggan != null)
+                        // Simpan Id_Pelanggan ke sesi
+                        PelangganSession.SelectedPelangganId = idPelanggan;
+
+                        MessageBox.Show($"Pelanggan dengan ID {idPelanggan} berhasil dipilih.", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        if (SessionData.SelectedProdukId.HasValue)
                         {
-                            MessageBox.Show($"Pelanggan dengan ID {pelanggan.Id_Pelanggan} berhasil dipilih.", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                            // Muat ulang data (jika diperlukan)
-                            LoadDataKaryawan();
+                            // Arahkan ke PersewaanDetail
+                            MessageBox.Show("Event Click Terpicu");
+                            PersewaanDetail persewaanDetail = new PersewaanDetail(SessionData.SelectedProdukId.Value);
+                            persewaanDetail.Show();
+                            this.Close(); // Tutup form PopupPelanggan
                         }
                         else
                         {
-                            MessageBox.Show("Data pelanggan tidak ditemukan.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                            MessageBox.Show("Produk belum dipilih. Silakan pilih produk terlebih dahulu.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                         }
                     }
                     else
@@ -138,7 +141,9 @@ namespace TaniAttire.Views.Kasir
                     MessageBox.Show($"Terjadi kesalahan: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
+
         }
+
 
         private void button9_Click(object sender, EventArgs e)
         {
@@ -152,7 +157,10 @@ namespace TaniAttire.Views.Kasir
                 MessageBox.Show($"Terjadi kesalahan saat memuat ulang data: {ex.Message}");
             }
         }
-
+        public static class PelangganSession
+        {
+            public static int SelectedPelangganId { get; set; }
+        }
         private void button7_Click(object sender, EventArgs e)
         {
             try

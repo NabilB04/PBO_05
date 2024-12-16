@@ -135,9 +135,7 @@ D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.
 D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Penjualan.resources
 D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Persewaan.resources
 D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Tambah_Ukuran.resources
-D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.KasirDashboard.resources
 D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.PersewaanProduk.resources
-D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.ShiftKasir.resources
 D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Login.resources
 D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.csproj.GenerateResource.cache
 D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.GeneratedMSBuildEditorConfig.editorconfig
@@ -261,3 +259,18 @@ E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.DataPelangg
 E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.Card.CardSewadetail.resources
 E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.PersewaanDetail.resources
 E:\pbo\PBO_05\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Tambahukuran_Produk.resources
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Tambahukuran_Produk.resources
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Ubah_Produk.resources
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.Card.CardDetailProduk.resources
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Auditor.Card.CardProduk.resources
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.Card.CardSewa.resources
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.Card.CardSewadetail.resources
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.DataPelanggan.resources
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.FormJual.resources
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.FormSewa.resources
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.FormTbhPelanggan.resources
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.PenjualanDetailProduk.resources
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.PenjualanProduk.resources
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.PersewaanDetail.resources
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.PopupPelanggan.resources
+D:\kuliah\semester 3\pbo\pemrograman\PBO_05\obj\Debug\net8.0-windows\TaniAttire.Views.Kasir.TrackPersewaan.resources

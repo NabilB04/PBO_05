@@ -9,6 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using TaniAttire.App.Controllers;
 using TaniAttire.App.Models;
+using static TaniAttire.Views.Kasir.DataPelanggan;
+using static TaniAttire.Views.Kasir.PersewaanProduk;
 
 namespace TaniAttire.Views.Kasir
 {
@@ -66,45 +68,52 @@ namespace TaniAttire.Views.Kasir
 
         private void button7_Click(object sender, EventArgs e)
         {
-            // Mengambil data dari TextBox
             string nama = textBox1.Text.Trim();
             string nomor_telepon = textBox2.Text.Trim();
             string alamat = textBox3.Text.Trim();
-            
 
-            // Validasi input
-            if (string.IsNullOrWhiteSpace(nama) || string.IsNullOrWhiteSpace(nomor_telepon) ||
-                string.IsNullOrWhiteSpace(alamat))
+            if (string.IsNullOrWhiteSpace(nama) || string.IsNullOrWhiteSpace(nomor_telepon) || string.IsNullOrWhiteSpace(alamat))
             {
                 MessageBox.Show("Semua field harus diisi!", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
 
-            // Membuat objek Users
-            Pelanggan newpelanggan = new Pelanggan
+            Pelanggan newPelanggan = new Pelanggan
             {
                 Nama_Pelanggan = nama,
                 No_Telpon = nomor_telepon,
                 Alamat = alamat,
             };
 
-            // Menambahkan pengguna ke database menggunakan usersControllers
             try
             {
                 PelangganControllers controller = new PelangganControllers();
-                controller.Addpelanggan(newpelanggan);
+                int newPelangganId = controller.Addpelanggan(newPelanggan);
 
-                MessageBox.Show("Pengguna berhasil ditambahkan!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                // Simpan Id_Pelanggan ke sesi
+                PelangganSession.SelectedPelangganId = newPelangganId;
 
-                OnDataUpdated?.Invoke(this, EventArgs.Empty);
+                MessageBox.Show("Pelanggan berhasil ditambahkan!", "Sukses", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                if (SessionData.SelectedProdukId.HasValue)
+                {
+                    // Arahkan ke PersewaanDetail
+                    PersewaanDetail persewaanDetail = new PersewaanDetail(SessionData.SelectedProdukId.Value);
+                    persewaanDetail.Show();
+                    this.Close(); // Tutup form PopupPelanggan
+                }
+                else
+                {
+                    MessageBox.Show("Produk belum dipilih. Silakan pilih produk terlebih dahulu.", "Peringatan", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             }
             catch (Exception ex)
             {
                 MessageBox.Show($"Terjadi kesalahan: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
-            Close();
         }
+
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
