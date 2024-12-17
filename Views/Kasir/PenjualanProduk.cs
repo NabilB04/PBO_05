@@ -41,8 +41,8 @@ namespace TaniAttire
                     };
 
                     // Set data produk ke dalam card
-                    cardProduk.label1.Text = $"Nama produk : Rp {produk.Nama_Produk:N0}";
-                    cardProduk.label2.Text = $"Harga produk : Rp {produk.Harga_Jual:N0}";
+                    cardProduk.label1.Text = $"{produk.Nama_Produk:N0}";
+                    cardProduk.label2.Text = $"Rp {produk.Harga_Jual:N0}";
 
                     // Set gambar produk jika ada
                     if (!string.IsNullOrEmpty(produk.Foto_Produk))

@@ -138,6 +138,7 @@ namespace TaniAttire.Views.Kasir.Card
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoValidate = AutoValidate.EnablePreventFocusChange;
             Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(label1);

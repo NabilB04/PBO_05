@@ -51,8 +51,8 @@ namespace TaniAttire.Views.Kasir
                     };
 
                     // Set data produk ke dalam card
-                    cardSewa.label1.Text = $"Nama Produk: Rp {produk.Nama_Produk:N0}";
-                    cardSewa.label2.Text = $"Harga: Rp {produk.Harga_Sewa:N0}";
+                    cardSewa.label1.Text = $"{produk.Nama_Produk:N0}";
+                    cardSewa.label2.Text = $"Harga Sewa: Rp {produk.Harga_Sewa:N0}";
                     cardSewa.label3.Text = $"Denda perhari : Rp {produk.Denda_Perhari:N0}";
 
                     // Set gambar produk jika ada

@@ -54,10 +54,10 @@
             // pictureBox1
             // 
             pictureBox1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            pictureBox1.Location = new Point(-12, 4);
+            pictureBox1.Location = new Point(0, 0);
             pictureBox1.Margin = new Padding(3, 4, 3, 4);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(205, 411);
+            pictureBox1.Size = new Size(204, 206);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 3;
             pictureBox1.TabStop = false;
@@ -78,7 +78,7 @@
             // 
             label2.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label2.AutoSize = true;
-            label2.Location = new Point(72, 249);
+            label2.Location = new Point(16, 248);
             label2.Name = "label2";
             label2.Size = new Size(53, 20);
             label2.TabIndex = 2;
@@ -90,7 +90,7 @@
             // 
             label1.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             label1.AutoSize = true;
-            label1.Location = new Point(72, 214);
+            label1.Location = new Point(16, 210);
             label1.Name = "label1";
             label1.Size = new Size(53, 20);
             label1.TabIndex = 1;

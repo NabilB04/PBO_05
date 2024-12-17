@@ -41,5 +41,10 @@ namespace TaniAttire.Views.Auditor.Card
         {
 
         }
+
+        private void panelWrapper_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

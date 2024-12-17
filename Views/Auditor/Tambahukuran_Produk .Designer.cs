@@ -28,6 +28,7 @@
 //        /// </summary>
 //        private void InitializeComponent()
 //        {
+//            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Tambahukuran_Produk));
 //            button6 = new Button();
 //            button3 = new Button();
 //            button4 = new Button();
@@ -122,6 +123,7 @@
 //            button2.Size = new Size(382, 80);
 //            button2.TabIndex = 26;
 //            button2.UseVisualStyleBackColor = false;
+//            //button2.Click += button2_Click;
 //            // 
 //            // button1
 //            // 
@@ -313,6 +315,7 @@
 //            // 
 //            AutoScaleDimensions = new SizeF(8F, 20F);
 //            AutoScaleMode = AutoScaleMode.Font;
+//            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
 //            BackgroundImageLayout = ImageLayout.Stretch;
 //            ClientSize = new Size(1445, 908);
 //            Controls.Add(panel1);

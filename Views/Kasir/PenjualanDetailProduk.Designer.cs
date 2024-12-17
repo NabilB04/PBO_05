@@ -129,6 +129,7 @@
             Controls.Add(button6);
             Cursor = Cursors.IBeam;
             Name = "PenjualanDetailProduk";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "PenjualanDetailProduk";
             Load += Dashboard_Load_1;
             ResumeLayout(false);

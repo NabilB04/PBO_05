@@ -46,17 +46,17 @@ namespace TaniAttire.Views.Auditor
                 dataGridView1.Columns.Add(deleteButtonColumn);
             }
 
-            if (!dataGridView1.Columns.Contains("Tambah Ukuran"))
-            {
-                var tambahukuranButtonColumn = new DataGridViewButtonColumn
-                {
-                    HeaderText = "Aksi",
-                    Text = "Tambah Ukuran",
-                    UseColumnTextForButtonValue = true,
-                    Name = "Tambah Ukuran"
-                };
-                dataGridView1.Columns.Add(tambahukuranButtonColumn);
-            }
+            //if (!dataGridView1.Columns.Contains("Tambah Ukuran"))
+            //{
+            //    var tambahukuranButtonColumn = new DataGridViewButtonColumn
+            //    {
+            //        HeaderText = "Aksi",
+            //        Text = "Tambah Ukuran",
+            //        UseColumnTextForButtonValue = true,
+            //        Name = "Tambah Ukuran"
+            //    };
+            //    dataGridView1.Columns.Add(tambahukuranButtonColumn);
+            //}
         }
         private void LoadDataProduk()
         {
